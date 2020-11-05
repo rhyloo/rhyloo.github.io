@@ -2,41 +2,11 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>.Init</title>
-    <link>https://rhyloo.github.io/</link>
+    <link>https://rhyloo.github.io/docs/shortcodes/</link>
     <description>Recent content on .Init</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>es-es</language>
-    <copyright>Rhyloo 2020</copyright><atom:link href="https://rhyloo.github.io/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>With ToC</title>
-      <link>https://rhyloo.github.io/docs/example/table-of-contents/with-toc/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://rhyloo.github.io/docs/example/table-of-contents/with-toc/</guid>
-      <description>Caput vino delphine in tamen vias#Cognita laeva illo fracta#Lorem markdownum pavent auras, surgit nunc cingentibus libet Laomedonque que est. Pastor An arbor filia foedat, ne fugit aliter, per. Helicona illas et callida neptem est Oresitrophos caput, dentibus est venit. Tenet reddite famuli praesentem fortibus, quaeque vis foret si frondes gelidos gravidae circumtulit inpulit armenta nativum.
- Te at cruciabere vides rubentis manebo Maturuit in praetemptat ruborem ignara postquam habitasse Subitarum supplevit quoque fontesque venabula spretis modo Montis tot est mali quasque gravis Quinquennem domus arsit ipse Pellem turis pugnabant locavit  Natus quaerere#Pectora et sine mulcere, coniuge dum tincta incurvae.</description>
-    </item>
-    
-    <item>
-      <title>Without ToC</title>
-      <link>https://rhyloo.github.io/docs/example/table-of-contents/without-toc/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://rhyloo.github.io/docs/example/table-of-contents/without-toc/</guid>
-      <description>At me ipso nepotibus nunc celebratior genus#Tanto oblite#Lorem markdownum pectora novis patenti igne sua opus aurae feras materiaque illic demersit imago et aristas questaque posset. Vomit quoque suo inhaesuro clara. Esse cumque, per referri triste. Ut exponit solisque communis in tendens vincetis agisque iamque huic bene ante vetat omina Thebae rates. Aeacus servat admonitu concidit, ad resimas vultus et rugas vultu dignamque Siphnon.
-Quam iugulum regia simulacra, plus meruit humo pecorumque haesit, ab discedunt dixit: ritu pharetramque.</description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>https://rhyloo.github.io/docs/example/hidden/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://rhyloo.github.io/docs/example/hidden/</guid>
-      <description>This page is hidden in menu#Quondam non pater est dignior ille Eurotas#Latent te facies#Lorem markdownum arma ignoscas vocavit quoque ille texit mandata mentis ultimus, frementes, qui in vel. Hippotades Peleus pennas conscia cuiquam Caeneus quas.
- Pater demittere evincitque reddunt Maxime adhuc pressit huc Danaas quid freta Soror ego Luctus linguam saxa ultroque prior Tatiumque inquit Saepe liquitur subita superata dederat Anius sudor  Cum honorum Latona#O fallor in sustinui iussorum equidem.</description>
-    </item>
-    
+    <copyright>Rhyloo 2020</copyright><atom:link href="https://rhyloo.github.io/docs/shortcodes/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title></title>
       <link>https://rhyloo.github.io/docs/shortcodes/buttons/</link>
@@ -107,44 +77,6 @@ Example#{{&amp;lt; katex [display] [class=&amp;#34;text-center&amp;#34;] &amp
       <guid>https://rhyloo.github.io/docs/shortcodes/mermaid/</guid>
       <description>Mermaid Chart#Mermaid is library for generating svg charts and diagrams from text.
 Example#{{&amp;lt; mermaid [class=&amp;#34;text-center&amp;#34;]&amp;gt;}} sequenceDiagram Alice-&amp;gt;&amp;gt;Bob: Hello Bob, how are you? alt is sick Bob-&amp;gt;&amp;gt;Alice: Not so good :( else is well Bob-&amp;gt;&amp;gt;Alice: Feeling fresh like a daisy end opt Extra response Bob-&amp;gt;&amp;gt;Alice: Thanks for asking end {{&amp;lt; /mermaid &amp;gt;}} </description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>https://rhyloo.github.io/docs/shortcodes/section/page1/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://rhyloo.github.io/docs/shortcodes/section/page1/</guid>
-      <description>Page 1#</description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>https://rhyloo.github.io/docs/shortcodes/section/page2/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://rhyloo.github.io/docs/shortcodes/section/page2/</guid>
-      <description>Page 2#</description>
-    </item>
-    
-    <item>
-      <title>.Init</title>
-      <link>https://rhyloo.github.io/_indexcp_ori/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://rhyloo.github.io/_indexcp_ori/</guid>
-      <description>Presentación  Hola extraño, soy Jorge Benavides Macías, en internet me conocen como Rhyloo, soy de Madrid pero llevo sin pisar la ciudad más de una década al menos físicamente porque mis datos seguro que pasan por allí. Internet es muy grande recuérdalo.
- Tengo `int AGE = (MONTH &amp;gt;= 11) ? YEAR - 2020 : YEAR - 2021` años, estoy en tercero de robótica[^1] en la Universidad de Málaga; intento llevar todo lo que puedo a un campo práctico (aunque no siempre es posible).</description>
-    </item>
-    
-    <item>
-      <title>Yo</title>
-      <link>https://rhyloo.github.io/docs/yo/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://rhyloo.github.io/docs/yo/</guid>
-      <description>Este &amp;ldquo;curriculum&amp;rdquo; es de lo más informal que vas a encontrar, un cv hecho blog personal por así decirlo, si necesitas algo más formal puedes mirar los siguientes enlaces:
-   LaTeX-es LaTeX-en Europass LinkedIn    Actualizado el 04-11-2020Datos básicos# Nombre:Jorge Benavides Macías Nacido en:Madrid, 15 de Noviembre del 2000 Vivo en:Málaga Web:rhyloo.github.io e-mail:rhyloot@gmail.com  Estado actual (04-11-2020)#Actualmente en Málaga</description>
     </item>
     
   </channel>

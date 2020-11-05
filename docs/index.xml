@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Docs on .Init</title>
+    <link>https://rhyloo.github.io/docs/</link>
+    <description>Recent content in Docs on .Init</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>es-es</language>
+    <copyright>Rhyloo 2020</copyright><atom:link href="https://rhyloo.github.io/docs/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Yo</title>
+      <link>https://rhyloo.github.io/docs/yo/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://rhyloo.github.io/docs/yo/</guid>
+      <description>Este &amp;ldquo;curriculum&amp;rdquo; es de lo más informal que vas a encontrar, un cv hecho blog personal por así decirlo, si necesitas algo más formal puedes mirar los siguientes enlaces:
+   LaTeX-es LaTeX-en Europass LinkedIn    Actualizado el 04-11-2020Datos básicos# Nombre:Jorge Benavides Macías Nacido en:Madrid, 15 de Noviembre del 2000 Vivo en:Málaga Web:rhyloo.github.io e-mail:rhyloot@gmail.com  Estado actual (04-11-2020)#Actualmente en Málaga</description>
+    </item>
+    
+  </channel>
+</rss>
