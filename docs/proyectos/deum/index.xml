@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>.Init</title>
+    <link>https://rhyloo.github.io/docs/proyectos/deum/</link>
+    <description>Recent content on .Init</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>es-es</language>
+    <copyright>Rhyloo 2020</copyright><atom:link href="https://rhyloo.github.io/docs/proyectos/deum/index.xml" rel="self" type="application/rss+xml" />
+  </channel>
+</rss>
