@@ -35,10 +35,6 @@
   </url>
   
   <url>
-    <loc>https://rhyloo.github.io/docs/proyectos/telegram_bot/</loc>
-  </url>
-  
-  <url>
     <loc>https://rhyloo.github.io/docs/shortcodes/</loc>
   </url>
   
@@ -100,6 +96,10 @@
   
   <url>
     <loc>https://rhyloo.github.io/docs/</loc>
+  </url>
+  
+  <url>
+    <loc>https://rhyloo.github.io/docs/proyectos/telegram_bot/</loc>
   </url>
   
   <url>
