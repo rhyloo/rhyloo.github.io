@@ -4,6 +4,7 @@ let testBool = false;
 function updateBackground() {
     var
     hr = (new Date()).getHours(),
+    hr = 1,
     body = document.body,
     bstyle = body.style,
     x = document.body;
