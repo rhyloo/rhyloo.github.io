@@ -23,6 +23,10 @@
   </url>
   
   <url>
+    <loc>https://rhyloo.github.io/docs/yo/</loc>
+  </url>
+  
+  <url>
     <loc>https://rhyloo.github.io/docs/example/hidden/</loc>
   </url>
   
@@ -107,11 +111,11 @@
   </url>
   
   <url>
-    <loc>https://rhyloo.github.io/tags/</loc>
+    <loc>https://rhyloo.github.io/docs/about/</loc>
   </url>
   
   <url>
-    <loc>https://rhyloo.github.io/docs/yo/</loc>
+    <loc>https://rhyloo.github.io/tags/</loc>
   </url>
   
 </urlset>

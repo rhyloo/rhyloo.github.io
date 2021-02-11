@@ -28,6 +28,16 @@ Quam iugulum regia simulacra, plus meruit humo pecorumque haesit, ab discedunt d
     </item>
     
     <item>
+      <title>Yo</title>
+      <link>https://rhyloo.github.io/docs/yo/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://rhyloo.github.io/docs/yo/</guid>
+      <description>Este &amp;ldquo;curriculum&amp;rdquo; es de lo más informal que vas a encontrar, un cv hecho blog personal por así decirlo, si necesitas algo más formal puedes mirar los siguientes enlaces:
+   LaTeX-es LaTeX-en Europass LinkedIn    Actualizado el 07-12-2020Datos básicos# Nombre:Jorge Benavides Macías Nacido en:Madrid, 15 de Noviembre del 2000 Vivo en:Málaga Web:rhyloo.github.io e-mail:rhyloot  Estado actual (07-11-2020)#Actualmente estoy en Málaga&amp;hellip;</description>
+    </item>
+    
+    <item>
       <title></title>
       <link>https://rhyloo.github.io/docs/example/hidden/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -138,13 +148,13 @@ Example#{{&amp;lt; mermaid [class=&amp;#34;text-center&amp;#34;]&amp;gt;}} se
     </item>
     
     <item>
-      <title>Yo</title>
-      <link>https://rhyloo.github.io/docs/yo/</link>
+      <title>Sobre este sitio</title>
+      <link>https://rhyloo.github.io/docs/about/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://rhyloo.github.io/docs/yo/</guid>
-      <description>Este &amp;ldquo;curriculum&amp;rdquo; es de lo más informal que vas a encontrar, un cv hecho blog personal por así decirlo, si necesitas algo más formal puedes mirar los siguientes enlaces:
-   LaTeX-es LaTeX-en Europass LinkedIn    Actualizado el 07-12-2020Datos básicos# Nombre:Jorge Benavides Macías Nacido en:Madrid, 15 de Noviembre del 2000 Vivo en:Málaga Web:rhyloo.github.io e-mail:rhyloot  Estado actual (07-11-2020)#Actualmente estoy en Málaga&amp;hellip;</description>
+      <guid>https://rhyloo.github.io/docs/about/</guid>
+      <description>Llevo años haciendo cosas, algunas más avanzadas y otras muy simples, pero tenemos (o por lo menos tengo yo) la mala costumbre de dejarlo en el olvido y de no publicarlo, un grave error.
+No es el único mal que nos acecha, pensad en los últimos años, nos hemos llenado de títulos para ostentarlos (y lo digo yo que tengo más 5 publicados en mi cuenta de Linkedin) y el objetivo fundamental lo hemos perdido.</description>
     </item>
     
   </channel>
