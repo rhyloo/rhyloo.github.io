@@ -15,7 +15,7 @@ function updateBackground() {
     // console.log('Toggled bool is',testBool); 
     if (hr<16) {
 	// bstyle.backgroundColor = "#616771";
-	bstyle.backgroundColor = "#cccccc";
+	bstyle.backgroundColor = "#eeeeee";
     bstyle.color = "black";
       for (i = 0; i < y.length; i++) {
 	  y[i].style.backgroundColor = "white";

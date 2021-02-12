@@ -7,5 +7,43 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>es-es</language>
     <copyright>Rhyloo 2020</copyright><atom:link href="https://rhyloo.github.io/docs/proyectos/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Control Symbs Extension</title>
+      <link>https://rhyloo.github.io/docs/proyectos/controlsymbs/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://rhyloo.github.io/docs/proyectos/controlsymbs/</guid>
+      <description>Control Symbols#Una extensión para Inkscape</description>
+    </item>
+    
+    <item>
+      <title>LaTeX_Templates</title>
+      <link>https://rhyloo.github.io/docs/proyectos/latex_templates/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://rhyloo.github.io/docs/proyectos/latex_templates/</guid>
+      <description>asasas</description>
+    </item>
+    
+    <item>
+      <title>Mastermind</title>
+      <link>https://rhyloo.github.io/docs/proyectos/mastermind/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://rhyloo.github.io/docs/proyectos/mastermind/</guid>
+      <description>Mastermind#¿Qué es Mastermind?#Mastermind es un juego de mesa que nació en los 70 para dos jugadores.
+El objetivo es adivinar la combinación que uno de los jugadores ha hecho, el juego termina cuando el jugador encuentra la combinación o los intentos se acaban.
+Sobre el proyecto#Lo hice durante el invierno de 2018, en una asignatura que tenía de programación, como tema de la semana nosotros teníamos que aprender el uso de arrays, mi profesor (uno de los mejores que he tenido) nos pidió un juego en C++, el hizo la base del código para que funcionara en distintas plataformas y yo el resto.</description>
+    </item>
+    
+    <item>
+      <title>Telegram_Bot</title>
+      <link>https://rhyloo.github.io/docs/proyectos/telegram_bot/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://rhyloo.github.io/docs/proyectos/telegram_bot/</guid>
+      <description>J.A.R.V.I.S#¿Qué es un bot?#Sobre el proyecto#Lo hice durante el invierno de 2018, en una asignatura que tenía de programación, como tema de la semana nosotros teníamos que aprender el uso de arrays, mi profesor (uno de los mejores que he tenido) nos pidió un juego en C++, el hizo la base del código para que funcionara en distintas plataformas y yo el resto.</description>
+    </item>
+    
   </channel>
 </rss>

@@ -148,6 +148,55 @@ Example#{{&amp;lt; mermaid [class=&amp;#34;text-center&amp;#34;]&amp;gt;}} se
     </item>
     
     <item>
+      <title>Control Symbs Extension</title>
+      <link>https://rhyloo.github.io/docs/proyectos/controlsymbs/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://rhyloo.github.io/docs/proyectos/controlsymbs/</guid>
+      <description>Control Symbols#Una extensión para Inkscape</description>
+    </item>
+    
+    <item>
+      <title>LaTeX_Templates</title>
+      <link>https://rhyloo.github.io/docs/proyectos/latex_templates/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://rhyloo.github.io/docs/proyectos/latex_templates/</guid>
+      <description>asasas</description>
+    </item>
+    
+    <item>
+      <title>Mastermind</title>
+      <link>https://rhyloo.github.io/docs/proyectos/mastermind/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://rhyloo.github.io/docs/proyectos/mastermind/</guid>
+      <description>Mastermind#¿Qué es Mastermind?#Mastermind es un juego de mesa que nació en los 70 para dos jugadores.
+El objetivo es adivinar la combinación que uno de los jugadores ha hecho, el juego termina cuando el jugador encuentra la combinación o los intentos se acaban.
+Sobre el proyecto#Lo hice durante el invierno de 2018, en una asignatura que tenía de programación, como tema de la semana nosotros teníamos que aprender el uso de arrays, mi profesor (uno de los mejores que he tenido) nos pidió un juego en C++, el hizo la base del código para que funcionara en distintas plataformas y yo el resto.</description>
+    </item>
+    
+    <item>
+      <title>Miscelánea</title>
+      <link>https://rhyloo.github.io/docs/sitios/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://rhyloo.github.io/docs/sitios/</guid>
+      <description>Frases en latín#Sitios Webs#¿Cómo hacer preguntas de manera inteligente?
+¿Cómo ser un hacker?
+Manifiesto hacker
+Guerilla Open Access Manifesto
+Biblioweb de sinDominio
+97 cosas que todo programador debería saber
+Software libre
+Archive.org
+Wikiversidad
+Artículos de wikipedia#Interesantes principios del buen diseño según el diseñador alemán Dieter Rams
+Libros#Fuckowski, memorias de un ingeniero
+Software libre para una sociedad libre es un libro que recopila diversos ensayos de Richard M.</description>
+    </item>
+    
+    <item>
       <title>Sobre este sitio</title>
       <link>https://rhyloo.github.io/docs/about/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -155,6 +204,15 @@ Example#{{&amp;lt; mermaid [class=&amp;#34;text-center&amp;#34;]&amp;gt;}} se
       <guid>https://rhyloo.github.io/docs/about/</guid>
       <description>Llevo años haciendo cosas, algunas más avanzadas y otras muy simples, pero tenemos (o por lo menos tengo yo) la mala costumbre de dejarlo en el olvido y de no publicarlo, un grave error.
 No es el único mal que nos acecha, pensad en los últimos años, nos hemos llenado de títulos para ostentarlos (y lo digo yo que tengo más 5 publicados en mi cuenta de Linkedin) y el objetivo fundamental lo hemos perdido.</description>
+    </item>
+    
+    <item>
+      <title>Telegram_Bot</title>
+      <link>https://rhyloo.github.io/docs/proyectos/telegram_bot/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://rhyloo.github.io/docs/proyectos/telegram_bot/</guid>
+      <description>J.A.R.V.I.S#¿Qué es un bot?#Sobre el proyecto#Lo hice durante el invierno de 2018, en una asignatura que tenía de programación, como tema de la semana nosotros teníamos que aprender el uso de arrays, mi profesor (uno de los mejores que he tenido) nos pidió un juego en C++, el hizo la base del código para que funcionara en distintas plataformas y yo el resto.</description>
     </item>
     
   </channel>

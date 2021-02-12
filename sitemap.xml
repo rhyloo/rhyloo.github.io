@@ -99,15 +99,23 @@
   </url>
   
   <url>
+    <loc>https://rhyloo.github.io/docs/proyectos/controlsymbs/</loc>
+  </url>
+  
+  <url>
     <loc>https://rhyloo.github.io/docs/</loc>
   </url>
   
   <url>
-    <loc>https://rhyloo.github.io/docs/proyectos/telegram_bot/</loc>
+    <loc>https://rhyloo.github.io/docs/proyectos/latex_templates/</loc>
   </url>
   
   <url>
     <loc>https://rhyloo.github.io/docs/proyectos/mastermind/</loc>
+  </url>
+  
+  <url>
+    <loc>https://rhyloo.github.io/docs/sitios/</loc>
   </url>
   
   <url>
@@ -116,6 +124,10 @@
   
   <url>
     <loc>https://rhyloo.github.io/tags/</loc>
+  </url>
+  
+  <url>
+    <loc>https://rhyloo.github.io/docs/proyectos/telegram_bot/</loc>
   </url>
   
 </urlset>
