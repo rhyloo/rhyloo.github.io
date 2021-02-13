@@ -31,9 +31,10 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://rhyloo.github.io/docs/proyectos/mastermind/</guid>
-      <description>Mastermind#¿Qué es Mastermind?#Mastermind es un juego de mesa que nació en los 70 para dos jugadores.
-El objetivo es adivinar la combinación que uno de los jugadores ha hecho, el juego termina cuando el jugador encuentra la combinación o los intentos se acaban.
-Sobre el proyecto#Lo hice durante el invierno de 2018, en una asignatura que tenía de programación, como tema de la semana nosotros teníamos que aprender el uso de arrays, mi profesor (uno de los mejores que he tenido) nos pidió un juego en C++, el hizo la base del código para que funcionara en distintas plataformas y yo el resto.</description>
+      <description>Mastermind#What is Mastermind?#It is a game board for two players, it born in the 70s.
+The objetive is to guess the combination what the other player has thought.
+About the project#I made it in 2018 for a subject, programming, we had to learn about arrays and this was the best way to understand them.
+Some screenshots#Links#You can see the code on Github.</description>
     </item>
     
     <item>
