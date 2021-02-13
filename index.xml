@@ -157,16 +157,6 @@ Example#{{&amp;lt; mermaid [class=&amp;#34;text-center&amp;#34;]&amp;gt;}} se
     </item>
     
     <item>
-      <title>LaTeX_Templates</title>
-      <link>https://rhyloo.github.io/docs/proyectos/latex_templates/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://rhyloo.github.io/docs/proyectos/latex_templates/</guid>
-      <description>Template for recipes#I modified a template for write my own recipes, I am not a pro but my brother likes my way of cooking, so I wanted to take notes about what I make for preparing meals that he likes. All in a nice-looking format.
-I took a template from overleaf and I made some format changes, languages, font, background and images, the author is Raphkebab, it is under Creative Commons CC BY 4.</description>
-    </item>
-    
-    <item>
       <title>Mastermind</title>
       <link>https://rhyloo.github.io/docs/proyectos/mastermind/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -209,6 +199,16 @@ No es el único mal que nos acecha, pensad en los últimos años, nos hemos llen
       
       <guid>https://rhyloo.github.io/docs/proyectos/telegram_bot/</guid>
       <description>J.A.R.V.I.S#¿Qué es un bot?#Sobre el proyecto#Lo hice durante el invierno de 2018, en una asignatura que tenía de programación, como tema de la semana nosotros teníamos que aprender el uso de arrays, mi profesor (uno de los mejores que he tenido) nos pidió un juego en C++, el hizo la base del código para que funcionara en distintas plataformas y yo el resto.</description>
+    </item>
+    
+    <item>
+      <title>Templates(LaTeX)</title>
+      <link>https://rhyloo.github.io/docs/proyectos/latex_templates/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://rhyloo.github.io/docs/proyectos/latex_templates/</guid>
+      <description>Template for recipes#I modified a template for write my own recipes, I am not a pro but my brother likes my way of cooking, so I wanted to take notes about what I make for preparing meals that he likes. All in a nice-looking format.
+I took a template from overleaf and I made some format changes, languages, font, background and images, the author is Raphkebab, it is under Creative Commons CC BY 4.</description>
     </item>
     
   </channel>
