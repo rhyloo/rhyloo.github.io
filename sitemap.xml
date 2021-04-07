@@ -15,6 +15,11 @@
   </url>
   
   <url>
+    <loc>https://rhyloo.github.io/posts/migrate-from-jekyll/</loc>
+    <lastmod>2021-03-02T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://rhyloo.github.io/docs/example/table-of-contents/</loc>
   </url>
   
@@ -24,6 +29,16 @@
   
   <url>
     <loc>https://rhyloo.github.io/docs/yo/</loc>
+  </url>
+  
+  <url>
+    <loc>https://rhyloo.github.io/</loc>
+    <lastmod>2021-03-02T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://rhyloo.github.io/posts/</loc>
+    <lastmod>2021-03-02T00:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -79,14 +94,6 @@
   </url>
   
   <url>
-    <loc>https://rhyloo.github.io/</loc>
-  </url>
-  
-  <url>
-    <loc>https://rhyloo.github.io/posts/</loc>
-  </url>
-  
-  <url>
     <loc>https://rhyloo.github.io/categories/</loc>
   </url>
   
@@ -112,6 +119,10 @@
   
   <url>
     <loc>https://rhyloo.github.io/tags/</loc>
+  </url>
+  
+  <url>
+    <loc>https://rhyloo.github.io/docs/proyectos/tdds/</loc>
   </url>
   
   <url>

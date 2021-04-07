@@ -25,7 +25,17 @@
       <description>Mastermind#What is Mastermind?#It is a game board for two players, it born in the 70s.
 The objetive is to guess the combination what the other player has thought.
 About the project#I made it in 2018 for a subject, programming, we had to learn about arrays and this was the best way to understand them.
-Some screenshots#Links#You can see the code on Github.</description>
+Some screenshots#Links#Download it from .</description>
+    </item>
+    
+    <item>
+      <title>TDDS</title>
+      <link>https://rhyloo.github.io/docs/proyectos/tdds/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://rhyloo.github.io/docs/proyectos/tdds/</guid>
+      <description>TDDS#TDDS is technical drawing software but I guess is better to say that it is made for learn, when I was in my first university course I had a lot of problems with it, the problem was I did not understand nothing about what were doing, then I had the idea of a software to simplify the diedric system.
+It&amp;rsquo;s true, there are software for CAD and they let you drawing this figures easily but they ask for a license (almost are no free software or open source) and the worst part is you have to learn about how to draw and understand what you are doing, in my idea of software you dont have to know nothing, just have a minimal knowledge about what you want to draw, a line or a point in 3D and the program will make for you the 2D part, it let you know how the space moves in 2D planes.</description>
     </item>
     
     <item>

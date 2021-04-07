@@ -6,7 +6,8 @@
     <description>Recent content on .Init</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>es-es</language>
-    <copyright>Rhyloo 2020</copyright><atom:link href="https://rhyloo.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <copyright>Rhyloo 2020</copyright>
+    <lastBuildDate>Wed, 03 Mar 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://rhyloo.github.io/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>With ToC</title>
       <link>https://rhyloo.github.io/docs/example/table-of-contents/with-toc/</link>
@@ -25,6 +26,17 @@
       <guid>https://rhyloo.github.io/docs/example/table-of-contents/without-toc/</guid>
       <description>At me ipso nepotibus nunc celebratior genus#Tanto oblite#Lorem markdownum pectora novis patenti igne sua opus aurae feras materiaque illic demersit imago et aristas questaque posset. Vomit quoque suo inhaesuro clara. Esse cumque, per referri triste. Ut exponit solisque communis in tendens vincetis agisque iamque huic bene ante vetat omina Thebae rates. Aeacus servat admonitu concidit, ad resimas vultus et rugas vultu dignamque Siphnon.
 Quam iugulum regia simulacra, plus meruit humo pecorumque haesit, ab discedunt dixit: ritu pharetramque.</description>
+    </item>
+    
+    <item>
+      <title>Termómetro con un diodo</title>
+      <link>https://rhyloo.github.io/posts/migrate-from-jekyll/</link>
+      <pubDate>Wed, 03 Mar 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://rhyloo.github.io/posts/migrate-from-jekyll/</guid>
+      <description>Move static content to static#Jekyll has a rule that any directory not starting with _ will be copied as-is to the _site output. Hugo keeps all static content under static. You should therefore move it all there. With Jekyll, something that looked like
+▾ &amp;lt;root&amp;gt;/▾ images/logo.png should become
+▾ &amp;lt;root&amp;gt;/▾ static/▾ images/logo.png Additionally, you&amp;rsquo;ll want any files that should reside at the root (such as CNAME) to be moved to static.</description>
     </item>
     
     <item>
@@ -165,7 +177,7 @@ Example#{{&amp;lt; mermaid [class=&amp;#34;text-center&amp;#34;]&amp;gt;}} se
       <description>Mastermind#What is Mastermind?#It is a game board for two players, it born in the 70s.
 The objetive is to guess the combination what the other player has thought.
 About the project#I made it in 2018 for a subject, programming, we had to learn about arrays and this was the best way to understand them.
-Some screenshots#Links#You can see the code on Github.</description>
+Some screenshots#Links#Download it from .</description>
     </item>
     
     <item>
@@ -174,12 +186,12 @@ Some screenshots#Links#You can see the code on Github.</description>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://rhyloo.github.io/docs/sitios/</guid>
-      <description>Frases en latín#Excusatio non petita, accusatio manifesta - Excusa no pedida, acusación manifiesta.
+      <description>Frases#Excusatio non petita, accusatio manifesta - Excusa no pedida, acusación manifiesta.
 Quod erat demonstrandum - Lo que se quería demostrar.
 Carpe diem - Aprovecha el día.
 Alea jacta est - La suerte está echada.
 Quod licet Iovi, non licet bovi - Lo que es lícito para Júpiter, no es lícito para todos.
-Aliquando et insanire iucundum est - De vez en cuando es agradable hacer una tontería</description>
+Aliquando et insanire iucundum est - De vez en cuando es agradable hacer una tontería.</description>
     </item>
     
     <item>
@@ -190,6 +202,16 @@ Aliquando et insanire iucundum est - De vez en cuando es agradable hacer una ton
       <guid>https://rhyloo.github.io/docs/about/</guid>
       <description>Llevo años haciendo cosas, algunas más avanzadas y otras muy simples, pero tenemos (o por lo menos tengo yo) la mala costumbre de dejarlo en el olvido y de no publicarlo, un grave error.
 No es el único mal que nos acecha, pensad en los últimos años, nos hemos llenado de títulos para ostentarlos (y lo digo yo que tengo más 5 publicados en mi cuenta de Linkedin) y el objetivo fundamental lo hemos perdido.</description>
+    </item>
+    
+    <item>
+      <title>TDDS</title>
+      <link>https://rhyloo.github.io/docs/proyectos/tdds/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://rhyloo.github.io/docs/proyectos/tdds/</guid>
+      <description>TDDS#TDDS is technical drawing software but I guess is better to say that it is made for learn, when I was in my first university course I had a lot of problems with it, the problem was I did not understand nothing about what were doing, then I had the idea of a software to simplify the diedric system.
+It&amp;rsquo;s true, there are software for CAD and they let you drawing this figures easily but they ask for a license (almost are no free software or open source) and the worst part is you have to learn about how to draw and understand what you are doing, in my idea of software you dont have to know nothing, just have a minimal knowledge about what you want to draw, a line or a point in 3D and the program will make for you the 2D part, it let you know how the space moves in 2D planes.</description>
     </item>
     
     <item>
