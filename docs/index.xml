@@ -1,45 +1,0 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Docs on .Init</title>
-    <link>https://rhyloo.github.io/docs/</link>
-    <description>Recent content in Docs on .Init</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>es-es</language>
-    <copyright>Rhyloo 2020</copyright><atom:link href="https://rhyloo.github.io/docs/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Yo</title>
-      <link>https://rhyloo.github.io/docs/yo/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://rhyloo.github.io/docs/yo/</guid>
-      <description>Tú, lector, considera esta página una biografía o un curriculum informal, si estás buscando algo con más categoría haz click en algunos de los enlaces de abajo.
-LaTeX_ESEuropassLaTeX_ENLinkedinActualizado el 07-12-2020DATOS BÁSICOS# Nombre:Jorge Benavides Macías Nacido en:Madrid, 15 de Noviembre del 2000 Vivo en:Málaga Web:rhyloo.github.io e-mail:rhyloot  ESTADO ACTUAL#Actualmente estoy en Málaga&amp;hellip;</description>
-    </item>
-    
-    <item>
-      <title>Miscelánea</title>
-      <link>https://rhyloo.github.io/docs/sitios/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://rhyloo.github.io/docs/sitios/</guid>
-      <description>Frases#Excusatio non petita, accusatio manifesta - Excusa no pedida, acusación manifiesta.
-Quod erat demonstrandum - Lo que se quería demostrar.
-Carpe diem - Aprovecha el día.
-Alea jacta est - La suerte está echada.
-Quod licet Iovi, non licet bovi - Lo que es lícito para Júpiter, no es lícito para todos.
-Aliquando et insanire iucundum est - De vez en cuando es agradable hacer una tontería.</description>
-    </item>
-    
-    <item>
-      <title>Sobre este sitio</title>
-      <link>https://rhyloo.github.io/docs/about/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://rhyloo.github.io/docs/about/</guid>
-      <description>Llevo años haciendo cosas, algunas más avanzadas y otras muy simples, pero tenemos (o por lo menos tengo yo) la mala costumbre de dejarlo en el olvido y de no publicarlo, un grave error.
-No es el único mal que nos acecha, pensad en los últimos años, nos hemos llenado de títulos para ostentarlos (y lo digo yo que tengo más 5 publicados en mi cuenta de Linkedin) y el objetivo fundamental lo hemos perdido.</description>
-    </item>
-    
-  </channel>
-</rss>

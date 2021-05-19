@@ -1,18 +1,13 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<link rel="alternate"
-      type="application/rss+xml"
-      href="https://rhyloo.github.io/rss.xml"
-      title="RSS feed for https://rhyloo.github.io/">
-<title>Rhyloo's Blog</title>
-</head>
-<body>
-<div id="preamble" class="status"></div>
-<div id="content">
-
-<div class="post-date">19 may. 2021</div><h1 class="post-title"><a href="https://rhyloo.github.io/2021-05-19-mi-primer-post.html">Mi primer post</a></h1>
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+<channel>
+<title><![CDATA[Rhyloo's Blog]]></title>
+<description><![CDATA[Rhyloo's Blog]]></description>
+<link>https://rhyloo.github.io/</link>
+<lastBuildDate>mi., 19 may. 2021 09:04:34 +0200</lastBuildDate>
+<item>
+  <title><![CDATA[Mi primer post]]></title>
+  <description><![CDATA[
 <p>
 Un poco tarde eh&#x2026; campeón, es la una de la madrugada, a diferencia del 80% de la sociedad no soy 90% café, solo un tío con mucha curiosidad, he logrado meter emacs en un pendrive, ¿Qué por qué no lo instalo? fácil porque sería más difícil además windows apesta, es broma señor Gates, windows está bien pero no puedo usar todo su esplendor sin poner archivos por aquí y arhivos por allá siempre termina siendo una rueda funcional con muchos parches (aunque seamos sinceros si estoy aquí a las dos de la madrugada es porque tampoco el "USB rueda" funciona muy bien).
 </p>
@@ -28,10 +23,10 @@ Un saludo
 <p>
 Ryhloo.
 </p>
-<div class="taglist"><a href="https://rhyloo.github.io/tags.html">Tags</a>: <a href="https://rhyloo.github.io/tag-personal.html">personal</a> </div><div id="archive">
-<a href="https://rhyloo.github.io/archive.html">Other posts</a>
-</div>
-</div>
-<div id="postamble" class="status"></div>
-</body>
-</html>
+<div class="taglist"><a href="https://rhyloo.github.io/tags.html">Tags</a>: <a href="https://rhyloo.github.io/tag-personal.html">personal</a> </div>]]></description>
+  <category><![CDATA[personal]]></category>
+  <link>https://rhyloo.github.io/2021-05-19-mi-primer-post.html</link>
+  <pubDate>mi., 19 may. 2021 01:34:00 +0200</pubDate>
+</item>
+</channel>
+</rss>

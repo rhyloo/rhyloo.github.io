@@ -1,0 +1,5 @@
+#+title: Seguridad sobrevalorada
+#+date: <2021-05-19 09:08>
+#+description: He quitado el passphrase de mi clave SSH.
+#+filetags: contraseñas magit automatización
+He quitado la contraseña de mi clave ssh, por casualidad he intentado clonar algo desde magit y ha funcionado. ¡Genial! Pero es aún mejor he intentado hacer un pull y ha ido mejor todavía, seguiré haciendo prueba durante el día.
