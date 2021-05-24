@@ -9,12 +9,16 @@
 #+HTML_HEAD: <style>.copy-to-clipboard-button{display:none;}</style>
 #+HTML_HEAD: <style>#org-src-container{display:none;}</style>
 #+HTML_HEAD_EXTRA: <link rel="icon" type="image/png" href="./../../images/favicon.ico">
-
-
+#+HTML_HEAD: <style>#content{text-align: justify;background-color: #e2e2e2!important;}</style>
+#+HTML_HEAD: <style>.nolinks{ pointer-events: none!important;  cursor: default;}</style>
+#+HTML_HEAD: <style>td.org-left{text-align: center;}</style>
+#+HTML_HEAD: <style>.links{margin-top: -15px;margin-bottom: 0px;margin-left: 20px;}</style>
 #+HTML_HEAD: <link rel="stylesheet" type="text/css" href="./../org-html-themes/src/bigblow_theme/css/htmlize.css"/>
 #+HTML_HEAD: <link rel="stylesheet" type="text/css" href="./../org-html-themes/src/bigblow_theme/css/bigblow.css"/>
 #+HTML_HEAD: <link rel="stylesheet" type="text/css" href="./../org-html-themes/src/bigblow_theme/css/hideshow.css"/>
 
+
+#+HTML_HEAD: <script type="text/javascript" src="./../org-html-themes/src/bigblow_theme/js/links.js"></script>
 #+HTML_HEAD: <script type="text/javascript" src="./../org-html-themes/src/bigblow_theme/js/jquery-1.11.0.min.js"></script>
 #+HTML_HEAD: <script type="text/javascript" src="./../org-html-themes/src/bigblow_theme/js/jquery-ui-1.10.2.min.js"></script>
 #+HTML_HEAD: <script type="text/javascript" src="./../org-html-themes/src/bigblow_theme/js/jquery.localscroll-min.js"></script>
@@ -23,3 +27,4 @@
 #+HTML_HEAD: <script type="text/javascript" src="./../org-html-themes/src/bigblow_theme/js/hideshow.js"></script>
 #+HTML_HEAD: <script type="text/javascript" src="./../org-html-themes/src/lib/js/jquery.stickytableheaders.min.js"></script>
 #+HTML_HEAD: <script type="text/javascript" src="./../org-html-themes/src/bigblow_theme/js/jquery.scrollTo-1.4.3.1-min.js"></script>
+

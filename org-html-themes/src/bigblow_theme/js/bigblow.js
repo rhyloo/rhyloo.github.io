@@ -43,6 +43,14 @@ $(function() {
     $('<div id="minitoc" class="dontprint"></div>').prependTo('body');
 });
 
+$(function() {
+	$("div.nolinks ul li").find("a").each(function(){
+		var linkText = $(this).text();
+		$(this).before(linkText);
+		$(this).remove();
+	});
+});
+
 // generate contents of minitoc
 function generateMiniToc(divId) {
     $('#minitoc').empty().append('<h2>In this section</h2>');
