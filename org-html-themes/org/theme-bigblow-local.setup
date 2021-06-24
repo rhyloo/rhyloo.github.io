@@ -1,18 +1,20 @@
 # -*- mode: org; -*-
 #+CREATOR: Emacs 24.3.50.3 (Org mode 8.0.3)
 
-#+HTML_HEAD: <style>#minitoc{display:none;}</style>
-#+HTML_HEAD: <style>#left-panel-wrapper{display:none;}</style>
-#+HTML_HEAD: <style>#right-panel-wrapper{display:none;}</style>
-#+HTML_HEAD: <style>.hsReviewPanel{display:none;}</style>
-#+HTML_HEAD: <style>.snippet-copy-to-clipboard{display:none;}</style>
-#+HTML_HEAD: <style>.copy-to-clipboard-button{display:none;}</style>
-#+HTML_HEAD: <style>#org-src-container{display:none;}</style>
+#+HTML_HEAD: <style type="text/css">#minitoc{display:none;}</style>
+#+HTML_HEAD: <style type="text/css">#left-panel-wrapper{display:none;}</style>
+#+HTML_HEAD: <style type="text/css">#right-panel-wrapper{display:none;}</style>
+#+HTML_HEAD: <style type="text/css">.hsReviewPanel{display:none;}</style>
+#+HTML_HEAD: <style type="text/css">.snippet-copy-to-clipboard{display:none;}</style>
+#+HTML_HEAD: <style type="text/css">.copy-to-clipboard-button{display:none;}</style>
+#+HTML_HEAD: <style type="text/css">.src > span{background-color: #FFF!important;}</style>
+#+HTML_HEAD: <style type="text/css">#org-src-container{display:none;}</style>
 #+HTML_HEAD_EXTRA: <link rel="icon" type="image/png" href="./../../images/favicon.ico">
-#+HTML_HEAD: <style>#content{text-align: justify;background-color: #e2e2e2!important;}</style>
-#+HTML_HEAD: <style>.nolinks{ pointer-events: none!important;  cursor: default;}</style>
-#+HTML_HEAD: <style>td.org-left{text-align: center;}</style>
-#+HTML_HEAD: <style>.links{margin-top: -15px;margin-bottom: 0px;margin-left: 20px;}</style>
+#+HTML_HEAD: <style type="text/css">#content{text-align: justify;background-color: #e2e2e2!important;}</style>
+#+HTML_HEAD: <style type="text/css">.nolinks a:link{ color: black; pointer-events: none!important;  cursor: default;}</style>
+#+HTML_HEAD: <style type="text/css">td.org-left{text-align: center;}</style>
+#+HTML_HEAD: <style type="text/css">.links{margin-top: -15px;margin-bottom: 0px;margin-left: 20px;}</style>
+
 #+HTML_HEAD: <link rel="stylesheet" type="text/css" href="./../org-html-themes/src/bigblow_theme/css/htmlize.css"/>
 #+HTML_HEAD: <link rel="stylesheet" type="text/css" href="./../org-html-themes/src/bigblow_theme/css/bigblow.css"/>
 #+HTML_HEAD: <link rel="stylesheet" type="text/css" href="./../org-html-themes/src/bigblow_theme/css/hideshow.css"/>
