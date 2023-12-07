@@ -41,3 +41,5 @@ jobs:
           git add generated_blog/*
           git commit -m "Publish blog files"
           git push origin main
+        env:
+          GH_TOKEN: ${{ secrets.PAT }}
