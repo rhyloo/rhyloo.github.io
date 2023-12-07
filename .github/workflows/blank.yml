@@ -15,29 +15,33 @@ jobs:
 
       - name: Install Docker
         run: |
-          # Your Docker installation steps
+          sudo apt-get update
+          sudo apt-get install -y apt-transport-https ca-certificates curl software-properties-common
+          curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo gpg --dearmor -o /usr/share/keyrings/docker-archive-keyring.gpg
+          echo "deb [arch=amd64 signed-by=/usr/share/keyrings/docker-archive-keyring.gpg] https://download.docker.com/linux/ubuntu $(lsb_release -cs) stable" | sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
+          sudo apt-get update
+          sudo apt-get install -y docker-ce docker-ce-cli containerd.io
 
       - name: Build Docker container and publish blog
         run: |
-          # Your commands to build and publish the blog
+          docker pull zngguvnf/emacs:firsttry
+          docker run -v $PWD:/app -w /app zngguvnf/emacs:firsttry emacs --batch --eval "(progn (package-initialize) (package-refresh-contents)(package-install 'org))"
+          docker run -v $PWD:/app -w /app zngguvnf/emacs:firsttry emacs --batch --no-init-file --load publish.el --funcall org-static-blog-publish
+          docker run -v $PWD:/app -w /app zngguvnf/emacs:firsttry bash -c 'cp -r *.html public && cp -r posts/*.html public && cp -r rss.xml public'
 
       - name: Move generated files to repository
         run: |
-          # Your commands to copy the generated files
+          mkdir -p $GITHUB_WORKSPACE/generated_blog
+          cp -r $GITHUB_WORKSPACE/public/* $GITHUB_WORKSPACE/generated_blog/
 
       - name: Configure Git
         run: |
           git config --global user.email "actions@github.com"
           git config --global user.name "GitHub Actions"
 
-      - name: Commit changes
+      - name: Commit and push changes
         run: |
           git add generated_blog/*
           git commit -m "Publish blog files"
-
-      - name: Push changes
-        run: |
-          git remote set-url origin https://github.com/${{ github.repository_owner }}/${{ github.event.repository.name }}.git
+          git remote set-url origin https://$GITHUB_ACTOR:${{ secrets.PAT }}@github.com/$GITHUB_REPOSITORY.git
           git push origin main
-        env:
-          GITHUB_TOKEN: ${{ secrets.PAT }}
