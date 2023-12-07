@@ -345,7 +345,7 @@ as a communication channel."
 "<div class=\"header\">
   <a href=\"https://bastibe.de\">Basti's Scratchpad on the Internet</a>
   <div class=\"sitelinks\">
-    <a href=\"https://github.com/bastibe\">Github</a> | <a href=\"https://bastibe.de/projects.html\">Projects</a>
+    <a href=\"https://github.com/bastibe\">Github</a> | <a href=\"https://rhyloo.github.io/projects.html\">Projects</a>
   </div>
 </div>")
 
