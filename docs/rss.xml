@@ -3,15 +3,15 @@
 <channel>
   <title>org-static-blog-example</title>
   <description>org-static-blog-example</description>
-  <link>rhyloo.github.io</link>
-  <lastBuildDate>Thu, 07 Dec 2023 22:32:17 +0000</lastBuildDate>
+  <link>rhyloo.github.io/</link>
+  <lastBuildDate>Thu, 07 Dec 2023 22:34:07 +0000</lastBuildDate>
 <item>
   <title>Test de post</title>
   <description><![CDATA[<p>
 hola como va eso
 </p>
 ]]></description>
-  <link>rhyloo.github.io2023-12-07-test-de-post.html</link>
+  <link>rhyloo.github.io/2023-12-07-test-de-post.html</link>
   <pubDate>Thu, 07 Dec 2023 22:39:00 +0000</pubDate>
 </item>
 <item>
@@ -20,7 +20,7 @@ hola como va eso
 Hello World!!!
 </p>
 ]]></description>
-  <link>rhyloo.github.io2017-05-17--hello-world.html</link>
+  <link>rhyloo.github.io/2017-05-17--hello-world.html</link>
   <pubDate>Wed, 17 May 2017 00:00:00 +0000</pubDate>
 </item>
 </channel>
