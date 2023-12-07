@@ -316,13 +316,14 @@ as a communication channel."
 </item>\n")))
 ;; end org-static blog
 
-(setq org-static-blog-publish-title "test")
+(setq org-static-blog-publish-title "org-static-blog-example")
 (setq org-static-blog-publish-url "rhyloo.github.io")
+(setq org-static-blog-publish-directory "")
 (setq org-static-blog-posts-directory "./posts/")
 (setq org-static-blog-drafts-directory "./drafts/")
-(setq org-static-blog-enable-tags t)
 (setq org-export-with-toc nil)
 (setq org-export-with-section-numbers nil)
+(setq org-static-blog-index-length 1)
 
 (setq org-static-blog-page-header
 "<meta name=\"author\" content=\"Bastian Bechtold\">
