@@ -13,7 +13,15 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v3
 
+      - name: Check Docker cache
+        id: docker-cache
+        uses: actions/cache@v2
+        with:
+          path: /var/lib/docker
+          key: ${{ runner.os }}-docker-${{ hashFiles('**/Dockerfile') }}
+
       - name: Install Docker
+        if: steps.docker-cache.outputs.cache-hit != 'true'
         run: |
           sudo apt-get update
           sudo apt-get install -y apt-transport-https ca-certificates curl software-properties-common
@@ -31,7 +39,7 @@ jobs:
 
       - name: Move generated files to repository
         run: |
-          mkdir -p $GITHUB_WORKSPACE/generated_blog
+          mkdir -p $GITHUB_WORKSPACE/docs
           cp -r $GITHUB_WORKSPACE/public/* $GITHUB_WORKSPACE/docs/
 
       - name: Configure Git
@@ -41,7 +49,7 @@ jobs:
 
       - name: Commit and push changes
         run: |
-          git add generated_blog/*
+          git add docs/*
           git commit -m "Publish blog files"
           git remote set-url origin https://$GITHUB_ACTOR:${{ secrets.PAT }}@github.com/$GITHUB_REPOSITORY.git
           git push origin main
