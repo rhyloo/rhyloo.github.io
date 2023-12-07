@@ -4,7 +4,16 @@
   <title>org-static-blog-example</title>
   <description>org-static-blog-example</description>
   <link>rhyloo.github.io</link>
-  <lastBuildDate>Thu, 07 Dec 2023 21:32:29 +0000</lastBuildDate>
+  <lastBuildDate>Thu, 07 Dec 2023 21:41:45 +0000</lastBuildDate>
+<item>
+  <title>Test de post</title>
+  <description><![CDATA[<p>
+hola como va eso
+</p>
+]]></description>
+  <link>rhyloo.github.io2023-12-07-test-de-post.html</link>
+  <pubDate>Thu, 07 Dec 2023 22:39:00 +0000</pubDate>
+</item>
 <item>
   <title>Hello World!</title>
   <description><![CDATA[<p>
