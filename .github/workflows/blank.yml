@@ -32,7 +32,7 @@ jobs:
       - name: Move generated files to repository
         run: |
           mkdir -p $GITHUB_WORKSPACE/generated_blog
-          cp -r $GITHUB_WORKSPACE/public/* $GITHUB_WORKSPACE/generated_blog/
+          cp -r $GITHUB_WORKSPACE/public/* $GITHUB_WORKSPACE/docs/
 
       - name: Configure Git
         run: |
