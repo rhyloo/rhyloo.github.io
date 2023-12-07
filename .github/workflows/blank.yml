@@ -11,14 +11,19 @@ jobs:
 
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v3
+        uses: actions/checkout@v2
 
-      - name: Install Emacs and publish blog
+      - name: Install Docker
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y docker.io
+
+      - name: Build Docker container
         run: |
           docker pull zngguvnf/emacs:firsttry
-          docker run zngguvnf/emacs:firsttry emacs --batch --eval "(progn (package-initialize) (package-refresh-contents)(package-install 'org))"
-          docker run zngguvnf/emacs:firsttry emacs --batch --no-init-file --load publish.el --funcall org-static-blog-publish
-          docker run zngguvnf/emacs:firsttry bash -c 'cp -r *.html public && cp -r posts/*.html public && cp -r rss.xml public'
+          docker run -v $PWD:/app -w /app zngguvnf/emacs:firsttry emacs --batch --eval "(progn (package-initialize) (package-refresh-contents)(package-install 'org))"
+          docker run -v $PWD:/app -w /app zngguvnf/emacs:firsttry emacs --batch --no-init-file --load publish.el --funcall org-static-blog-publish
+          docker run -v $PWD:/app -w /app zngguvnf/emacs:firsttry bash -c 'cp -r *.html public && cp -r posts/*.html public && cp -r rss.xml public'
 
       - name: Cache generated files
         uses: actions/cache@v2
