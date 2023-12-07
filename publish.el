@@ -318,9 +318,8 @@ as a communication channel."
 
 (setq org-static-blog-publish-title "test")
 (setq org-static-blog-publish-url "rhyloo.github.io")
-(setq org-static-blog-publish-directory "~/Documents/Github/rhyloo.github.io/")
-(setq org-static-blog-posts-directory "~/Documents/Github/rhyloo.github.io/posts/")
-(setq org-static-blog-drafts-directory "~/Documents/Github/rhyloo.github.io/drafts/")
+(setq org-static-blog-posts-directory "./posts/")
+(setq org-static-blog-drafts-directory "./drafts/")
 (setq org-static-blog-enable-tags t)
 (setq org-export-with-toc nil)
 (setq org-export-with-section-numbers nil)
