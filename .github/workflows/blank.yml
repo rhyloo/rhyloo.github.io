@@ -1,36 +1,33 @@
-# This is a basic workflow to help you get started with Actions
+name: Publish Blog
 
-name: CI
-
-# Controls when the workflow will run
 on:
-  # Triggers the workflow on push or pull request events but only for the "main" branch
   push:
-    branches: [ "main" ]
-  pull_request:
-    branches: [ "main" ]
+    branches:
+      - main
 
-  # Allows you to run this workflow manually from the Actions tab
-  workflow_dispatch:
-
-# A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
-  # This workflow contains a single job called "build"
   build:
-    # The type of runner that the job will run on
     runs-on: ubuntu-latest
 
-    # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
-      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
-      - uses: actions/checkout@v3
+      - name: Checkout repository
+        uses: actions/checkout@v3
 
-      # Runs a single command using the runners shell
-      - name: Run a one-line script
-        run: echo Hello, world!
-
-      # Runs a set of commands using the runners shell
-      - name: Run a multi-line script
+      - name: Install Emacs and publish blog
         run: |
-          echo Add other actions to build,
-          echo test, and deploy your project.
+          docker pull zngguvnf/emacs:firsttry
+          docker run zngguvnf/emacs:firsttry emacs --batch --eval "(progn (package-initialize) (package-refresh-contents)(package-install 'org))"
+          docker run zngguvnf/emacs:firsttry emacs --batch --no-init-file --load publish.el --funcall org-static-blog-publish
+          docker run zngguvnf/emacs:firsttry bash -c 'cp -r *.html public && cp -r posts/*.html public && cp -r rss.xml public'
+
+      - name: Cache generated files
+        uses: actions/cache@v2
+        with:
+          path: public
+          key: ${{ runner.os }}-blog-public
+
+      - name: Upload artifacts
+        uses: actions/upload-artifact@v2
+        with:
+          name: blog-artifacts
+          path: public
