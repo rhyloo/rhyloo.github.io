@@ -29,14 +29,15 @@ jobs:
           docker run -v $PWD:/app -w /app zngguvnf/emacs:firsttry emacs --batch --no-init-file --load publish.el --funcall org-static-blog-publish
           docker run -v $PWD:/app -w /app zngguvnf/emacs:firsttry bash -c 'cp -r *.html public && cp -r posts/*.html public && cp -r rss.xml public'
 
-      - name: Cache generated files
-        uses: actions/cache@v2
-        with:
-          path: public
-          key: ${{ runner.os }}-blog-public
-
-      - name: Upload artifacts
-        uses: actions/upload-artifact@v2
-        with:
-          name: blog-artifacts
-          path: public
+      - name: Move generated files to repository
+        run: |
+          mkdir -p $GITHUB_WORKSPACE/generated_blog
+          cp -r $GITHUB_WORKSPACE/public/* $GITHUB_WORKSPACE/generated_blog/
+          
+      - name: Commit and push changes
+        run: |
+          git config --global user.email "actions@github.com"
+          git config --global user.name "GitHub Actions"
+          git add generated_blog/*
+          git commit -m "Publish blog files"
+          git push origin main
