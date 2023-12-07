@@ -316,11 +316,52 @@ as a communication channel."
 </item>\n")))
 ;; end org-static blog
 
-(setq org-static-blog-publish-title "org-static-blog-example")
-(setq org-static-blog-publish-url "rhyloo.github.io/")
-(setq org-static-blog-publish-directory "")
-(setq org-static-blog-posts-directory "./posts/")
-(setq org-static-blog-drafts-directory "./drafts/")
+(setq org-static-blog-publish-title "test")
+(setq org-static-blog-publish-url "rhyloo.github.io")
+(setq org-static-blog-publish-directory "~/Documents/Github/rhyloo.github.io/")
+(setq org-static-blog-posts-directory "~/Documents/Github/rhyloo.github.io/posts/")
+(setq org-static-blog-drafts-directory "~/Documents/Github/rhyloo.github.io/drafts/")
+(setq org-static-blog-enable-tags t)
 (setq org-export-with-toc nil)
 (setq org-export-with-section-numbers nil)
-(setq org-static-blog-index-length 1)
+
+(setq org-static-blog-page-header
+"<meta name=\"author\" content=\"Bastian Bechtold\">
+<meta name=\"referrer\" content=\"no-referrer\">
+<link href= \"static/style.css\" rel=\"stylesheet\" type=\"text/css\" />
+<link rel=\"icon\" href=\"static/favicon.ico\">
+<link rel=\"apple-touch-icon-precomposed\" href=\"static/favicon-152.png\">
+<link rel=\"msapplication-TitleImage\" href=\"static/favicon-144.png\">
+<link rel=\"msapplication-TitleColor\" href=\"#0141ff\">
+<script src=\"static/katex.min.js\"></script>
+<script src=\"static/auto-render.min.js\"></script>
+<script src=\"static/lightbox.js\"></script>
+<link rel=\"stylesheet\" href=\"static/katex.min.css\">
+<script>document.addEventListener(\"DOMContentLoaded\", function() { renderMathInElement(document.body); });</script>
+<meta http-equiv=\"content-type\" content=\"application/xhtml+xml; charset=UTF-8\">
+<meta name=\"viewport\" content=\"initial-scale=1,width=device-width,minimum-scale=1\">")
+
+(setq org-static-blog-page-preamble
+"<div class=\"header\">
+  <a href=\"https://bastibe.de\">Basti's Scratchpad on the Internet</a>
+  <div class=\"sitelinks\">
+    <a href=\"https://github.com/bastibe\">Github</a> | <a href=\"https://bastibe.de/projects.html\">Projects</a>
+  </div>
+</div>")
+
+(setq org-static-blog-page-postamble
+"<div id=\"archive\">
+  <a href=\"https://bastibe.de/archive.html\">Other posts</a>
+</div>
+<center><a rel=\"license\" href=\"https://creativecommons.org/licenses/by-sa/3.0/\"><img alt=\"Creative Commons License\" style=\"border-width:0\" src=\"https://i.creativecommons.org/l/by-sa/3.0/88x31.png\" /></a><br /><span xmlns:dct=\"https://purl.org/dc/terms/\" href=\"https://purl.org/dc/dcmitype/Text\" property=\"dct:title\" rel=\"dct:type\">bastibe.de</span> by <a xmlns:cc=\"https://creativecommons.org/ns#\" href=\"https://bastibe.de\" property=\"cc:attributionName\" rel=\"cc:attributionURL\">Bastian Bechtold</a> is licensed under a <a rel=\"license\" href=\"https://creativecommons.org/licenses/by-sa/3.0/\">Creative Commons Attribution-ShareAlike 3.0 Unported License</a>.</center>")
+
+(setq org-static-blog-post-comments
+"<div id=\"hyvor-talk-view\"></div>
+<script type=\"text/javascript\">
+    var HYVOR_TALK_WEBSITE = 3390;
+    var HYVOR_TALK_CONFIG = {
+        url: false,
+        id: location.pathname
+    };
+</script>
+<script async type=\"text/javascript\" src=\"//talk.hyvor.com/web-api/embed\"></script>")
