@@ -1,0 +1,125 @@
+#+HTML_DOCTYPE:html5
+#+LANGUAGE:es
+#+OPTIONS: toc:nil
+#+HTML_HEAD: <link rel="stylesheet" href="index.css">
+#+TITLE: PLOCK
+#+OPTIONS: num:nil
+#+insertar descripcion personal
+#+Insertar descripcion del proyecto PLOCK
+* Sobre mí
+** Mi curriculum 
+  *Mi Currículum Vitae*\\
+   /actualizado a [2019-08-29 ju. 11:35]/\\
+   *Nombre:* Jorge Benavides Macías\\
+   *Nacido en:* Madrid, España\\
+   *Vivo en:* Málaga, España\\
+   *Nickname:* Rhyloo /aunque en algunos sitios me conocen como
+   Rhyloot porque al parecer no soy el único Rhyloo del planeta/\\
+   *Repositorio:* [[http:github.com/rhyloo/][Rhyloo]]\\
+   *email:* [[mailto:rhyloot@gmail.com][rhyloot@gmail.com]]\\
+   /Nota: este curriculum no es tan serio busca comentar un poco las dudas que podrían surgir durante el camino./\\
+   
+   Curriculum serio #1: [[https://www.linkedin.com/in/jorge-benavides-macias/][Linkedin]]\\
+   Curriculum serio #2: +Insertar curriculum actualziado en latex(en español)+\\
+   Curriculum serio #3: +Insertar curriculum europepass(in english)+\\
+   
+   Estoy en la universidad, estudio ingeniería de la +no lo sé la+
+   +verdad porque me han concedido el traslado de expediente a+
+   +robótica, lo cual implica matricularme en otro grado, etc... asi
+   que diré que estudio+ energía +,que era en lo que estaba
+   matriculado antes+\\
+*** _Mis objetivos en la vida_ 
+    Estoy en una edad complicada en la que lo que más cuesta es
+    escribirlo (o por lo menos a mí me pasa)
+    + Lograr que el conocimiento sea accesible para todo el mundo.
+    + Desarrollar ideas que ayuden a cambiar el mundo, energía,
+      transporte, seguridad.
+    + Aprender y actulizar constamente mis conocimientos en todas las
+      áreas que pueda.
+*** _Estudios oficiales_
+    + ESO. "Unidad Educativa LEMAS" (Ecuador)
+    + Bachillerato "Unidad educativa LEMAS" (Ecuador)
+    + Grado en ingeniería de la energía /en curso/ ~Universidad de
+      Málaga~ (España)
+*** _Conocimientos_
+    /Uso una escala del 1 al 10 porque las escalas cualitativas se quedan cortas/
+**** [[https://www.latex-project.org/get/][LaTeX]]
+     Empecé con 16 años, mi profesor de matématicas ,del bachillerto,
+     pertenece a la [[https://omec-mat.org/][Olimpiada Matemática ECuatoriana]], supongo que fue
+     allí dónde conoció este sistema de composición de textos en alta
+     calidad([[https://www.latex-project.org/get/][LaTeX]]), empezó a usarlo en sus clases para enviar
+     ejercicios, exámenes, plantillas, una pasada total, al principio
+     lo vi y dije va un software más de edición, pero luego de una
+     semana tuve curiosidad y empecé a revisarlo, me descargué los
+     recursos necesarios (/insertar posible guía para tener latex,
+     beamer, etc/) para windows, he hice mi primer documento con algo
+     más que un =Hello world!=, era la solución de un ejercicio de
+     sumatorias, estuve todo el día escribiendo "código" (o eso le
+     decía a mi madre con emoción),desde que llegué a casa hasta las 2
+     AM, no tenía la agilidad en los dedos para escribir tantos
+     =\sum{},\dfrac, \sqrt, etc...= además había muchas
+     cosas que no me funcionaban o que no tenía idea de como
+     modificarlas, fue una larga jornada pero al final funcionó y
+     quedó un trabjo medianamete decente.
+     /insertar pdf del trabajo/
+     Hoy en día sigo usando [[https://www.latex-project.org/get/][LaTeX]], trato de introducirlo lo mejor
+     posible a mi día a día, aunque en la universidad,a excepción de
+     trabajos importantes como informes de laboratorio (de los cuales
+     me siento muy orgulloso y sólo tengo dos), lo veo complicado ya
+     que el tiempo que inviertes en pasar apuntes a [[https://www.latex-project.org/get/][LaTeX]] lo puedes
+     invertir en otras actividades; no obstante no daré pie, ahora que
+     tengo Org-mode espero poder hacerlo.
+
+    *Nivel:* 5
+
+**** [[https://www.gnu.org/software/emacs/][EMACS]]
+     #+begin_pepe
+     La historia con [[https://www.gnu.org/software/emacs/][EMACS]] es bastante curiosa ya que podría decir que
+     fue el mismo Richard Stallaman quién me enseñó el software, a los
+     17 años empecé a buscar información de GNU/Linux yo ya conocía el
+     sistema pero no le había dado su debida atención, podría decirse
+     que había salido de los muros en los que tenía mi comodidad de
+     internauta (tenía internet en mi ordenador, sabía descargar
+     cosas, un poco de lenguaje de marcado y algún que otro lenguaje
+     de programación, empecé por mi fuente favortia de información -->
+     [[http://es.wikipedia.org][Wikipedia]], leí sobre Linux, vi vídeos sobre Linux, busqué foros y
+     blogs que hablarán de él, en fin recopilé un montón de
+     información y al final me volví parte del movimiento quería linux
+     en mi ordenador, no era una época fácil (o es lo que yo pensaba
+     porque la verdad no hubiera tenido ningún problema si hubiera
+     hecho el cambio de S.O. todos los programas que usaba tenían una
+     versión libre) para hacer el cambio así que planeé algo a futuro,
+     en ese intento de plan llegué Richard Stallman, leí un montón
+     sobre él, quién era, el movimiento que fundó, sus ideales,
+     vídeos, charlas, conferencias, etc... un par de horas bien
+     invertidas la verdad, en fin terminé en la página de [[https://www.gnu.org/][GNU/Linux]] y
+     otra vez a revisar todo el sitio, llegué a la categoría de
+     software y oh sorpresa ahí estaba lo que buscaba con tanta
+     desesperación pero no lo sabía [[https://www.gnu.org/software/emacs/][EMACS]] como si me llamara hice clic
+     en el enlace y empecé a leer sobre  [[https://www.gnu.org/software/emacs/][EMACS]] naturalmente mi
+     instinto me obligaba a instalarlo pero no tenía un sitio dónde
+     hacerlo, tuve que aguardar un par de meses para culminar mi
+     cometido y cuando por fin lo hice no me decepcionó desde el
+     primer momento quedé impresionado con todo lo que ofrecía.
+
+    *Nivel:* 3
+    #+end_pepe
+
+#+BEGIN_SRC LaTeX
+\documentclass[a4paper]{article}
+\begin{document}
+Hello Wolrd!
+\end{document}
+#+END_SRC
+
+#+BEGIN_SRC emacs-lisp
+  (defun org-xor (a b)
+     "Exclusive or."
+     (if a (not b) b))
+#+END_SRC
+
+#+BEGIN_EXPORT html
+<footer>
+ Trabajo realizado por <a href="https://twitter.com/Rhyloot">Rhyloo</a>
+ </footer>
+#+END_EXPORT

@@ -1,0 +1,11 @@
+#+DESCRIPTION: Un ingeniero en problemas por Jorge Benavides Macías (Rhyloo)
+
+#+OPTIONS: toc:nil
+#+OPTIONS: num:nil
+#+OPTIONS: ^:nil
+#+OPTIONS: d:(not "PROPERTIES")
+#+OPTIONS: prop:(not "CUSTOM_ID")
+#+OPTIONS: prop:nil
+
+#+INCLUDE: ./header.org
+#+INCLUDE: ./sites/_index.org

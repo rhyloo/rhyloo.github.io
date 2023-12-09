@@ -1,17 +1,17 @@
 @font-face {
     font-family: "Iosevka";
-    src: url(iosevka-regular.woff2);
+    src: url(./static/iosevka-regular.woff2);
 }
 
 @font-face {
     font-family: "Open Sans";
-    src: url(OpenSans-Regular.woff2);
+    src: url(./static/OpenSans-Regular.woff2);
 }
 
 #content {
     background: #fff;
     padding-top: 3em;
-    max-width: 600px;
+    max-width: 75em;
     position: relative;
     margin: 5px auto;
     padding-left: 10px;

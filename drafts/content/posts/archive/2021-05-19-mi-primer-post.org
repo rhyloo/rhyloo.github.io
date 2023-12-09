@@ -1,0 +1,16 @@
+#+title: Mi primer post
+#+date: <2021-05-19 01:34>
+#+AUTHOR: Jorge Benavides M.
+#+EMAIL: rhyloot@gmail.com
+#+SETUPFILE: ~/projects/blog/public_html/org-html-themes/org/theme-bigblow-local.setup
+#+description: Mi primera entrada
+#+filetags: personal
+
+Un poco tarde eh... campeón, es la una de la madrugada, a diferencia del 80% de la sociedad no soy 90% café, solo un tío con mucha curiosidad, he logrado meter emacs en un pendrive, ¿Qué por qué no lo instalo? fácil porque sería más difícil además windows apesta, es broma señor Gates, windows está bien pero no puedo usar todo su esplendor sin poner archivos por aquí y arhivos por allá siempre termina siendo una rueda funcional con muchos parches (aunque seamos sinceros si estoy aquí a las dos de la madrugada es porque tampoco el "USB rueda" funciona muy bien).
+
+Ha sido un día largo y como el objetivo de esta entrada era usar mi nuevo "servicio" de blog no me extenderé mucho en lo que haré justamente después de esto, probar que si pulso el comando de publicar, git se activa y se actualizan los repositorios, y cepillarme los dientes, que es hora de ir a la cama.
+
+Un saludo
+
+Ryhloo.
+

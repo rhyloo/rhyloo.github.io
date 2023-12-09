@@ -1,0 +1,84 @@
+#+HTML_DOCTYPE:html5
+#+LANGUAGE:es
+#+OPTIONS: toc:nil
+#+HTML_CONTAINER: div
+#+HTML_HEAD: <link rel="stylesheet" href="index.css">
+#+HTML_HEAD_EXTRA:<link href="https://fonts.googleapis.com/css?family=Fredoka+One&display=swap" rel="stylesheet"> 
+#+HTML_HEAD_EXTRA:<link href="https://fonts.googleapis.com/css?family=Bungee+Inline|Fredoka+One&display=swap" rel="stylesheet">
+#+HTML_HEAD_EXTRA:<link href="https://fonts.googleapis.com/css?family=Bungee+Inline|Flamenco|Fredoka+One&display=swap" rel="stylesheet">
+#+HTML_HEAD_EXTRA:<title>PLOCK</title>
+#+TITLE: 
+#+OPTIONS: num:nil
+
+#+BEGIN_EXPORT html
+ <h1 class="beginning">
+	<a href="index.html">PLOCK</a>
+ </h1>
+#+END_EXPORT 
+ 
+#+begin_description
+Hola, seguro has llegado por algún enlace externo ya que dudo mucho
+que google indexe tan rápido mi sitio, en fin es un placer que hayas
+venido, sientete libre de mirar todo lo que he dejado por aquí.\\
+
+Lo olvidaba, soy Jorge Benavides Macias, en internet me conocen como
+Rhyloo o Rhyloot según el sitio, un "aficionado" a esto de programar y
+partidario de que todo lo que consumimos debería ser libre (esto no
+signfiica que sea gratis) en especial el conocimiento.
+#+end_description
+
+
+#+HTML:<div id="block">
+
+* [[file:projects.html][Proyectos]]
+  #+begin_projects
+  Todos los trabajos en los que aparece mi nombre están dentro de esta
+  sección, mira sin miedo seguro que alguno te sorprenderá.
+  #+end_projects
+* [[file:exercises.html][Apuntes]]
+  #+begin_exercises
+  Espero subir todos mis apuntes del grado y que obviamente sean de
+  utilidad para todos.\\
+ /Intentaré subirlos en LaTeX/
+  #+end_exercises 
+* [[file:blog.html][Blog]]
+  #+begin_blog
+  Aquí comento un poco lo que hago cada día, supongo que se irá
+  mezclando con mis actividades universitarias que aunque son pocas
+  ocupan la mayor parte de mi tiempo.
+  #+end_blog
+* [[file:problems.html][Problemas]]
+  #+begin_problems
+  Durante este largo proyecto estoy más que seguro que encontraré
+  problemas en todas partes, el código no compila, el css no hace lo
+  que yo quiero que haga, Windows no responde, pantallazo azul, esta
+  sección es para darle soluciones o reírme un rato de los problema.
+  #+end_problems
+* [[file:ideas.html][Ideas]]
+  #+begin_ideas
+  Aquí escribo cualquier tontería que se me va ocurriendo por el
+  camino, sueños y aspiraciones con la tecnología, espero que muchas
+  de las ideas que plantee en esta sección terminen en la sección de proyectos.
+  #+end_ideas
+* [[file:aboutme.html][Sobre mí]]
+  #+begin_aboutme
+  Entra aquí si quieres conocerme un poco más, tienes mi curriculum
+  por si quieres saber que tan fiable son mis consejos, mi experiencia
+  y alguna que otra historia interesante sobre mi vida.
+  #+end_aboutme
+* [[file:contactme.html][Contáctame]]
+  #+begin_contactme
+  Si te interesa hablar conmigo, comentarme alguna idea o proponerme
+  un proyecto esta es tu sección.
+  #+end_contactme
+* [[file:agenda.html][Tareas]]
+  #+begin_tasks
+  Aquí apunto todo lo que tengo que hacer o modificar para que funcione.
+  #+end_tasks
+#+HTML: </div>
+
+#+BEGIN_EXPORT html
+<footer>
+ Trabajo realizado por <a id="twitter" href="https://twitter.com/Rhyloot">Rhyloo</a>
+ </footer>
+#+END_EXPORT

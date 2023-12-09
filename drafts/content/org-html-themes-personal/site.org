@@ -1,0 +1,1023 @@
+#+OPTIONS: num:nil
+#+LANGUAGE: es
+#+INCLUDE: ./../header.org
+#+HTML_LINK_HOME: /
+#+HTML_LINK_UP: /blog.html
+
+* RhylooSolutions (por detrás).
+:PROPERTIES:
+:CUSTOM_ID: un-ingeniero-en-problemas-por-detr-s
+:END:
+
+Mi sitio web ha tenido muchos cambios, haciendo una cuenta rápida entre 6 y 10  cambios grandes, los archivos de texto o la idea original de lo que quería exponer siempre se han mantenido más o menos constante, la ventaja de trabajar en texto plano; los cambios se han producido principalmente en el *"workflow"* he pasado por generar un sitio desde la mina, picando con código ~HTML~ Y ~css~ desde cero, algo que no recomiendo a nadie si no quiere perder las ganas de vivir o al menos de usar el lenguaje de marcado, hasta llegar a frameworks como HUGO y JEKYLL.
+
+Me encantaría tener una foto de todos los formatos por los que he pasado... una pena que en su momento no pensara en el valor que tendría, si escribía esto, supongo que era porque escribir una entrada del blog no era tan fácil, implicaba copiar el código que había escrito comentarlo, multiplicar por cientos los archivos generados, vamos un autentico coñazo y lo digo yo que soy el escritor... por suerte EMACS estaba ahí para solucionar mi vida, algo que detallaré más adelante, aunque me parece que tengo algunas capturas.
+
+Estaría bien enumerar esos  métodos usados "por las risas" o por empezar a llevar un control y rescatar algunas fotos que habrá hecho de mi sitio la [[https://archive.org/web/][Wayback Machine]], una vez más el *backup* salvándonos el culo.
+
+Hay otra "persona" que conoce los cambios que ha sufrido mi sitio, [[https://github.com/rhyloo/rhyloo.github.io/network][Github]], evidentemente si usas git para control de versiones debería tenerlo todo, pues no, yo creaba un repositorio nuevo con cada cambio, que las ramas deben estar limpias y no mostrar errores, es código e internet deben mantenerse los cambios, en fin, sigamos.
+
+Por ahora recuerdo estos:
+- HTML y CSS puro.
+- Org Mode (mal)
+- Wordpress
+- JEKYLL
+- HUGO
+- Org Mode (actual)
+
+Ahora lo idea sería comentar cada uno, adjuntar captura si la tengo y decir porqué Org Mode (mal) y porqué Org Mode otra vez, pero lo dejaré para otro artículo ahora lo que importa es como está hecho este sitio.
+*** HTML y CSS                                                         :noexport:
+:PROPERTIES:
+:CUSTOM_ID: html-y-css
+:END:
+
+Corrían los años 2000 era un joven neonato, la era de la informática en su máximo apogeo y yo durmiendo como un bebé, nunca mejor dicho, pues eso que empecé a estudiar "programación" por mi cuenta 11 años después del apogeo, evidentemente la clásica web estática con el html en plano ya había pasado de moda, pero, no tenía ni idea.
+
+Visité muchas páginas como Wikipedia-fuente confiable de información para informarme de esto de programar, HTML tenía una sintaxis fácil y me gustaba porque era tangible a diferencia de C++ o PHP que en ese entonces no
+https://web.archive.org/web/20120930205332/http://desarrolloweb.com/
+
+* Desde el lodo al éxito
+:PROPERTIES:
+:CUSTOM_ID: desde-el-lodo-al-xito
+:END:
+*¿Por qué Org Mode?*
+Bueno, porque uso EMACS, diría que es broma pero es una realidad usar EMACS y su entorno es lo que mejor funciona, esta entrada de blog servirá como generador de css y como artículo, y los bloques de código fuente que ves aquí se guardan en un archivo .css directamente evitando el molesto copy&paste que tenía que hacer en los otros frameworks, trabajar con el teclado me encanta apenas y tengo que tocar el ratón y bueno poco más, lo que más valoro es el workflow.
+
+#+name: sh-tree
+#+begin_src sh :results verbatim :exports both
+tree -a ./../../content -I "*~"
+#+end_src
+
+#+results: sh-tree
+#+begin_example
+./../../content
+├── docs
+│   └── recipe.pdf
+├── header.org
+├── images
+│   ├── aa.svg
+│   ├── banner_picture.jpg
+│   ├── contour.svg
+│   ├── dot_success.svg
+│   ├── filter_chebyshev_low_pass_1.png
+│   ├── filter_chebyshev_low_pass_2.png
+│   ├── filter_chebyshev_low_pass_3.png
+│   ├── fsa.svg
+│   ├── github.png
+│   ├── logo.png
+│   ├── mastermind_game_easy.png
+│   ├── mastermind.png
+│   ├── matlab-file-exchange.svg
+│   ├── real_programmers.png
+│   ├── recipe.png
+│   ├── TDDS_progress1.png
+│   ├── TDDS_wiwt.png
+│   └── WIN95.png
+├── index.org
+├── org-html-themes-personal
+│   ├── .#site.org -> rhyloo@rhylap.139473:1671913051
+│   └── site.org
+├── posts
+│   ├── 2021-07-21-seguridad-en-la-piscina.org
+│   ├── archive
+│   │   ├── 2021-05-19-mi-primer-post.org
+│   │   ├── 2021-05-19-seguridad-sobrevalorada.org
+│   │   ├── 2021-05-20-colpitts-0---rhyloo-1.org
+│   │   ├── 2021-05-24-segundo-post.org
+│   │   ├── 31052021_emacs_portable.org_archive
+│   │   └── como_escribir_un_blog.org
+│   └── drafts
+│       └── 31052021_emacs_portable.org
+├── proyectos
+│   ├── archive
+│   │   ├── ControlSymbs.md
+│   │   ├── LaTeX_Templates.md
+│   │   ├── Mastermind.md
+│   │   ├── problema_puntuable_3.org
+│   │   ├── TDDS.md
+│   │   ├── Telegram_Bot.md
+│   │   └── telegram_bot.org
+│   ├── controlsymbs.org
+│   ├── #filtro_chevyshev.org#
+│   ├── filtro_chevyshev.org
+│   ├── mastermind.org
+│   ├── template_recipes.org
+│   └── universibot.org
+├── sitemap.org
+└── sites
+    ├── aboutme.org
+    ├── blog.org
+    ├── _index.org
+    ├── libros.org
+    ├── miscelanea.org
+    ├── peliculas.org
+    └── proyectos.org
+
+9 directories, 52 files
+#+end_example
+
+* Cooked style
+:PROPERTIES:
+:header-args+: :mkdirp yes :tangle ./../../docs/org-html-themes-personal/site.css
+:CUSTOM_ID: cooked-style
+:END:
+
+** COMMENT Variables
+:PROPERTIES:
+:CUSTOM_ID: comment-variables
+:tangle: yes
+:END:
+
+#+name: style-css-variables
+#+begin_src css :results none
+/* CSS variables */
+:root {
+    /* Body */
+    /* ---- */
+    --body-bg: red;
+    /* --content-bg: #fdf6e3; */
+    --content-bg: blue;
+    --content-padding: 10px;
+    /* --content-bg: #F1F1F1; */
+    --content-box-shadow: 0;
+    --body-margin: 30px; /* not used for small screens */
+
+    /* Footer */
+    /* ------ */
+    --footer-border: 1px solid black;
+    --footer-padding: 10px;
+    --footer-buttons-bg: #4C6FB0;
+    --footer-buttons-bg-hover: navy;
+    --footer-buttons-padding: 5px 10px;
+    --footer-buttons-color: white;
+    --footer-buttons-font-size: 90%;
+    --footer-buttons-border: 2px solid navy;
+    --footer-buttons-min-width: 270px;
+
+    /* Table of contents */
+    /* ----------------- */
+
+    /* Basic style */
+    --toc-bg: white;
+    --toc-box-shadow: 0 0 0.8em #777777;
+    --toc-border-radius: 5px;
+    --toc-li-color: black;
+    --toc-hover-bg-color: #555;
+    --toc-hover-color: white;
+    --toc-border: black;
+
+    /* Layout */
+    --toc-nav-vspacing: 20px;
+    --toc-base-padding: 5px;
+    --toc-ul-padding-left: 20px;
+    --toc-local-padding: 5px;
+    --toc-extra-padding-x: 4px;
+
+    /* Navigation bar */
+    /* -------------- */
+
+    /* Basic style */
+    --nav-bg: #333;
+    --nav-hover: #111;
+
+    /* RSS */
+    /* --- */
+    /* --rss-img: url("/blog/images/feed-icon-28x28.png"); */
+
+    /* Tables */
+    /* ------ */
+    --tbl-border-color: #4E4E4F;
+    --tbl-border-size: 1px;
+
+    /* Org-js */
+    /* ------ */
+    --org-js-console-bg: var(--footer-buttons-bg);
+
+    /* Fonts */
+    /* ----- */
+
+    /* Text */
+    --font-body-family: Arial, sans-serif;
+    --font-body-size: 12pt;
+
+    /* Code */
+    --font-code-family: DejaVu, Lucida Console, monospace;
+    --font-code-color: #4E4E4F;
+    --font-code-size: 11pt;
+    --font-src-family: DejaVu, Lucida Console, monospace;
+    --font-example-family: DejaVu, Lucida Console, monospace;
+    --font-example-size: 11pt;
+
+    /* Links */
+    --font-a-color: navy;
+    --font-a-coderef-color: #7082BC;
+
+    /* Color scheme */
+    /* ------------ */
+
+    /* Source blocks */
+    --src-bg: #fBF9E7;
+    --lua-bg: var(--src-bg);
+
+}                               /**/
+#+end_src
+
+#+begin_src css :results none
+/** Responsive variables
+ */
+
+/* Large screens */
+@media (min-width: 1024px) {
+    :root {
+        --side-width: 250px;
+        --body-width: calc(92% - var(--side-width));
+        --nav-base-font-size: 80%;
+        --nav-height: 50px;
+        --nav-padding: 14px 16px;
+        --toc-base-font-size: 70%;
+        --toc-ul-font-size: 150%;
+        --toc-ul-local-font-size: 130%;
+        --toc-ul-2-font-size: 80%;
+        --toc-ul-3-font-size: 80%;
+        --font-src-size: 11pt;
+        --rss-padding: 0 0 0 25px;
+        --rss-size: 25px 25px;
+        --rss-pos: 50%;
+    }
+}
+
+/* Medium screens */
+@media (min-width: 600px) and (max-width: 1024px) {
+    :root {
+        --side-width: 150px;
+        --body-width: calc(92% - var(--side-width));
+        --nav-base-font-size: 70%;
+        --nav-height: 30px;
+        --nav-padding: 5px 6px;
+        --toc-base-font-size: 70%;
+        --toc-ul-font-size: 130%;
+        --toc-ul-local-font-size: 130%;
+        --toc-ul-2-font-size: 80%;
+        --font-src-size: 11pt;
+        --rss-padding: 0 0 19px 9px;
+        --rss-size: 10px 10px;
+        --rss-pos: 25%;
+    }
+}
+
+/* Small screens */
+@media (max-width: 600px) {
+    :root {
+        --side-width: 150px; /* unused in this case */
+        --body-width: 100%;
+        --nav-base-font-size: 80%;
+        --nav-height: 30px;
+        --nav-padding: 5px 6px;
+        --toc-base-font-size: 80%;
+        --toc-ul-font-size: 120%;
+        --toc-ul-local-font-size: 130%;
+        --toc-ul-2-font-size: 80%;
+        --font-src-size: 10pt;
+        --rss-padding: 0 0 19px 20px;
+        --rss-size: 20px 20px;
+        --rss-pos: 19%;
+    }
+}
+
+#+end_src
+
+
+** Variables
+:PROPERTIES:
+:CUSTOM_ID: variables
+:END:
+#+begin_src css :results none :exports code
+:root {
+    /* Code */
+    --code-bg: #f5ebe1;
+    --code-lang-bg: lightgreen;
+    --code-border-color: purple
+    --code-height: 125ex;
+
+    /*Body*/
+    --body-color: black;
+    --body-bg: whitesmoke;
+    --landscape-body-width: 810px;
+    --landscape-sidebar-width: 280px;
+
+    /*Title*/
+    --title-size-font: 250%;
+    --title-color:black;
+    --title-font-weight: 600;
+
+    /*TOC*/
+    --toc-bg: white;
+
+    font-family: "Source Serif Pro", serif;
+    /* otherwise scrollbar impacts the content */
+    overflow-y: scroll;
+    /* From copy  */
+    --link-color: #0000EE;
+    --visited-link-color:  #0000ee;
+    --width: 60rem; /* todo rename to main-width?? */
+    --aside-width: 20rem;
+}
+#+end_src
+
+** Core
+#+begin_src css :results none :exports code
+html {
+  font-family: "Source Serif Pro", serif;
+  /* otherwise scrollbar impacts the content */
+  overflow-y: scroll;
+}
+
+#settings {
+  z-index: -1;
+}
+
+#bottomfooter {
+  border-top: 0.1rem solid;
+  padding-top: 1em;
+  font-size: 0.75em;
+
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 0.5em;
+}
+
+/* now, post-specific stuff */
+
+time {
+    font-family: "Lucida Console", Monaco, monospace;
+}
+
+.post-tag + .post-tag {
+    margin-left: 0.5em;
+}
+
+.post-tag {
+  font-size: 0.95em;
+  font-family: "Lucida Console", Monaco, monospace;
+
+  /* https://stackoverflow.com/a/12362315/706389
+     somewhat hacky way to prevent breaking tags on hyphens...
+   ,*/
+  white-space: nowrap;
+}
+
+.tag-active {
+  color: #a51;
+  font-weight: bold;
+}
+
+.tag-inactive {
+  color: black;
+}
+
+#post-title h1 {
+  /* default margin is too large */
+  margin-bottom: 0em;
+}
+
+#post-title .summary {
+  /* ???  */
+  -webkit-margin-before:0em;
+  -webkit-margin-after:0em;
+
+  color: #a9a9a9;
+  font-size: 1.5em;
+}
+
+
+
+
+
+
+
+article aside.sidenote {
+  /* todo highlight sidenotes maybe? */
+  /* to match with corresponding <p> */
+  /* TODO is this really necessary?? */
+  display : var(--sidenote-display);
+
+  /* makes it work in conjucion with position: relative in article */
+  position: var(--sidenote-position);
+  left    : var(--sidenote-left);
+  width   : var(--sidenote-width);
+
+  padding-left : 2em; /* for horizontal padding between text and note */
+  padding-right: 1em; /* so it's not too close to the screen edge */
+  box-sizing: border-box; /* without it doesn't wrap around?? */
+
+  font-size: 0.8em;
+  color: gray;
+}
+
+/* TODO not sure if article should contain footer and comments?? */
+
+a.headerlink {
+    text-decoration: none;
+    color: lightgrey;
+}
+h1:hover > a.headerlink,
+h2:hover > a.headerlink,
+h3:hover > a.headerlink,
+h4:hover > a.headerlink,
+h5:hover > a.headerlink,
+h6:hover > a.headerlink {
+    color: #c60f0f
+}
+/*
+a.headerlink:hover {
+    background-color: #c60f0f;
+    color: white;
+}
+,*/
+/* */
+
+/* highlight inline code produced by org-mode */
+/* TODO support for ipynb as well? */
+code.inline {
+    color: green;
+}
+a code.inline {
+    /* TODO not sure about this one... */
+    text-decoration: underline;
+}
+/* end */
+
+
+details summary {
+    cursor: pointer;
+}
+
+
+/* compile-org sets these  */
+a.link-down:after {
+    content: "⤵";
+}
+
+a.link-up:after {
+    content: "⤴";
+}
+/* end */
+
+
+#post-footer time {
+  color: #555;
+}
+
+#isso-root .avatar {
+  display: none;
+}
+
+.debug-usage {
+    animation:debug 0.8s infinite;
+}
+
+@keyframes debug{
+    0%{     background: black; color: #f00;    }
+    49%{    background: black; color: transparent; }
+    50%{    background: black; color: transparent; }
+    99%{    background: black; color: transparent;  }
+    100%{   background: black; color: #f00;    }
+}
+
+#+end_src
+
+** Responsive
+#+begin_src css :results none :exports code
+/* 80 = --width + --aside-width */
+@media (min-width: 80rem) {
+    body {
+        width: var(--width);
+        /* auto margin centers the content. not sure if it's the right way to do it... */
+        margin-left:  auto;
+        margin-right: auto;
+        text-align: justify;
+    }
+
+    a.headerlink {
+        margin-left: -1em;
+    }
+}
+
+/* 80 = --width + --aside-width */
+@media (min-width: 80rem) {
+  /* when wide enough, display as a side note */
+  article {
+    --sidenote-display  : inline;
+
+    /* if wide enough, display at a fixed position on the right */
+    position: relative;
+    --sidenote-position : absolute;
+    --sidenote-left     : var(--width);
+
+    /* set width, otherwise they wrap at the word boundary */
+    --sidenote-width    : var(--aside-width);
+  }
+
+  .before-aside {
+    /* hacky way of forcing aside to display on the same line....
+     ,* without it, it displays on the same line as the last
+     ,* (can see on multiline paragraphs). probably can be fixed in a better way?
+     ,* e.g. can reorder aside and the preceding element.. but this is a bit misleading then
+     ,*/
+    display: inline-block;
+  }
+  li .before-aside {
+    /* for li, that breaks the list marker alignment...  I guess that's a relatively small price to pay for now... */
+    display: initial;
+  }
+}
+
+@media (max-width: 80rem) {
+  article {
+    --sidenote-display  : block;
+  }
+}
+#+end_src
+** Links
+#+begin_src css :results none :exports code
+a:link,a:visited{
+  color: #2a5db0;
+    /* default is underline... dunno, feels pretty distracting */
+  text-decoration: none;
+}
+#+end_src
+
+** Titulos
+*** headings
+#+begin_src css :results none :exports code
+h1,
+h2,
+h3 {
+ /* font-family:"Open Sans","Deja Vu Sans", Georgia, sans; */
+ font-weight:600;
+ text-decoration:none;
+}
+
+h1 {
+    font-size: 2rem;
+    text-align: center;
+}
+
+h2 {
+    font-size: 1.7rem;
+ text-align: center;
+}
+
+h3 {
+ /* text-align: center; */
+  font-size: 1.4rem;
+}
+
+h4 {
+  font-size: 1rem;
+}
+
+h1 a,
+h2 a,
+h3 a {
+ text-decoration:none;
+}
+
+b,
+strong {
+ font-weight:700;
+}
+
+#+end_src
+*** subheadings
+#+begin_src css :results none :exports code
+.subheading {
+text-align: center;
+color: gray;
+  margin-top: -20px;
+  margin-bottom: 20px;
+}
+#+end_src
+** Images
+#+begin_src css :results none :exports code
+figure {
+text-align: center;
+}
+img {
+    max-width: 100%;
+    max-height: 100%;
+}
+#+end_src
+** Tags
+#+begin_src css :results none :exports code
+span.done {
+    display: flex;
+    justify-content: space-between;
+}
+
+span.todo {
+    display: flex;
+    justify-content: space-between;
+}
+#+end_src
+
+** Movies
+#+begin_src css :results none :exports code
+.timestamp {
+    color: blue;
+}
+.timestamp-wrapper {
+    font-size: 0.75em;
+    font-family: "Lucida Console", Monaco, monospace;
+}
+#outline-container-orgf518ae7 div.outline-text-3{
+display: grid;
+grid-template-columns: 28em auto;
+grid-template-rows: auto auto;
+}
+
+#outline-container-orgf518ae7 div.outline-text-3* p:first-child{
+  grid-column: 1 / 1;
+}
+
+.movies-done{
+ background-color: whitesmoke;
+}
+.movies-done ul{
+  list-style-type: none;
+  display: inline;
+  /* justify-content: justify; */
+
+}
+
+.movies-done ul li{
+    margin: 0.2em;
+    list-style-type: none;
+    font-family: "Source Serif Pro", serif;
+    display: inline-block;
+    /* align-items: justify; */
+    /* justify-content: justify; */
+    font-weight: 850;
+}
+#+end_src
+
+** Enlaces de interes
+#+begin_src css :results none :exports code
+.enlaces-de-interes{
+    background-color: #ced;
+}
+.enlaces-de-interes ul{
+  list-style-type: none;
+  display: inline;
+  /* justify-content: justify; */
+
+}
+
+.enlaces-de-interes ul li{
+    margin: 0.2em;
+    list-style-type: none;
+    font-family: "Source Serif Pro", serif;
+    display: inline-block;
+    /* align-items: justify; */
+    /* justify-content: justify; */
+    font-weight: 350;
+}
+#+end_src
+
+** Enlaces de Wikipedia
+#+begin_src css :results none :exports code
+.enlaces-de-wikipedia{
+    background-color: #ffe3003d;
+}
+.enlaces-de-wikipedia ul{
+  list-style-type: none;
+  display: inline;
+  /* justify-content: justify; */
+
+}
+
+.enlaces-de-wikipedia ul li{
+    margin: 0.2em;
+    list-style-type: none;
+    font-family: "Source Serif Pro", serif;
+    display: inline-block;
+    /* align-items: justify; */
+    /* justify-content: justify; */
+    font-weight: 350;
+}
+#+end_src
+
+** Tables
+#+begin_src css :results none :exports code
+td.org-left{
+text-align: center;
+}
+#+end_src
+
+
+** COMMENT Nav
+:PROPERTIES:
+:CUSTOM_ID: nav
+:END:
+#+begin_src css :results none :exports code
+.banner nav {
+ font-size:115%;
+ font-family:"Open Sans","Deja Vu Sans", Georgia, sans;
+ font-weight:600;
+ padding: 15px;
+}
+.banner p {
+ word-spacing:.5em;
+ margin:0;
+ text-align: center;
+}
+
+.banner nav a {
+ height:30px;
+ text-decoration:none;
+}
+.banner hr {
+ width: var(--landscape-body-width);
+ text-align:left;
+ margin-left:0;
+margin-bottom:0;
+margin-top:0;
+}
+#+end_src
+** COMMENT Body
+:PROPERTIES:
+:CUSTOM_ID: body
+:END:
+#+begin_src css :results none :exports code
+  /* This style sheet configures the basic style of Note */
+
+  /* @import url("../default-style.css"); */
+
+  .title {
+  color: var(--title-color);
+  font-family:"Open Sans","Deja Vu Sans", Georgia, sans;
+  font-size: var(--title-size-font);
+  font-weight: var(--title-font-weight);
+  text-decoration:none;
+  }
+
+  body {
+      font-family: 'MS Sans Serif', Geneva, sans-serif;;
+      font-size: 12pt;
+      min-width: 400px;
+      max-width: 1000px;
+      margin: 0 auto;
+      text-align: justify;
+      margin: auto;
+      width: 70%;
+      color: var(--body-color);
+      background-color: var(--body-bg);
+      --content-margin-left:
+      calc((100vw - var(--landscape-body-width)
+      - var(--landscape-sidebar-width)) / 3);
+      margin-left: calc(var(--content-margin-left) +
+      var(--landscape-sidebar-width));
+      width: var(--landscape-body-width);
+      }
+#+end_src
+** COMMENT Table of contents
+:PROPERTIES:
+:CUSTOM_ID: table-of-contents
+:END:
+#+begin_src css :results none :exports code
+  /* Landscape */
+  /* Floating TOC */
+  #table-of-contents {
+  border-top: 1px dotted black;
+  border-left: 1px dotted black;
+  border-right: 1px dotted black;
+  border-bottom: 1px dotted black;
+  /* padding: 0.8em; */
+  background-color: var(--toc-bg);
+  height: auto;
+   /* overflow: auto; */
+          padding-inline-start: 0px;
+          text-align: left;
+          font-size: 14px;
+          /* bottom: 0; */
+          position: fixed;
+          overflow-y: scroll;
+          overflow-x: wrap;
+          top: 145px;
+          left: 2.5em;
+          width: 25em;
+          /* Hide scrollbar in Firefox */
+          scrollbar-width: none;
+          /* Hide scrollbar in Edge */
+          -ms-overflow-style: none;
+      }
+      /* Hide scrollbar in Safari and Chrome */
+      #table-of-contents::-webkit-scrollbar {
+          display: none;
+      }
+
+  .wrap-figure-right{
+      float: right;
+      margin: 5px;
+      margin-top: 0px;
+      width: 18%;
+      position: relative;
+      top: -20%;
+  }
+
+  .rssbox {
+      padding: 0.3em;
+      margin: 0.2em;
+      margin-bottom: 0.5em;
+      display: inline-block;
+      float: right
+  }
+
+  img.rssimg {
+      height: 1em;
+  }
+
+  .flattrbox {
+      border: 1px solid black;
+      padding: 0.3em;
+      display: inline-block;
+      float: right;
+  }
+
+  .outline-2 {
+      border-top: 1px dotted black;
+      border-left: 1px dotted black;
+      border-right: 1px dotted black;
+      padding: 0.8em;
+      background-color: white;
+      height: 100%;
+      overflow: auto;
+  }
+
+  #postamble {
+      border-top: 3px solid black;
+      font-size: small;
+      float: none;
+  }
+
+
+
+  #content p:nth-child(1) {
+      border: 1 px dotted black;
+  }
+
+  div.figure p {
+      font-weight: bold;
+      padding: 0.0em;
+      margin: 0.0em;
+  }
+
+
+  .gmap {
+      border: 1px solid black;
+      padding: 1em;
+      margin: 1em;
+      float: right;
+  }
+
+  div.caption {
+      font-size: 13pt;
+      font-weight: 500;
+  }
+
+
+  /* a { */
+  /*     color: inherit; */
+  /*     background-color: inherit; */
+  /*     font: inherit; */
+  /*     text-decoration: inherit; */
+  /* } */
+  /* a:hover { */
+  /*     text-decoration: underline; */
+  /* } */
+
+#+end_src
+
+** COMMENT Source Code
+:PROPERTIES:
+:CUSTOM_ID: source-code
+:END:
+
+#+begin_src css :results none :exports code
+code {
+  font-style: oblique;
+  }
+
+p.verse { margin-left: 3%; }
+pre {
+  border: 1px solid black;
+  box-shadow: 3px 3px 8px #000;
+  position: relative;
+  font-family: monospace;
+  overflow: auto;
+  margin: 1.2em;
+  font-family: DejaVu, Lucida Console, monospace;
+  font-size: 10pt;
+}
+
+pre.src {
+
+  overflow-x: auto;
+  overflow-y: auto;
+ line-height: 2.5ex;
+  max-height: 75ex;
+  outline: 5px solid var(--code-border-color);
+  background-color: var(--code-bg);
+}
+
+pre.src:before {
+  display: none;
+  overflow: hidden;
+  top: 2%;
+  background-color: var(--code-lang-bg);
+  padding: 3px;
+  border: 1px solid black;
+}
+
+pre.src:hover:before {
+    display: inline;
+    position: absolute;
+    width: max-content;
+    height:max-content;
+}
+#+end_src
+
+** COMMENT Links
+:PROPERTIES:
+:CUSTOM_ID: links
+:END:
+#+begin_src css :results none :exports code
+  a:link,a:visited{
+  color: #2a5db0;
+  text-decoration: none;
+  }
+
+   /*    #table-of-contents, a:link{ */
+   /*          /\* color: #8784c8; *\/ */
+   /*          color: purple; */
+   /*          text-decoration: none; */
+   /*      } */
+
+   /*  #table-of-contents, a:visited { */
+   /*          /\* color: #544fb0; *\/ */
+   /*          color: blue; */
+   /*      } */
+   /* a:visited, a:link >        button{ */
+   /*        color:green; */
+   /*         text-decoration: none; */
+   /*      } */
+#+end_src
+** COMMENT Buttons
+:PROPERTIES:
+:CUSTOM_ID: buttons
+:END:
+#+begin_src css :results none :exports code
+
+  button:hover {
+    color: red;
+    transition: 0.01s;
+    background-color: white;
+  }
+
+  button {
+  background: none;
+  border: 2px solid yellow;
+  font: inherit;
+  line-height: 1;
+  margin: 0.5em;
+  padding: 1em 2em;
+  }
+.buttons{
+text-align: center;
+}                               /**/
+#+end_src
+* Referencias
+:PROPERTIES:
+:CUSTOM_ID: referencias
+:END:
+
+# https://es.wikipedia.org/wiki/Ley_de_Poe
+Para desarrollar el css, javascript y en general la estructura de mi sitio he seguido como referencia los siguientes blogs:
+
+- [[https://orgmode.org][Sitio Oficial Org Mode]]
+- [[https://thibaultmarin.github.io/blog/posts/2016-11-13-Personal_website_in_org.html#orgace8e3d][Thibaultmarin]]
+- [[https://www.brautaset.org/articles/2017/blogging-with-org-mode.html][Brautaset]]
+- [[https://archive.casouri.cat/note/2018/blog-with-only-org-mode/index.html#CSS][Casouri]]
+- [[https://thenybble.de/projects/orgsite.html][Thenybble]]
+- [[https://ogbe.net/][Ogbe]]
+- [[https://beepb00p.xyz/][Beepb00p]]
+
+* description-post                                                 :noexport:
+:PROPERTIES:
+:CUSTOM_ID: description-post
+:END:
+Mi sitio web ha tenido muchos cambios, haciendo una cuenta rápida entre 6 y 10  cambios grandes, los archivos de texto o la idea original de lo que quería exponer siempre se han mantenido más o menos constante, la ventaja de trabajar en texto plano; los cambios se han producido principalmente en el *"workflow"* he pasado por generar un sitio desde la mina, picando con código ~HTML~ Y ~css~ desde cero, algo que no recomiendo a nadie si no quiere perder las ganas de vivir o al menos de usar el lenguaje de marcado, hasta llegar a frameworks como HUGO y JEKYLL.
+
+# Local Variables:
+# eval: (add-hook 'after-save-hook 'org-babel-tangle)
+# End:

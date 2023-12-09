@@ -1,0 +1,453 @@
+#+TITLE: Filtro Chebyshev
+#+DATE: [2021-05-19 mi. 18:00]
+#+AUTHOR: Jorge Benavides M.
+#+EMAIL: rhyloot@gmail.com
+# LATEX OPTIONS
+#+OPTIONS: toc:nil        (no default TOC at all)
+#+OPTIONS: title:nil
+#+LATEX_HEADER: \usepackage{xcolor}
+#+LATEX_HEADER: \usepackage{parskip}   \setlength{\parskip}{1em}        \setlength{\parindent}{2em}  
+#+LATEX_HEADER: \usepackage{float}
+#+LATEX_HEADER: \usepackage{fancyhdr} \pagestyle{empty}
+#+LATEX_HEADER: \usepackage[framed,numbered,autolinebreaks,useliterate]{mcode}
+#+LATEX_HEADER: \usepackage[a4paper,text={6.25in,9in}, truedimen]{geometry}
+
+# HTML OPTIONS
+#+OPTIONS: ^:nil
+#+OPTIONS: num:nil
+#+SETUPFILE: ~/projects/blog/public_html/org-html-themes/org/theme-readtheorg-local.setup
+#+TODO: ADDED CHANGED DEPRECATED REMOVED FIXED SECURITY UNRELEASED
+
+#+BEGIN_CENTER
+#+LATEX: {\Large
+ *Problema puntuable no. 3*
+#+LATEX: }
+#+END_CENTER
+
+Diseñar un filtro de Chebyshev Pasa Baja que satisfaga las siguientes condiciones:
+- Frecuencia de corte $f_c = (1000+DNI)$ Hz.
+- Rizado en la banda pasante de $R = \left(1+\frac{DNI}{1000}\right)dB$ (con tres decimales).
+- Atenuación en la banda eliminada de $A = \left(35+\frac{DNI}{100}\right)dB$ a partir de la frecuencia de $f_r = (1400+DNI) Hz$.
+Donde DNI se corresponde cono las tres últimas cifras menos significativas del documento de identidad o identificación equivalente xxxxx123.
+
+1) Calcular el orden del filtro.
+2) Calcular los coeficientes del filtro.
+3) Proponer la función de transferencia del filtro.
+4) Proponer un circuito que sintetice la función de transferencia del filtro.
+5) Verificar mediante simulación que el circuito cumple las condiciones establecidas.
+
+*Nota:* Para tener buenos resultados se debe trabajar con una precisión de al menos 5 decimales en los coeficientes del filtro.
+
+*Nota2:* Para extremar la exactitud y facilitar los cálculos he usado MATLAB, el script que he desarrollado está en la parte final del documento.
+* Calcular el orden del filtro
+  :PROPERTIES:
+  :CUSTOM_ID: calcular-el-orden-del-filtro
+  :END:
+- Frecuencia de corte $f_c = (1000+948) = 1948$ Hz.
+- Rizado en la banda pasante de $R = \left(1+\frac{948}{1000}\right) = 1.948 dB$ (con tres decimales).
+- Atenuación en la banda eliminada de $A = \left(35+\frac{948}{100}\right) = 44.48 dB$ a partir de la frecuencia de $f_R = (1400+948) = 2348 Hz$.
+
+En primer lugar calculamos el factor de rizado \varepsilon para una banda pasante de $1.958 dB$:
+\begin{equation}
+-1.958db = 20 \log{\frac{1}{\sqrt{1+\varepsilon^2}}}\implies 1.958dB = 20\log{\sqrt{1+\varepsilon^2}}
+\end{equation}
+
+\begin{equation}
+10^{\frac{1.958}{20}} = \sqrt{1+\varepsilon^2} \implies \left(10^{\frac{1.958}{20}}\right)^2 = 1+\varepsilon^2 \implies \varepsilon^2 = 10^{\frac{3.916}{20}}-1 = 10^{0.1958}-1 = 0.5696
+\end{equation}
+
+\begin{equation}
+\varepsilon = \sqrt{0.5696} = 0.752349
+\end{equation}
+
+Por lo tanto el factor de rizado \varepsilon = 0.752349, descartando la opción negativa.
+
+La atenuación $A$ requerida para a $f_r = 2348$ Hz es:
+
+\begin{equation}
+44.48 dB = 20 \log{A} \implies A = 10^{(44.48/20)} = 167.4942
+\end{equation}
+
+El valor de $A = 167.494288$.
+
+Con estos valores, podemos calcular el orden del filtro
+
+\begin{equation}
+g = \sqrt{\frac{A^2-1}{\varepsilon^2}} = \sqrt{\frac{167.4942^2-1}{0.5659}} = 222.6243
+\end{equation}
+
+\begin{equation}
+n = \frac{\log \left(g+\sqrt{g^2-1}\right)}{\log{\left(\frac{\omega_r}{\omega_c} +\sqrt{\left(\frac{\omega_r}{\omega_c}\right)-1}\right)}} =\frac{\log \left(222.6243+\sqrt{222.6243^2-1}\right)}{\log{\left(\frac{2\pi f_r}{2\pi f_c} +\sqrt{\left(\frac{2\pi f_r}{2 \pi f_c}\right)-1}\right)}} = 9.6749
+\end{equation}
+El orden del filtro es: 9.6749, tal y como hemos aprendido en clase si el orden del filtro pasa aunque sea mínimamente en 0.01 debemos escoger el siguiente así que *necesitamos un filtro de orden 10.*
+
+* Calcular los coeficientes del filtro.
+  :PROPERTIES:
+  :CUSTOM_ID: calcular-los-coeficientes-del-filtro
+  :END:
+Para el cálculo de los coeficientes consideramos la frecuencia incial de corte normalizada $\omega_C = 1 rad/seg$, esto no es un problema dado que después podemos hacer la transformación a la frecuencia de corte necesaria, en este caso $\omega_c = 2\pi 1948 rad/seg$. 
+
+En los filtros Chebyshev los polos se encuentran sobre una elipse por lo tanto debemos calcular el coeficiente $\mu$, el semieje menor y el semieje mayor.
+
++ Coeficiente $\mu$:
+\begin{equation}
+\mu = \varepsilon^{-1}+\sqrt{\varepsilon^{-2}+1} = \frac{1}{0.752349} + \sqrt{\frac{1}{0.752349^2}+1} = 2.9925
+\end{equation}
+
+$\mu$ es igual a 2.9925, lo calculamos primero porque el semieje menor y mayor dependen de este coeficiente.
+
++ Semieje menor:
+
+\begin{equation}
+a = \frac{\mu^{\frac{1}{n}}-\mu^{-\frac{1}{n}}}{2} = \frac{2.9925^{\frac{1}{10}-2.9925^{-\frac{1}{10}}}}{2} = 0.1098
+\end{equation}
+El valor del semieje menor es $a = 0.1098$.
+
++ Semieje mayor:
+\begin{equation}
+a = \frac{\mu^{\frac{1}{n}}+\mu^{-\frac{1}{n}}}{2} = \frac{2.9925^{\frac{1}{10}}+2.9925^{-\frac{1}{10}}}{2} = 1.0060
+\end{equation}
+El valor del semieje mayor es $b = 1.0060$.
+
+Con estos datos podemos calcular la posición de los polos, recordamos que si es de orden par, el número de pares de polos complejos es igual a la mitad del orden, si el orden es impar tenemos el mismo número de polos complejos más uno real.
+
+\begin{equation}
+-a \cdot \sin\frac{\pi}{2n}(1+2k)+jb \cdot \cos\frac{\pi}{2n}(1+2k), k = 0,1,2,...,7
+\end{equation}
+
+Los polos son:
+- -0.0172 \pm 0.9936$i$
+- -0.0499 \pm 0.8964$i$
+- -0.0777 \pm 0.7114$i$
+- -0.0979 \pm 0.4567$i$
+- -0.1085 \pm 0.1574$i$
+
+Calculamos los factores de calidad  y las frecuencias propias normalizadas.
+
+Los términos cuadráticos correspondientes a estos pares de polos son: 
+\begin{equation}
+\begin{split}
+&[s^2+0.0344s+0.9876]\\
+&[s^2+0.0997s+0.8060]\\
+&[s^2+0.1553s+0.5121]\\
+&[s^2+0.1957s+0.2182]\\
+&[s^2+0.2170s+0.0365]\\
+\end{split}
+\end{equation}
+
+Par 1:
+\begin{equation}
+[s^2+0.0344s+0.9876]\implies \omega_{01} = \sqrt{0.9876} = 0.9938, Q_1 = \frac{\omega_{01}}{2\alpha} = 28.9203
+\end{equation}
+
+Par 2:
+\begin{equation}
+[s^2+0.0997s+0.8060]\implies \omega_{02} = \sqrt{0.8060} = 0.0.8978, Q_1 = \frac{\omega_{02}}{2\alpha} = 9.0023
+\end{equation}
+
+Par 3:
+\begin{equation}
+[s^2+0.1553s+0.5121]\implies \omega_{03} = \sqrt{0.5121} = 0.7156, Q_1 = \frac{\omega_{03}}{2\alpha} = 4.6070
+\end{equation}
+
+Par 4:
+\begin{equation}
+[s^2+0.1957s+0.2182]\implies \omega_{04} = \sqrt{0.2182} = 0.4671, Q_1 = \frac{\omega_{04}}{2\alpha} = 2.3865
+\end{equation}
+
+Par 5:
+\begin{equation}
+[s^2+0.2170s+0.0365]\implies \omega_{05} = \sqrt{0.0365} = 0.1911, Q_1 = \frac{\omega_{05}}{2\alpha} = 0.8810
+\end{equation}
+
+Los coeficientes han quedado definidos.
+
+* Proponer la función de transferencia del filtro.
+  :PROPERTIES:
+  :CUSTOM_ID: proponer-la-funci-n-de-transferencia-del-filtro
+  :END:
+La función de transferencia a sintetizar tiene la siguiente forma:
+#+NAME: eqn:1
+\begin{equation}
+H(s) = \frac{H_0}{\prod_{i=1}^{4} \left(s^2 + \frac{\omega_{0i}}{Q_i}s+\omega_{oi}^2 \right)}
+\end{equation}
+
+Como n es par debemos calcular $|H(j0)|$ con la ecuación $|H(j0)|^2 = 1/1+\varepsilon^2$.
+\begin{equation}
+|H(j0)|^2 = \frac{1}{1+0.752349^2} \implies |H(j0)| = 0.7991
+\end{equation}
+
+Si sustituimos en la ecuación [[eqn:1]] con $s=j0$ obtenemos:
+\begin{equation}
+H(j0) = \frac{H_0}{\prod_{i=1}^{4} \left(\omega_{oi}^2 \right)} = 0.7991 \implies H_0 = 0.0026
+\end{equation}
+
+Por lo tanto la función de transferencia del filtro de Chebyshev normalizado que cumple las condiciones del diseño es:
+\begin{equation}
+\resizebox{.9\hsize}{!}{$H(s) = \frac{0.002596}{(s^2+0.217s+0.03653)(s^2+0.1957s+0.2182)(s^2+0.1553s+0.5121)(s^2+0.09972s+0.806)(s^2+0.0343s+0.9876)}$}
+\end{equation}
+
+Para obtener la función de transferencia del filtro con la frecuencia de corte deseada, debemos realizar el cambio de variable $s \rightarrow s/\omega_c$. Da como resultado:
+
+Donde $\omega_C = 2 \pi f_c = 2\pi \cdot 1948 = 1.2240\cdot10^4$
+#+NAME: eqn:2
+\begin{equation}
+\resizebox{.9\hsize}{!}{$H(s) = \frac{3.8891\cdot10^5}{(s^2+2665s+5.473\cdot10^6)(s^2+2396s+3.268\cdot10^7)(s^2+1901s+7.671\cdot10^7)(s^2+1221s+1.207\cdot10^8)(s^2+420.6s+1.479\cdot10^8)}$}
+\end{equation}
+
+*Nota:* Dado que todos los cáculos están hechos con MATLAB, la segunda forma de representar la función de transferencia es poco práctica ya que requiere calculo simbólico, a mano es más eficiente y fácil por lo tanto la he representado como una sola función de transferencia.
+
+Adaptamos la función de transferencia [[eqn:2]] a la topología VCVS. El par de polos complejos Pasa-Baja de la topología VCVS viene dado por, cuando hacemos $R_1 = R_4 = R $y $C_2, C_5, R_B = 0$ y $R_A = \infty$ (Filtro Sallem Key):
+
+\begin{equation}
+\frac{E_0(s)}{E_i(s)} = \frac{\frac{1}{R^2C_2 C_5}}{s^2+(\frac{2}{RC_2})s+\frac{1}{R^2 C_2 C_5}}
+\end{equation}
+Se considera R_1 = R_4 = 10000\Omega.
++ Producto 1:
+  + $C_2 = 475.53nF$
+  + $C_5 = 142.14pF$
++ Producto 2:
+  + $C_2 = 163.86nF$
+  + $C_5 = 505.46pF$
++ Producto 3:
+  + $C_2 = 105.20nF$
+  + $C_5 = 1.2391nF$
++ Producto 4:
+  + $C_2 = 83.488nF$
+  + $C_5 = 3.6647nF$
++ Producto 5:
+  + $C_2 = 75.316nF$
+  + $C_5 = 24.259nF$
+  
+* Proponer un circuito que sintetice la función de transferencia del filtro.
+  :PROPERTIES:
+  :CUSTOM_ID: proponer-un-circuito-que-sintetice-la-funci-n-de-transferencia-del-filtro
+  :END:
+Para la síntesis del circuito he intentado normalizar los condensadores, redondear decimales y ligeras modificaciones en la parte decimal, realmente la implementación de este filtro de forma analógica podría ser un verdadero reto ¿Cómo conseguimos 475.53nF? ese 0.53nF es todo un reto por lo tanto un ajuste fino manual en el simulador es conveniente.
+
+Por cada par de polos necesito un amplificador, en total usaré 2 amplificadores TL084,visualmente son 5 pero el TL084 es amplificador operacional cuádruple, también es de bajo consumo, alta frecuencia y el ruido que puedo producir por tensiones es mínimo entre 0.1 y 10 Hz, es perfecto para un filtro.
+\begin{figure}[H]
+\centering
+\includegraphics[scale=1]{schematic_filtro.pdf}
+\caption{Esquemático de filtro Chebyshev Pasa Baja de orden 10.}
+\end{figure}
+
+Los resultados quedarán perfectos si corregimos los valores de las resistencias de entrada restando los valores de la impedancia de salida de la fuente y de la impedancia de salida de los operacionales, no es trivial el cálculo por eso no he hecho el análisis ya que requiere un análisis paramétrico.
+* Verificar mediante simulación que el circuito cumple las condiciones establecidas.
+  :PROPERTIES:
+  :CUSTOM_ID: verificar-mediante-simulaci-n-que-el-circuito-cumple-las-condiciones-establecidas
+  :END:
+** Simulaciones no compensadas
+   :PROPERTIES:
+   :CUSTOM_ID: simulaciones-no-compensadas
+   :END:
+#+NAME: eqn:3
+\begin{figure}[H]
+\centering
+\includegraphics[scale=0.4]{respuesta_en_frecuencia.pdf}
+\caption{Barrido en frecuencia}
+\end{figure}
+
+Como podemos ver en [[eqn:3]] hay 5 mínimos y 5 máximos, los valores en los mínimos, al igual que en los mínimos se mantienen uniformes.
+
+#+NAME: eqn:4
+\begin{figure}[H]
+\centering
+\includegraphics[scale=0.4]{bode_plot.pdf}
+\caption{Módulo de la función de transferencia.}
+\end{figure}
+
+
+\begin{figure}[H]
+\centering
+\includegraphics[scale=0.4]{fase_bode_plot.pdf}
+\caption{Fase de la función de transferencia.}
+\end{figure}
+
+** Simulaciones compensadas
+   :PROPERTIES:
+   :CUSTOM_ID: simulaciones-compensadas
+   :END:
+\begin{figure}[H]
+\centering
+\includegraphics[scale=0.4]{respuesta_en_frecuencia_compensada.pdf}
+\caption{Barrido en frecuencia compensado.}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[scale=0.4]{bode_plot_compensada.pdf}
+\caption{Módulo compensado de la función de transferencia.}
+\end{figure}
+
+La pendiente es aproximadamente 200db/decada y a 2342 Hz hay una atenuación de -46.617, más de lo que esperábamos, cumple los criterios de diseño.
+
+\begin{figure}[H]
+\centering
+\includegraphics[scale=0.4]{fase_bode_plot_compensada.pdf}
+\caption{Fase compensada de la función de transferencia.}
+\end{figure}
+
+El desplazamiento de fase es de -800 grados en la frecuencia de corte. 
+
+* Código de matlab usado
+  :PROPERTIES:
+  :CUSTOM_ID: c-digo-de-matlab-usado
+  :END:
+\begin{lstlisting}
+%Titulo: Filtro de Chebyshev Pasa Baja
+%Autor: Jorge Benavides M.
+%%Calculo del factor de rizado para una banda pasante en dB:
+clc
+DNI = 948;
+f_c = 1948;
+f_r = 2348;
+db = 1.948;
+db_a = 44.48;
+
+syms epsilon
+rizado = solve(10^(db/20) == sqrt(1+epsilon^2));
+rizado = rizado(find(rizado>0));
+fprintf('El factor de rizado es: %f\n',double(rizado))
+%%Atenuacion de A
+atenuacion_a = 10^(db_a/20);
+fprintf('Atenuacion A: %f\n',double(atenuacion_a))
+%Orden del filtro
+%Como lo elevo al cuadrado, me sirven los dos valores y no tengo que
+%preocuparme por el signo
+g = double(sqrt((atenuacion_a(1)^2-1)/(rizado(1)^2)));
+num =log(g+sqrt(g^2-1));
+dem =log(((2*pi*f_r)/(2*pi*f_c))+sqrt((((2*pi*f_r)/(2*pi*f_c))^2-1)));
+num/dem
+orden_filtro = ceil(num/dem)
+%Coeficiente mu
+mu = double(rizado(1)^(-1)+sqrt(rizado(1)^(-2)+1))
+%Semieje menor
+a = (mu^(1/orden_filtro)-mu^(-1/orden_filtro))/2
+%Semieje mayor
+b = (mu^(1/orden_filtro)+mu^(-1/orden_filtro))/2
+%Los polos estan ubicados en las posiciones
+polos = [];
+for k = 0:orden_filtro-1
+polo = -a*sin((pi/(2*orden_filtro))*(1+2*k))+i*b*cos((pi/(2*orden_filtro))*(1+2*k));
+polos = [polos;polo];
+end
+polos
+if rem(orden_filtro,2) == 0
+    pares = [];
+    frecuencias = [];
+    calidades = [];
+    for k = 1:orden_filtro/2
+        par = [1 -1*2*real(polos(k)) real(polos(k))^2+imag(polos(k))^2];
+        pares = [pares;par];   
+    end
+    pares
+    
+    for k = 1:orden_filtro/2
+        frecuencia = sqrt(real(polos(k))^2+imag(polos(k))^2);
+        frecuencias = [frecuencias;frecuencia];
+    end
+    frecuencias
+    for k = 1:orden_filtro/2
+        calidad = frecuencias(k)/(-1*2*(real(polos(k))));
+        calidades = [calidades; calidad];
+    end
+    calidades   
+else
+    pares = [];
+    frecuencias = [];
+    calidades = [];
+    for k = 1:(orden_filtro/2)+1
+        par = [1 -1*2*real(polos(k)) real(polos(k))^2+imag(polos(k))^2];
+        pares = [pares;par];   
+    end
+    pares
+    
+    for k = 1:(orden_filtro/2)+1
+        frecuencia = sqrt(real(polos(k))^2+imag(polos(k))^2);
+        frecuencias = [frecuencias;frecuencia];
+    end
+    frecuencias
+    for k = 1:(orden_filtro/2)+1
+        calidad = frecuencias(k)/(-1*2*(real(polos(k))));
+        calidades = [calidades; calidad];
+    end
+    calidades
+end
+ 
+if rem(orden_filtro,2) == 0
+    H_j0 = double(sqrt(1/(1+rizado^2)));
+    H_j0
+    for k = 1:orden_filtro/2
+    H_j0 = H_j0 * (frecuencias(k))^2;
+    end
+    H_0 = H_j0
+else
+    H_j0 = 1;
+    for k = 1:(orden_filtro/2)+1
+    H_j0 = H_j0 * (frecuencias(k))^2;
+    end
+    H_0 = H_j0
+end
+sys = 1;
+if rem(orden_filtro,2) == 0
+    for k = 1:(orden_filtro/2)
+        sys = sys*tf([1],[1 frecuencias(k)/calidades(k) frecuencias(k)^2]);
+    end
+    sys = sys*H_0;
+    zpk(sys)
+else
+    for k = 1:(orden_filtro/2)+1
+        if (k == (orden_filtro/2)+0.5)
+            sys = sys*tf([1],[1 frecuencias(k)]);    
+        else
+            sys = sys*tf([1],[1 frecuencias(k)/calidades(k) frecuencias(k)^2]);
+        end
+    end
+    sys = sys*H_0;
+    zpk(sys)
+end
+w_c = 2*pi*f_c;
+sys = 1;
+if rem(orden_filtro,2) == 0
+    for k = 1:(orden_filtro/2)
+        sys = sys*tf([1],[1  ((frecuencias(k)*w_c)/(calidades(k))) (frecuencias(k)^2*w_c^2)]);
+    end
+    sys = sys*H_0*w_c^2;
+    zpk(sys)
+else
+    for k = 1:(orden_filtro/2)+1
+        if (k == (orden_filtro/2)+0.5)
+            sys = sys*tf([w_c^2],[1 frecuencias(k)*w_c]);    
+        else
+            sys = sys*tf([1],[1  ((frecuencias(k)*w_c)/(calidades(k))) (frecuencias(k)^2*w_c^2)]);
+        end
+    end
+    sys = sys*H_0;
+    zpk(sys)
+end
+[Z,P,K] = zpkdata(sys,'v')
+R = 1e4;
+if rem(orden_filtro,2) == 0
+    for k = 1:2:(orden_filtro)
+    polinomio = poly([P(k) P(k+1)]);
+    C2 = 2/(R*polinomio(2))
+    C5 = 1/(R^2*C2*polinomio(3))
+    end
+else
+    ugly_pole = P(find(imag(P)==0));
+    P(find(imag(P) == 0)) = [];
+    for k = 1:2:(orden_filtro)-1
+    polinomio = poly([P(k) P(k+1)]);
+    C2 = 2/(R*polinomio(2))
+    C5 = 1/(R^2*C2*polinomio(3))
+    end
+    ugly_pole = -1*ugly_pole
+    syms C
+    R = 10000;
+    C = double(solve(ugly_pole == 1/(R*C)))
+    syms R2
+    R1 = 10000;
+    R2 = double(solve(ugly_pole == (1/(R*C))*(1+(R2/R1))))
+end
+\end{lstlisting}

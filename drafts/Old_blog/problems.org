@@ -1,0 +1,24 @@
+#+HTML_DOCTYPE:html5
+#+LANGUAGE:es
+#+OPTIONS: toc:nil
+#+HTML_CONTAINER: div
+#+HTML_HEAD: <link rel="stylesheet" href="index.css">
+#+HTML_HEAD_EXTRA:<link href="https://fonts.googleapis.com/css?family=Fredoka+One&display=swap" rel="stylesheet"> 
+#+HTML_HEAD_EXTRA:<link href="https://fonts.googleapis.com/css?family=Bungee+Inline|Fredoka+One&display=swap" rel="stylesheet">
+#+HTML_HEAD_EXTRA:<link href="https://fonts.googleapis.com/css?family=Bungee+Inline|Flamenco|Fredoka+One&display=swap" rel="stylesheet">
+#+HTML_HEAD_EXTRA:<title>PLOCK</title>
+#+TITLE: 
+#+OPTIONS: num:nil
+
+
+* Problemas
+  /Básicamente apunto los problemas que me voy encontrando en mi
+  trabajo diario y como les he dado solución/
+** Website
+  - Separar el CSS del html orginal
+  - ¿Cómo editaré el CSS para que todo este sitio funcione?
+    + Lo he solucionado, he aprendido a crear mis etiquetas, el
+      clásico "class".\\
+      =#+begin_etiqueta=\\
+      =*Inserte texto aquí*=\\
+      =#end_etiqueta=

@@ -1,0 +1,14 @@
+#+INCLUDE: ./../header.org
+#+HTML_LINK_HOME: /
+#+HTML_LINK_UP: ./sites/blog.html
+
+* Fuga de Cerebros
+:DETAILS:
+:DIRECTOR: Fernando González Molina
+:GENRE: Comedia
+:LANGUAGE: español
+:RATE: 6
+:DATE: [2021-07-02 vi.]
+:VIEWS: 1
+:END:
+No pienso verme "la segunda parte", al menos no en un futuro próximo, la película no está mal, tiene momentos graciosos ya que hace uso de un humor poco usual, es decir poco escatológico (aprende algo *Adam Sandler*), por destacar la escena de la morgue y todo el malentendido de la necrefolia me pareción un puntazo; la segunda parte por lo que he leído en la sinopsis, los personajes y el tráiler es muy parecida a la primera.

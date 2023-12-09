@@ -1,0 +1,49 @@
+#+TITLE: Mastermind
+#+DATE: [2021-05-19 mi. 18:00]
+#+AUTHOR: Jorge Benavides M.
+#+EMAIL: rhyloot@gmail.com
+#+OPTIONS: ^:nil
+#+OPTIONS: num:nil
+#+SETUPFILE: ~/projects/blog/public_html/org-html-themes/org/theme-readtheorg-local.setup
+#+TODO: ADDED CHANGED DEPRECATED REMOVED FIXED SECURITY UNRELEASED
+
+* Mastermind
+  :PROPERTIES:
+  :CUSTOM_ID: mastermind
+  :END:
+
+[[file:./../images/WIN95.png][file:./../images/WIN95.png]]
+
+** ¿Qué es Mastermind?
+   :PROPERTIES:
+   :CUSTOM_ID: qu-es-mastermind
+   :END:
+Es un juego de mesa para dos jugadores que fue popular en los 70.
+El objetivo es *adivinar* la combinación que el jugador contrario ha pensado.
+
+** Sobre el proyecto
+   :PROPERTIES:
+   :CUSTOM_ID: sobre-el-proyecto
+   :END:
+Lo hice durante el curso 2018-2019 para una asignatura de programación, teníamos que aprender sobre arrays y era la mejor forma de entenderlos.
+
+** Screenshots
+   :PROPERTIES:
+   :CUSTOM_ID: screenshots
+   :END:
+[[file:./../images/mastermind.png][file:./../images/mastermind.png]]
+[[file:./../images/mastermind_game_easy.png][file:./../images/mastermind_game_easy.png]]
+
+** Links
+   :PROPERTIES:
+   :CUSTOM_ID: links
+   :END:
+{{<github "https://github.com/rhyloo/Mastermind">}}
+
+**** Notes
+The image was generated with the [<ins>**Death
+Generator**</ins>](https://github.com/foone/SierraDeathGenerator),
+this creates GAME OVER/YOU DIED screens as seen in Sierra Online's SCI
+engine, as well as lots of other fake videogame screenshots from many,
+many games.
+

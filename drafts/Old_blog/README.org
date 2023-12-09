@@ -1,0 +1,64 @@
+* (+Rhyloo+)Plock
+/Aún cuando este repositorio tiene como nombre rhyloo, ya que es el
+nickname que uso como tal el repositorio se llama "PLOCK" y el creador
+es "Rhyloo"/
+** Presentaciones ([[file:../emacs/Org/agenda.org][Cambiar el nombre del repositorio]])
+[[https://revealjs.com/#/][Reveal .js]] es "The html presentation framewok" o eso dice su página,
+lo vi en un tutorial de emacs sobre presentaciones([[https://www.youtube.com/watch?v=bRoSpJ23Kzk&list=PL9KxKa8NpFxIcNQa9js7dQQIHc81b0-Xg&index=51][Using Emacs - Episode
+50 - presentations]]), me parece que podría ser útil para presentaciones
+de la universidad o una página web de algún proyecto,ya que la mayor
+parte por no decir todo lo hace Reveal .js tú solo tienes que escribir
+el archivo .org.
+*** Contenido:
++ [2019-08-30 vi. 13:41] La presentación no tiene nada relevante, un
+  saludo de broma a mis amigos y ya está.
+**** TODO Modificar la presentación a modo plantilla, posibles trabajos en la universidad
+*** Modificaciones:
++ Cambio de tema: Por defecto viene con el tema dark, ahora tiene el
+  tema Sky.
+
+** Sitio web
+
+** LaTeX
+   - Lo uso principalmente para la elaboración de documentos en
+     los que debo incluir muchas ecuaciones (su principal función).
+   - Hasta ahora su integración en mi día a día se basaba en artículos
+     del instituto en el que tenía que presentar demostraciones
+     matemáticas y algún que otro ejercicio gráfico con Asymptote
+     (cabe recalcar que el uso de LaTeX no era parte de la clase).
+   - En al universidad por he visto un uso limitado a 6 trabajos de la
+     asignatura de empresa y dos informes de laboratorio de física,
+     los apuntes son algo tediosos para pasarlos al ordenador, no
+     obstante espero mejorarlo este curso con este entorno.
+** Emacs
+   - Permite hacer todo lo que te puedas imaginar, edición, trabajo,
+     optimización del tiempo, es tu mejor aliado al momenot de
+     organizarte.
+   - Empecé su uso hace un año pero lo he dejado en el camino, lo he
+     retomado para completar el entorno de trabajo/work-flow.
+     - Paquetes que tengo actualmente:
+       - pdf-tools
+       - Auctex
+       - mediawiki (ediciones en Wikiversidad)
+   - Espero que sea un gran aliado durante este curso, para la
+     elaboración de apuntes, organización y otros trabajos.
+** HTML
+   - El trabajo en HTML se reduce a aprender un lenguaje de marcado,
+     me gusta me parece interesante y quiero aprenderlo, mis prácticas
+     se reducen a editar el index.html de este repositorio.
+** CSS
+   - El trabajo realizado en CSS es básicamente por complementar el
+     conocimiento adquirido en HTML ya que el color, las animaciones y
+     todo lo que nos puede proporcionar CSS no tiene límites.
+** Git
+   - Sin comentarios al respecto, hasta ahora había usado la interfaz
+     gráfica pero me parece que para hacer un workflow más eficiente
+     la consola de comando viene mejor por su simplicad y evitar
+     distracciones.
+** Wikiversidad 
+   - El conocimiento debe ser libre para todo el mundo, ser parte de
+     una comunidad poco activa es difícil pero creo que poco a poco
+     este proyecto puede resurgir y convertirse en lo que juró ser.
+
+* Footnotes
+  Readme.org está hecho desde Emacs.
