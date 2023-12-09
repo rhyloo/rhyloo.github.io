@@ -318,7 +318,7 @@ as a communication channel."
 
 (setq org-static-blog-publish-title "Un ingeniero en problemas")
 (setq org-static-blog-publish-url "rhyloo.github.io/")
-(setq org-static-blog-publish-directory "./docs/")
+(setq org-static-blog-publish-directory "./")
 (setq org-static-blog-posts-directory "./posts/")
 (setq org-static-blog-drafts-directory "./drafts/")
 (setq org-export-with-toc nil)
