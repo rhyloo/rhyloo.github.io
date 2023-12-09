@@ -317,7 +317,7 @@ as a communication channel."
 ;; end org-static blog
 
 (setq org-static-blog-publish-title "Un ingeniero en problemas")
-(setq org-static-blog-publish-url "rhyloo.github.io/")
+(setq org-static-blog-publish-url "./")
 (setq org-static-blog-publish-directory "./")
 (setq org-static-blog-posts-directory "./posts/")
 (setq org-static-blog-drafts-directory "./drafts/")
