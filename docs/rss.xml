@@ -3,15 +3,15 @@
 <channel>
   <title>Un ingeniero en problemas</title>
   <description>Un ingeniero en problemas</description>
-  <link>rhyloo.github.io/</link>
-  <lastBuildDate>Sat, 09 Dec 2023 11:19:05 +0000</lastBuildDate>
+  <link>./</link>
+  <lastBuildDate>Sat, 09 Dec 2023 11:25:33 +0000</lastBuildDate>
 <item>
   <title>Test de post</title>
   <description><![CDATA[<p>
 hola como va eso
 </p>
 ]]></description>
-  <link>rhyloo.github.io/2023-12-07-test-de-post.html</link>
+  <link>./2023-12-07-test-de-post.html</link>
   <pubDate>Thu, 07 Dec 2023 22:39:00 +0000</pubDate>
 </item>
 <item>
@@ -199,7 +199,7 @@ library.
 </div>
 </div>
 ]]></description>
-  <link>rhyloo.github.io/about.html</link>
+  <link>./about.html</link>
   <pubDate>Sun, 08 May 2022 00:00:00 +0000</pubDate>
 </item>
 <item>
@@ -458,7 +458,7 @@ A cross-platform audio mex file for Matlab, based on portaudio. I worked on this
 </div>
 </div>
 ]]></description>
-  <link>rhyloo.github.io/projects.html</link>
+  <link>./projects.html</link>
   <pubDate>Wed, 13 Jun 2018 00:00:00 +0000</pubDate>
 </item>
 <item>
@@ -467,7 +467,7 @@ A cross-platform audio mex file for Matlab, based on portaudio. I worked on this
 Hello World!!!
 </p>
 ]]></description>
-  <link>rhyloo.github.io/2017-05-17--hello-world.html</link>
+  <link>./2017-05-17--hello-world.html</link>
   <pubDate>Wed, 17 May 2017 00:00:00 +0000</pubDate>
 </item>
 </channel>
