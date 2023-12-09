@@ -259,7 +259,7 @@ as a communication channel."
 "<?xml version=\"1.0\" encoding=\"utf-8\"?>
 <!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.0 Strict//EN\"
 \"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd\">
-<html xmslns=\"http://www.w3.org/1999/xhtml\" lang=\"en\" xml:lang=\"en\">
+<html xmlns=\"http://www.w3.org/1999/xhtml\" lang=\"en\" xml:lang=\"en\">
 <head>
 <meta http-equiv=\"Content-Type\" content=\"text/html;charset=utf-8\" />
 <link rel=\"alternate\"
@@ -326,7 +326,7 @@ as a communication channel."
 (setq org-static-blog-index-length 1)
 
 (setq org-static-blog-page-header
-"<meta name=\"author\" content=\"Jorge Beanvides\">
+"<meta name=\"author\" content=\"Jorge Benavides\">
 <meta name=\"referrer\" content=\"no-referrer\">
 <link href= \"./static/style.css\" rel=\"stylesheet\" type=\"text/css\" />
 <link rel=\"icon\" href=\"./static/favicon.ico\">
@@ -352,8 +352,7 @@ as a communication channel."
 (setq org-static-blog-page-postamble
 "<div id=\"archive\">
   <a href=\"https://rhyloo.github.io/archive.html\">Other posts</a>
-</div>
-<center><a rel=\"license\" href=\"https://creativecommons.org/licenses/by-sa/3.0/\"><img alt=\"Creative Commons License\" style=\"border-width:0\" src=\"https://i.creativecommons.org/l/by-sa/3.0/88x31.png\" /></a><br /><span xmlns:dct=\"https://purl.org/dc/terms/\" href=\"https://purl.org/dc/dcmitype/Text\" property=\"dct:title\" rel=\"dct:type\">bastibe.de</span> by <a xmlns:cc=\"https://creativecommons.org/ns#\" href=\"https://bastibe.de\" property=\"cc:attributionName\" rel=\"cc:attributionURL\">Bastian Bechtold</a> is licensed under a <a rel=\"license\" href=\"https://creativecommons.org/licenses/by-sa/3.0/\">Creative Commons Attribution-ShareAlike 3.0 Unported License</a>.</center>")
+</div>")
 
 (setq org-static-blog-post-comments
 "<div id=\"hyvor-talk-view\"></div>
