@@ -1,0 +1,10 @@
+#+HUGO_SECTION: ./
+#+TITLE: index
+#+HUGO_AUTO_SET_LASTMOD: nil
+#+HUGO_WEIGHT: 1
+#+HUGO_CUSTOM_FRONT_MATTER: :menu main :authorbox false
+
+
+* Test de sección index 
+
+Prueba de blog para Jorge benavides 

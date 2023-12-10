@@ -1,4 +1,0 @@
-#+Title: Hello World!
-#+Date: <2017-05-17 Mi>
-
-Hello World!!!

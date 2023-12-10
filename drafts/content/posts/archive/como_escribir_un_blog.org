@@ -1,5 +1,0 @@
-https://opensource.com/business/15/5/write-better-docs
-https://www.writethedocs.org/guide/writing/beginners-guide-to-docs/
-https://www.sohamkamani.com/blog/how-to-write-good-documentation/
-https://www.freecodecamp.org/news/how-to-write-good-documentation/
-https://guides.lib.berkeley.edu/how-to-write-good-documentation

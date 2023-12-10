@@ -1,0 +1,10 @@
+#+HUGO_SECTION: ./
+#+TITLE: Test
+#+HUGO_AUTO_SET_LASTMOD: nil
+#+HUGO_WEIGHT: 2
+#+HUGO_CUSTOM_FRONT_MATTER: :menu main :sidebar false :authorbox false
+
+* Test de sección 
+
+This gets created in ~<HUGO_BASE_DIR>/content/articles/~.
+sasaas

@@ -1,0 +1,10 @@
+github.com/adityatelange/hugo-PaperMod v0.0.0-20231125123631-b288ede80cbd h1:p8a6Mp9l7T3Ak+ai1TRTysTxoKGwBbvVIlo6it0oGNo=
+github.com/adityatelange/hugo-PaperMod v0.0.0-20231125123631-b288ede80cbd/go.mod h1:HCHxNMKYdGafUYjVV3ICiAqznZK2yH0iI53jqcDFDdQ=
+github.com/appernetic/hugo-bootstrap-premium v0.0.0-20190404174249-84104d145f84 h1:S0P2ntO72tZqdycz05fbAqWy5BLEXHRGxkq6nnd9o84=
+github.com/appernetic/hugo-bootstrap-premium v0.0.0-20190404174249-84104d145f84/go.mod h1:TuPIT45PKbu4sbBBTFJbRUWi26USJhVpepJ6SYGCd14=
+github.com/canhtran/maverick v0.0.0-20230114060933-267086f1f4bc h1:EwYLNT6OMCGJ2W0UYI0kZaCPlDQZH6vyhCu6zo7JwO4=
+github.com/canhtran/maverick v0.0.0-20230114060933-267086f1f4bc/go.mod h1:YuK6DnnmF0p8Cf5oZ4IWxZ463PtAfOlUy90d1tfCAKU=
+github.com/hugo-fixit/FixIt v0.2.18 h1:P0xFAI/r5k4Tiuhn4AzHPyVS7EBDQ9Hm8XYH/WUJ7xg=
+github.com/hugo-fixit/FixIt v0.2.18/go.mod h1:3XIRedrqakO7/a4ZnhE46haMRF8HgsT0N0B5j5D2iRU=
+github.com/vimux/mainroad v0.0.0-20231128132217-4a730e9c6c8d h1:FMVwiYDNzyylbMxZqms1BC2HzsJPU9sX5qPjDbli0+0=
+github.com/vimux/mainroad v0.0.0-20231128132217-4a730e9c6c8d/go.mod h1:Gk9iXsARNmAg+2szyzue3lvbLsvJQPNmKqOrbSjYCPM=

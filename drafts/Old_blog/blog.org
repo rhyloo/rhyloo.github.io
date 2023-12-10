@@ -1,9 +1,0 @@
-* Blog
-  * Un nuevo comienzo [2019-08-29 ju. 11:28]
-
-    He emepazado con emacs otra vez, creo que es porque me gustar
-    procastinar con estilo ya que tengo que estudiar para mis exámenes
-    de dibujo y física II, (dato de vital importancia: lo haré mañana,
-    hoy terminaré de saciar mi necesidad de usar emacs), en fin que me
-    voy las ramas, estoy montando mi sitio web org-mode espero que
-    funcione.

@@ -1,0 +1,12 @@
+
+* DONE My first post                                        :tag1:@category1:
+:PROPERTIES:
+:EXPORT_FILE_NAME: my-first-post
+:END:
+This is my post body
+
+* DONE My second post                                       :tag1:@category1:
+:PROPERTIES:
+:EXPORT_FILE_NAME: my-second-post
+:END:
+This is my post body
