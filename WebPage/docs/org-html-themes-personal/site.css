@@ -1,0 +1,388 @@
+:root {
+    /* Code */
+    --code-bg: #f5ebe1;
+    --code-lang-bg: lightgreen;
+    --code-border-color: purple
+    --code-height: 125ex;
+
+    /*Body*/
+    --body-color: black;
+    --body-bg: whitesmoke;
+    --landscape-body-width: 810px;
+    --landscape-sidebar-width: 280px;
+
+    /*Title*/
+    --title-size-font: 250%;
+    --title-color:black;
+    --title-font-weight: 600;
+
+    /*TOC*/
+    --toc-bg: white;
+
+    font-family: "Source Serif Pro", serif;
+    /* otherwise scrollbar impacts the content */
+    overflow-y: scroll;
+    /* From copy  */
+    --link-color: #0000EE;
+    --visited-link-color:  #0000ee;
+    --width: 60rem; /* todo rename to main-width?? */
+    --aside-width: 20rem;
+}
+
+html {
+  font-family: "Source Serif Pro", serif;
+  /* otherwise scrollbar impacts the content */
+  overflow-y: scroll;
+}
+
+#settings {
+  z-index: -1;
+}
+
+#bottomfooter {
+  border-top: 0.1rem solid;
+  padding-top: 1em;
+  font-size: 0.75em;
+
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 0.5em;
+}
+
+/* now, post-specific stuff */
+
+time {
+    font-family: "Lucida Console", Monaco, monospace;
+}
+
+.post-tag + .post-tag {
+    margin-left: 0.5em;
+}
+
+.post-tag {
+  font-size: 0.95em;
+  font-family: "Lucida Console", Monaco, monospace;
+
+  /* https://stackoverflow.com/a/12362315/706389
+     somewhat hacky way to prevent breaking tags on hyphens...
+   */
+  white-space: nowrap;
+}
+
+.tag-active {
+  color: #a51;
+  font-weight: bold;
+}
+
+.tag-inactive {
+  color: black;
+}
+
+#post-title h1 {
+  /* default margin is too large */
+  margin-bottom: 0em;
+}
+
+#post-title .summary {
+  /* ???  */
+  -webkit-margin-before:0em;
+  -webkit-margin-after:0em;
+
+  color: #a9a9a9;
+  font-size: 1.5em;
+}
+
+
+
+
+
+
+
+article aside.sidenote {
+  /* todo highlight sidenotes maybe? */
+  /* to match with corresponding <p> */
+  /* TODO is this really necessary?? */
+  display : var(--sidenote-display);
+
+  /* makes it work in conjucion with position: relative in article */
+  position: var(--sidenote-position);
+  left    : var(--sidenote-left);
+  width   : var(--sidenote-width);
+
+  padding-left : 2em; /* for horizontal padding between text and note */
+  padding-right: 1em; /* so it's not too close to the screen edge */
+  box-sizing: border-box; /* without it doesn't wrap around?? */
+
+  font-size: 0.8em;
+  color: gray;
+}
+
+/* TODO not sure if article should contain footer and comments?? */
+
+a.headerlink {
+    text-decoration: none;
+    color: lightgrey;
+}
+h1:hover > a.headerlink,
+h2:hover > a.headerlink,
+h3:hover > a.headerlink,
+h4:hover > a.headerlink,
+h5:hover > a.headerlink,
+h6:hover > a.headerlink {
+    color: #c60f0f
+}
+/*
+a.headerlink:hover {
+    background-color: #c60f0f;
+    color: white;
+}
+*/
+/* */
+
+/* highlight inline code produced by org-mode */
+/* TODO support for ipynb as well? */
+code.inline {
+    color: green;
+}
+a code.inline {
+    /* TODO not sure about this one... */
+    text-decoration: underline;
+}
+/* end */
+
+
+details summary {
+    cursor: pointer;
+}
+
+
+/* compile-org sets these  */
+a.link-down:after {
+    content: "⤵";
+}
+
+a.link-up:after {
+    content: "⤴";
+}
+/* end */
+
+
+#post-footer time {
+  color: #555;
+}
+
+#isso-root .avatar {
+  display: none;
+}
+
+.debug-usage {
+    animation:debug 0.8s infinite;
+}
+
+@keyframes debug{
+    0%{     background: black; color: #f00;    }
+    49%{    background: black; color: transparent; }
+    50%{    background: black; color: transparent; }
+    99%{    background: black; color: transparent;  }
+    100%{   background: black; color: #f00;    }
+}
+
+/* 80 = --width + --aside-width */
+@media (min-width: 80rem) {
+    body {
+        width: var(--width);
+        /* auto margin centers the content. not sure if it's the right way to do it... */
+        margin-left:  auto;
+        margin-right: auto;
+        text-align: justify;
+    }
+
+    a.headerlink {
+        margin-left: -1em;
+    }
+}
+
+/* 80 = --width + --aside-width */
+@media (min-width: 80rem) {
+  /* when wide enough, display as a side note */
+  article {
+    --sidenote-display  : inline;
+
+    /* if wide enough, display at a fixed position on the right */
+    position: relative;
+    --sidenote-position : absolute;
+    --sidenote-left     : var(--width);
+
+    /* set width, otherwise they wrap at the word boundary */
+    --sidenote-width    : var(--aside-width);
+  }
+
+  .before-aside {
+    /* hacky way of forcing aside to display on the same line....
+     * without it, it displays on the same line as the last
+     * (can see on multiline paragraphs). probably can be fixed in a better way?
+     * e.g. can reorder aside and the preceding element.. but this is a bit misleading then
+     */
+    display: inline-block;
+  }
+  li .before-aside {
+    /* for li, that breaks the list marker alignment...  I guess that's a relatively small price to pay for now... */
+    display: initial;
+  }
+}
+
+@media (max-width: 80rem) {
+  article {
+    --sidenote-display  : block;
+  }
+}
+
+a:link,a:visited{
+  color: #2a5db0;
+    /* default is underline... dunno, feels pretty distracting */
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3 {
+ /* font-family:"Open Sans","Deja Vu Sans", Georgia, sans; */
+ font-weight:600;
+ text-decoration:none;
+}
+
+h1 {
+    font-size: 2rem;
+    text-align: center;
+}
+
+h2 {
+    font-size: 1.7rem;
+ text-align: center;
+}
+
+h3 {
+ /* text-align: center; */
+  font-size: 1.4rem;
+}
+
+h4 {
+  font-size: 1rem;
+}
+
+h1 a,
+h2 a,
+h3 a {
+ text-decoration:none;
+}
+
+b,
+strong {
+ font-weight:700;
+}
+
+.subheading {
+text-align: center;
+color: gray;
+  margin-top: -20px;
+  margin-bottom: 20px;
+}
+
+figure {
+text-align: center;
+}
+img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+span.done {
+    display: flex;
+    justify-content: space-between;
+}
+
+span.todo {
+    display: flex;
+    justify-content: space-between;
+}
+
+.timestamp {
+    color: blue;
+}
+.timestamp-wrapper {
+    font-size: 0.75em;
+    font-family: "Lucida Console", Monaco, monospace;
+}
+#outline-container-orgf518ae7 div.outline-text-3{
+display: grid;
+grid-template-columns: 28em auto;
+grid-template-rows: auto auto;
+}
+
+#outline-container-orgf518ae7 div.outline-text-3* p:first-child{
+  grid-column: 1 / 1;
+}
+
+.movies-done{
+ background-color: whitesmoke;
+}
+.movies-done ul{
+  list-style-type: none;
+  display: inline;
+  /* justify-content: justify; */
+
+}
+
+.movies-done ul li{
+    margin: 0.2em;
+    list-style-type: none;
+    font-family: "Source Serif Pro", serif;
+    display: inline-block;
+    /* align-items: justify; */
+    /* justify-content: justify; */
+    font-weight: 850;
+}
+
+.enlaces-de-interes{
+    background-color: #ced;
+}
+.enlaces-de-interes ul{
+  list-style-type: none;
+  display: inline;
+  /* justify-content: justify; */
+
+}
+
+.enlaces-de-interes ul li{
+    margin: 0.2em;
+    list-style-type: none;
+    font-family: "Source Serif Pro", serif;
+    display: inline-block;
+    /* align-items: justify; */
+    /* justify-content: justify; */
+    font-weight: 350;
+}
+
+.enlaces-de-wikipedia{
+    background-color: #ffe3003d;
+}
+.enlaces-de-wikipedia ul{
+  list-style-type: none;
+  display: inline;
+  /* justify-content: justify; */
+
+}
+
+.enlaces-de-wikipedia ul li{
+    margin: 0.2em;
+    list-style-type: none;
+    font-family: "Source Serif Pro", serif;
+    display: inline-block;
+    /* align-items: justify; */
+    /* justify-content: justify; */
+    font-weight: 350;
+}
+
+td.org-left{
+text-align: center;
+}

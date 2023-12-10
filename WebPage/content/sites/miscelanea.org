@@ -1,0 +1,46 @@
+#+INCLUDE: ./../header.org
+* Miscelánea
+** Frases
+#+attr_html: :align center
+| Frases en latin                              | Traducción                                              |
+|----------------------------------------------+---------------------------------------------------------|
+| *Excusatio non petita, accusatio manifesta*  | Excusa no pedida, acusación manifiesta.                 |
+| *Quod erat demonstrandum*                    | Lo que se quería demostrar.                             |
+| *Carpe diem*                                 | Aprovecha el día.                                       |
+| *Alea jacta est*                             | La suerte está echada.                                  |
+| *Quod licet Iovi, non licet bovi*            | Lo que es lícito para Júpiter, no es lícito para todos. |
+| *Aliquando et insanire iucundum est*         | De vez en cuando es agradable hacer una tontería        |
+| *Quidquid latifne dictum sit, altum videtur* | Cualquier cosadicha en latín suena profunda.            |
+| *Se non è vero, è ben trovato*               | Si no es verdad, está bien compuesto.                   |
+** Sitios Webs de interés
+#+begin_enlaces-de-interes
+- [[https://www.gnu.org/software/emacs/][EMACS]]
+- [[https://orgmode.org/][Org-mode]]
+- [[https://archive.org/][Archive.org]]
+- [[https://www.protectedtext.com/][ProtectedText]]
+- [[https://es.wikiversity.org/wiki/Portada][Wikiversidad]]
+- [[https://www.guerrillamail.com][Guerrillamail]]
+- [[https://www.gnu.org/philosophy/free-sw.html][Software libre]]
+- [[https://sindominio.net/biblioweb/telematica/mentor.html][Manifiesto hacker]]
+- [[https://sindominio.net/biblioweb/telematica/hacker-como.html][¿Cómo ser un hacker?]]
+- [[https://biblioweb.sindominio.net/telematica/][BiblioWeb de SinDominio]]
+- [[https://postmeritocracy.org][El Manifiesto Pos-Meritocracia]]
+- [[https://archive.org/details/GuerillaOpenAccessManifesto][Guerilla Open Access Manifesto]]
+- [[https://www.se.rit.edu/~tabeec/RIT_441/Resources_files/How%20To%20Write%20Unmaintainable%20Code.pdf][How To Write Unmaintainable Code]]
+- [[https://es.wikipedia.org/wiki/Sci-Hub][Sci-hub - Artículos sin suscripción]]
+- [[http://97cosas.com/programador/][97 cosas que todo programador debería saber]]
+- [[https://sindominio.net/ayuda/preguntas-inteligentes.html][¿Cómo hacer preguntas de manera inteligente?]]
+- [[https://www.ucm.es/oficina-de-software-libre/publicaciones][Publicaciones - Oficina de Software libre Complutense]]
+#+end_enlaces-de-interes
+** Artículos de wikipedia
+#+begin_enlaces-de-wikipedia
++ [[https://es.wikipedia.org/wiki/Dieter_Rams][Interesantes principios del buen diseño según el diseñador alemán Dieter Rams]]
++ [[https://es.wikipedia.org/wiki/Fata_Morgana][Fata Morgana]]
++ [[https://es.wikipedia.org/wiki/Theorema_egregium][Theorema egregium]]
++ [[https://es.wikipedia.org/wiki/No_te_repitas][No te repitas]]
++ [[https://es.wikipedia.org/wiki/Mitoman%C3%ADa][Mitomanía]]
++ [[https://es.wikipedia.org/wiki/Efecto_Dunning-Kruger][Efecto Dunning-Kruger]]
+#+end_enlaces-de-wikipedia
+** Vídeos
+
++ [[https://www.youtube.com/watch?v=xH_sltxrHok][Ara Malikian versiona la canción griega Misirlou]]

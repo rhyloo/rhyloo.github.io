@@ -1,0 +1,134 @@
+#+OPTIONS:   TeX:t LaTeX:t skip:nil d:nil todo:t pri:nil tags:not-in-toc author:nil date:nil
+#+OPTIONS: H:1
+#+startup: beamer
+#+LaTeX_CLASS: beamer
+#+LaTeX_CLASS_OPTIONS: [14pt]
+#+BEAMER_FRAME_LEVEL: 1
+#+LATEX_HEADER: \input{header.tex}
+
+Here's another technique that makes a simple photo book. I wanted to
+make an 8-page book that could be printed 4 pages to a 8.5"x14" sheet
+(duplex, flip along the short edge), with a final page size of
+7"x4.25".
+
+Sample with my own photos:
+
+[[https://github.com/sachac/book-7x4.25-photobook/raw/master/out.jpg]]
+
+* Prerequisites
+
+- ImageMagick
+- Texlive (probably)
+- latex-beamer
+- Org Mode and Emacs
+
+* Links
+
+- [[https://github.com/sachac/book-7x4.25-photobook/raw/master/print.pdf][Placeholder PDF Ready for printing on 8.5"x14" paper in landscape mode, duplex, *short edge* flip]]
+- [[https://github.com/sachac/book-7x4.25-photobook][Code on Github]]
+
+* Process
+
+We can define the labels and their captions in a named table like this:
+
+#+NAME: story
+| Let's Go for a Walk |                 |
+|                     |                 |
+| Caption for photo 1 | placeholder.png |
+| Caption for photo 2 | placeholder.png |
+| Caption for photo 3 | placeholder.png |
+| Caption for photo 4 | placeholder.png |
+| Caption for photo 5 | placeholder.png |
+|                     |                 |
+
+Note that the first page is row #1 this time, instead of starting with
+the last page.
+
+Then we generate the LaTeX code with some Emacs Lisp, like so:
+
+#+begin_src org
+,#+begin_src emacs-lisp :var pages=story :results value latex :exports results
+(mapconcat (lambda (row) (format "\\graphicframe{%s}{%s}" (cadr row) (org-export-string-as (car row) 'latex t))) pages "\n")
+,#+end_src
+#+end_src
+
+I put that in a subtree for easier exporting with =C-c C-e C-s l b= (=org-export-dispatch=, subtree, LaTeX, Beamer).
+
+* Story
+
+# #+begin_src emacs-lisp :var pages=story :results value latex :exports results
+# #+begin_src emacs-lisp :var pages=story :results value :exports results :mkdirp yes :tangle /tmp/test.txt
+
+
+
+
+# #+begin_src emacs-lisp :var pages=story :results code :results_switches ":exports both :mkdirp yes :tangle /tmp/test.txt"
+
+#+begin_src emacs-lisp :var pages=story :results value file :exports both :file test.html
+(mapconcat
+ (lambda
+   (row)
+   ;; (print row)
+   (print pages)
+   (format "%s - %s" (cadr row) (org-export-string-as (car row) 'html nil))) pages "\n")
+
+#+end_src
+
+#+RESULTS:
+[[file:test.html]]
+
+* Process
+
+** Set up Org Mode export to Beamer
+
+#+begin_src emacs-lisp
+(eval-after-load "ox-latex"
+  ;; update the list of LaTeX classes and associated header (encoding, etc.)
+  ;; and structure
+  '(add-to-list 'org-latex-classes
+                `("beamer"
+                  ,(concat "\\documentclass[presentation]{beamer}\n"
+                           "[DEFAULT-PACKAGES]"
+                           "[PACKAGES]"
+                           "[EXTRA]\n")
+                  ("\\section{%s}" . "\\section*{%s}")
+                  ("\\subsection{%s}" . "\\subsection*{%s}")
+                  ("\\subsubsection{%s}" . "\\subsubsection*{%s}"))))
+#+end_src
+
+** Set up the header.tex
+
+This file gets included in the LaTeX file for the children's book.
+Tweak it to change the appearance. In this example, I use black serif
+text text on the left side of a picture, both occupying roughly half
+of the page. I also experimented with using a different font this time, which you might need to install (for me, I did =apt-get install texlive-fonts-extra=).
+
+#+INCLUDE: "header.tex" src latex
+
+** Create the PDF
+
+   #+begin_src sh :results silent
+   pdflatex index.tex
+   #+end_src
+
+** Create one PNG per page
+
+   #+begin_src sh :results silent
+   mkdir pages
+   convert -density 300 index.pdf -quality 100 pages/page%d.png
+   #+end_src
+
+** Create the 4-up imposition
+
+The diagram at https://pressnostress.com/iw/howto/booklets/1.html was helpful.
+
+#+begin_src sh :dir pages :results silent
+montage \( page4.png -rotate 180 \) \( page3.png -rotate 180 \) page7.png page0.png -tile 2x2 -mode Concatenate front.png
+montage \( page2.png -rotate 180 \) \( page5.png -rotate 180 \) page1.png page6.png -tile 2x2 -mode Concatenate back.png
+convert front.png back.png -density 300 ../print.pdf
+#+end_src
+
+
+* Other notes
+
+Placeholder image from https://en.wikipedia.org/wiki/File:Portrait_placeholder%2Epng - public domain.

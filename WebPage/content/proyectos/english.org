@@ -1,0 +1,52 @@
+Para decirle a una chica en español que te gusta ella y te gustaría salir con ella en una cita, podrías decir: "Me gustas y me gustaría invitarte a ver una película o dar un paseo por el centro de la ciudad contigo."
+
+Si quieres ser sutil, podrías intentar usar un enfoque más indirecto. Aquí hay algunas opciones:
+
+    "¿Te gustaría hacer algo juntos algún día? Podríamos ver una película o dar un paseo por el centro de la ciudad."
+
+    "¿Te apetecería hacer algo divertido el fin de semana? Tengo ganas de ver una buena película o dar un paseo por el centro."
+
+    "¿Qué tal si hacemos algo distinto este fin de semana? Me encantaría invitarte a ver una película o a dar un paseo por el centro de la ciudad."
+
+#+title: Practising with and IA
+
+*input* : "You are an English teacher and have been asked to test my knowledge of how to write in English. Please ask me some questions and correct my answers. Be sure to breakdown your suggestions and be specific with the lines. Additionally, please provide a clarification about the score out of ten that you would give my writing.
+
+* Write a short paragraph describing your favorite hobby or activity. Be sure to include specific details and explain why it is your favorite.
+
+Me: 
+My favourite hobby is watch movies, I really enjoy it above all when I do that in my chair, it is comfortable. Why is it my favorite ? Because I am being enterteined and can be part of the story, if the movie is well done I can emphatize with the characters and feel something like fear, love, happines, anything that you can imagine it's possible when you are watching a movie, just you have to leave for an hour or two your routine and join in the fictional world
+
+IA:
+My favourite hobby is watching movies. I really enjoy it above all when I do it in my comfortable chair. Why is it my favorite? Because I am entertained and can become part of the story. If the movie is well done, I can empathize with the characters and feel a range of emotions such as fear, love, happiness, or anything else that you can imagine. All it takes is setting aside an hour or two of my routine to escape into the fictional world."
+
+* Write a short essay discussing the benefits of learning a second language. In your essay, be sure to include specific examples and explain how learning a second language has improved your life or could potentially improve the life of others.
+
+Original: "Learning a second language has a lot of benefits, where I can start... uhmm... first you cand understand others, maybe it is not important wether you dont travel but just for one moment think that you learn the most common language english, dont care where you go, you could understand anyone; the culture like the art, music, movies are in more than one language just a second cover a minimal part of it. My life has been improved when I started to read in english about programming, all manuals, tutorials, and other geek stuff are in english and I had to learn english to understand that content."
+
+Revised:
+-
+- "Learning a second language has many benefits." (This sentence provides a clearer overview of the main topic of the essay.)
+- "it allows you to understand others, even if you don't travel." (This sentence explains one benefit of learning a second language.)
+- "For example, by learning the most common language, English, you can understand anyone, no matter where you go." (This sentence provides a specific example to illustrate the benefit mentioned in the previous sentence.)
+- "Additionally, culture such as art, music, and movies are often available in multiple languages." (This sentence introduces another benefit of learning a second language.)
+- "By learning a second language, you can access a greater portion of this cultural content." (This sentence explains how learning a second language allows you to access more cultural content.)
+- "In my own life, learning English has improved my ability to read about programming and access technical manuals and tutorials, which are often written in English." (This sentence provides a personal example of how learning a second language has improved your life.)
+- "Overall, learning a second language has the potential to broaden your understanding of the world and improve your communication skills." (This sentence provides a summary of the main points of the essay and emphasizes the long-term benefits of learning a second language.)
+
+* Write a short email explaining to a colleague why you are unable to attend a meeting. Be sure to provide a reason for your absence and offer any suggestions or alternatives for the meeting.
+
+Original: "Hey Mike I can't attent the meeting because I have an stomachache, don't worry about that just a difficult day at the office. Could you organice another meeting for the friday? I really like to meet with you. thanks, rhyloo"
+
+Revised:
+
+   - "Hi Mike," (This greeting is more formal and appropriate for an email to a colleague.)
+   - "I won't be able to attend the meeting because I have a stomachache." (This sentence explains the reason for your absence in a clear and direct way.)
+   - "It was a difficult day at the office, but I'll be fine." (This sentence provides additional context and reassures your colleague that you will be okay.)
+   - "Don't worry about it." (This phrase is a polite way to assure your colleague that your absence is not a problem.)
+   - "Could we organize another meeting for Friday instead?" (This sentence makes a specific request for rescheduling the meeting.)
+   - "I really want to meet with you." (This sentence shows your interest in meeting with your colleague.)
+   - "Thanks," (This closing is polite and formal.)
+   - "Rhyloo" (This is your name, which should be included as the closing of the email.)
+
+

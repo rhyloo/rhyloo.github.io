@@ -1,0 +1,11 @@
+#+title: Mi segundo post
+#+date: <2021-05-19 01:34>
+#+AUTHOR: Jorge Benavides M.
+#+EMAIL: jorge2@hotmail.es
+#+SETUPFILE: ~/projects/blog/public_html/org-html-themes/org/theme-bigblow-local.setup
+#+description: Mi primera entrada
+* [[./../index.org][Un ingeniero en problemas]]
+  :PROPERTIES:
+  :CUSTOM_ID: index-org-un-ingeniero-en-problemas
+  :END:
+Post de prueba gg

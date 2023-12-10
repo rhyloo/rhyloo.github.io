@@ -1,0 +1,54 @@
+#+INCLUDE: ./../header.org
+
+*** [[file:./../posts/2021-07-21-seguridad-en-la-piscina.org][Seguridad en la piscina]] :noexport:
+:PROPERTIES:
+:CUSTOM_ID: file-posts-2021-07-21-seguridad-en-la-piscina-org-seguridad-en-la-piscina
+:END:
+
+#+INCLUDE: "./../posts/2021-07-21-seguridad-en-la-piscina.org::#description-post" :only-contents t
+
+[[file:./../posts/2021-07-21-seguridad-en-la-piscina.org][Read more...]]
+*** [[file:./../org-html-themes-personal/site.org][Cómo crear un sitio web Org Mode]]
+:PROPERTIES:
+:CUSTOM_ID: file-org-html-themes-personal-site-org-c-mo-crear-un-sitio-web-org-mode
+:END:
+
+#+INCLUDE: "./../org-html-themes-personal/site.org::#description-post" :only-contents t
+
+[[file:./../org-html-themes-personal/site.org][Read more...]]
+***  asa                                                         :noexport:
+:PROPERTIES:
+:CUSTOM_ID: dsds
+:END:
+#+ATTR_HTML: :fallback ./../images/fsa.svg
+[[./../images/fsa.svg]]
+# #+ATTR_HTML: :fallback ./../images/fsa.svg
+# [[./../images/foo.svg]]
+
+
+#+BEGIN_SRC dot :file ./../images/aa.svg
+strict graph {
+  a -- a
+  b -- a [color=red]
+  b -- c [color=red]
+  a -- d [color=gray]
+}
+#+END_SRC
+
+** ¿Por qué debo usar imágenes vectorizadas?                       :noexport:
+ :PROPERTIES:
+ :CUSTOM_ID: por-qu-debo-usar-im-genes-vectorizadas
+   :END:
+** Mi primer post                                                  :noexport:
+:PROPERTIES:
+:CUSTOM_ID: mi-primer-post
+:END:
+** Entrada de prueba                                               :noexport:
+   :PROPERTIES:
+   :CUSTOM_ID: entrada-de-prueba
+   :END:
+hola como va eso no se que perros y gatos
+** Emacs Portable                                                  :noexport:
+:PROPERTIES:
+:CUSTOM_ID: emacs-portable
+:END:

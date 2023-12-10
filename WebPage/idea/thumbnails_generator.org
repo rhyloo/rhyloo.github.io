@@ -1,0 +1,33 @@
+#+title:Thumbnail Generator
+
+#+BEGIN_SRC python :session :exports none :tangle inputs.py :results none
+def input(x):
+    if x == "Type directory name with pictures: ":
+        return "./"
+    elif x == "Type output directory:":
+        return "./test"
+
+#+END_SRC
+
+#+begin_src python :session :results output :preamble from inputs import *
+# Pido al usuario el directorio fuente
+work_directory = input("Type directory name with pictures: ")
+output_directory = input("Type output directory: ")
+# Selecciono el de salida
+
+#+end_src
+
+#+RESULTS:
+
+#+begin_src python :session :results output
+print(work_directory)
+# Selecciono todas las imágenes
+# Hago los recortes y los meto en thumbnails
+# Hago una copia de la imagen original en otra carpeta
+## Thumbnails - Orginal - html
+
+# Genero los html
+#+end_src
+
+#+RESULTS:
+: ./

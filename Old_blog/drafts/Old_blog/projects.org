@@ -1,0 +1,37 @@
+#+HTML_DOCTYPE:html5
+#+LANGUAGE:es
+#+OPTIONS: toc:nil
+#+HTML_CONTAINER: div
+#+HTML_HEAD: #+HTML_HEAD: <link rel="stylesheet" type="text/css" href="https://orgmode.org/worg/style/worg-zenburn.css">
+#+HTML_HEAD_EXTRA:<link href="https://fonts.googleapis.com/css?family=Fredoka+One&display=swap" rel="stylesheet"> 
+#+HTML_HEAD_EXTRA:<link href="https://fonts.googleapis.com/css?family=Bungee+Inline|Fredoka+One&display=swap" rel="stylesheet">
+#+HTML_HEAD_EXTRA:<link href="https://fonts.googleapis.com/css?family=Bungee+Inline|Flamenco|Fredoka+One&display=swap" rel="stylesheet">
+#+HTML_HEAD_EXTRA:<title>PLOCK</title>
+#+TITLE: 
+#+OPTIONS: num:nil
+
+* Proyectos
+** DONE Arduino
+CLOSED: [2017-08-30 vi. 13:10]
+La verdad siempre quise tener uno, miraba todo el día tutoriales de
+cosas que se podían hacer con la placa, recuerdo tanto que lo más
+interesante del momento era un smartwatch o reloj despertador, vaya
+que hay muchos en el mercado pero el siempe hecho de tener algo que yo
+haya hecho y funcione me fascinaba.
+
+LLegó el día, la feria de ciencias del instituto, participé con un
+grupo de compañeros en la asignatura de física, discutimos "por días"
+(+la verdad si sumamos las horas que le dedicamos a pensar que hacerdan menos de un día pero como lo hicimos en días separados asumiremos
+que fueron días, suena mejor+) el proyecto que haríamos, propuse una
+impresora 3D, pero nuestro 
+** INPROGESS Sitio web rhyloo.github.io
+/Por obvias razones este sitio siempre será un proyecto en
+actualización/\\
+
+El objetivo principal de este proyecto es practicar y de alguna forma
+llevar a un entorno real todos los conocimientos que adquiero en
+emacs,org-mode, HTML y CSS.
+
+También apuntar en algún sitio los trabajos que hago, cómo lo hago,
+lo normal, por si de alguna forma ayuda a alguien.
+** INPROGESS Wikiversity

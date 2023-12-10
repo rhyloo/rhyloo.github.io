@@ -1,0 +1,15 @@
+#+title: Colpitts 0 - Rhyloo 
+#+date: <2021-05-20 15:45>
+#+AUTHOR: Jorge Benavides M.
+#+EMAIL: jorge2@hotmail.es
+#+SETUPFILE: ~/projects/blog/public_html/org-html-themes/org/theme-bigblow-local.setup
+#+description: Felicidad en su máximo 
+* [[./../index.org][Un ingeniero en problemas]]
+  :PROPERTIES:
+  :CUSTOM_ID: index-org-un-ingeniero-en-problemas
+  :END:
+<2021-05-20 ju. 18:10>
+Supongo que me he venido a arriba muy rápido, no no he resuelto el problema Colpitts 2 - Rhyloo 0, básicamente click bait
+
+<2021-05-21 vi. 00:15>
+Me ha ganado Colpitts :(
