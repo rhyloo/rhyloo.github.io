@@ -1,0 +1,70 @@
+#+HUGO_SECTION: ./miscellany
+#+TITLE: MISCELLANY
+#+HUGO_AUTO_SET_LASTMOD: nil
+#+HUGO_WEIGHT: 5
+#+HUGO_CUSTOM_FRONT_MATTER: :sidebar false :authorbox false
+
+* Latin quotes
+:PROPERTIES:
+:export_file_name: quotes
+:END:
+
+This is a collection of Latin quotes that I have heard throughout my life and wanted to keep in order.
+#+hugo: more
+
+
+| Latin                                     | English Translation                                    |
+|-------------------------------------------+--------------------------------------------------------|
+| Excusatio non petita, accusatio manifesta | Unasked for excuses, a clear accusation.               |
+| Quod erat demonstrandum                   | What was to be demonstrated.                           |
+| Carpe diem                                | Seize the day.                                         |
+| Alea jacta est                            | The die is cast.                                       |
+| Quod licet Iovi, non licet bovi           | What is allowed for Jupiter is not allowed for the ox. |
+| Aliquando et insanire iucundum est        | Sometimes, it's pleasant to act a little crazy.        |
+| Quidquid latine dictum sit, altum videtur | Whatever is said in Latin sounds profound.             |
+| Se non è vero, è ben trovato              | If it's not true, it's well invented.                  |
+
+* Interesting websites
+:PROPERTIES:
+:export_file_name: interesting websites
+:END:
+
+This is a collection of interesting websites (at least for me) that I have found surfing on internet.
+#+hugo: more
+
+- [[https://www.gnu.org/software/emacs/][EMACS]]
+- [[https://orgmode.org/][Org-mode]]
+- [[https://archive.org/][Archive.org]]
+- [[https://www.protectedtext.com/][ProtectedText]]
+- [[https://es.wikiversity.org/wiki/Portada][Wikiversidad]]
+- [[https://www.guerrillamail.com][Guerrillamail]]
+- [[https://www.gnu.org/philosophy/free-sw.html][Software libre]]
+- [[https://sindominio.net/biblioweb/telematica/mentor.html][Manifiesto hacker]]
+- [[https://sindominio.net/biblioweb/telematica/hacker-como.html][¿Cómo ser un hacker?]]
+- [[https://biblioweb.sindominio.net/telematica/][BiblioWeb de SinDominio]]
+- [[https://postmeritocracy.org][El Manifiesto Pos-Meritocracia]]
+- [[https://archive.org/details/GuerillaOpenAccessManifesto][Guerilla Open Access Manifesto]]
+- [[https://www.se.rit.edu/~tabeec/RIT_441/Resources_files/How%20To%20Write%20Unmaintainable%20Code.pdf][How To Write Unmaintainable Code]]
+- [[https://es.wikipedia.org/wiki/Sci-Hub][Sci-hub - Artículos sin suscripción]]
+- [[http://97cosas.com/programador/][97 cosas que todo programador debería saber]]
+- [[https://sindominio.net/ayuda/preguntas-inteligentes.html][¿Cómo hacer preguntas de manera inteligente?]]
+- [[https://www.ucm.es/oficina-de-software-libre/publicaciones][Publicaciones - Oficina de Software libre Complutense]]
+
+* Wikipedia's articles
+:PROPERTIES:
+:export_file_name: wikipedia_articles
+:END:
+
+This is a collection of Wikipedia's I read.
+#+hugo: more
+
++ [[https://es.wikipedia.org/wiki/Dieter_Rams][Interesantes principios del buen diseño según el diseñador alemán Dieter Rams]]
++ [[https://es.wikipedia.org/wiki/Fata_Morgana][Fata Morgana]]
++ [[https://es.wikipedia.org/wiki/Theorema_egregium][Theorema egregium]]
++ [[https://es.wikipedia.org/wiki/No_te_repitas][No te repitas]]
++ [[https://es.wikipedia.org/wiki/Mitoman%C3%ADa][Mitomanía]]
++ [[https://es.wikipedia.org/wiki/Efecto_Dunning-Kruger][Efecto Dunning-Kruger]]
+
+
+
+

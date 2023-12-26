@@ -1,0 +1,51 @@
+<div>
+<script>
+  const base_url = 'https://letterboxd.com/Rhyloo/films/page/';
+
+  async function getMovieNames(url) {
+      try {
+          const response = await axios.get(url);
+          const movieNames = [];
+
+          if (response.status === 200) {
+              const $ = cheerio.load(response.data);
+              $('img[alt]').each((index, element) => {
+                  movieNames.push($(element).attr('alt'));
+              });
+          } else {
+              console.log(`Failed to fetch ${url}`);
+          }
+
+          return movieNames;
+      } catch (error) {
+          console.error('Error:', error);
+          return [];
+      }
+  }
+
+  const allMovieNames = [];
+
+  // Iterate through pages (assuming 8 pages)
+  async function scrapePages() {
+      try {
+          for (let page_num = 1; page_num <= 8; page_num++) {
+              const url = `${base_url}${page_num}`;
+              const movieNames = await getMovieNames(url);
+              allMovieNames.push(...movieNames);
+          }
+
+          // Display all movie names
+          const movieList = document.getElementById('movieList');
+          allMovieNames.forEach((name) => {
+              const listItem = document.createElement('li');
+              listItem.textContent = name;
+              movieList.appendChild(listItem);
+          });
+      } catch (error) {
+          console.error('Error:', error);
+      }
+  }
+
+  scrapePages();
+</script>
+</div>

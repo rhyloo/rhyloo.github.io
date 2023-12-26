@@ -1,10 +1,168 @@
 #+HUGO_SECTION: ./
-#+TITLE: About
+#+TITLE: ABOUT
 #+HUGO_AUTO_SET_LASTMOD: nil
-#+HUGO_WEIGHT: 2
+#+HUGO_WEIGHT: 6
 #+HUGO_CUSTOM_FRONT_MATTER: :menu main :sidebar false :authorbox false
 
-* Test de sección About
+* Sobre mí
+  :PROPERTIES:
+  :CUSTOM_ID: sobre-m
+  :END:
+Tú, lector, considera esta página una biografía o un curriculum
+informal, si estás buscando algo con más categoría haz click en
+algunos de los enlaces de abajo, si buscas una línea temporal, [[https://rhyloo.github.io/life/][entra aquí]].
 
-This gets created in ~<HUGO_BASE_DIR>/content/articles/~.
-sasaas
+
+| Linkedin | EuroPass | LaTeX (ES) | LaTeX (EN) |
+|----------+----------+------------+------------|
+|          |          |            |            |
+
+** Datos Básicos
+   :PROPERTIES:
+   :CUSTOM_ID: datos-b-sicos
+   :END:
+  - *Nombre:* Jorge Benavides Macías
+  - *Nací :* Madrid, 15 de Noviembre del 2000o
+  - *Vivo en:* Málaga
+  - *Web:* [[https://rhyloo.github.io/][rhyloo.github.io]]
+  - *e-mail:* [[mailto:rhyloot@gmail.com][rhyloot]]
+
+# ## ESTADO ACTUAL
+
+# Actualmente estoy en Málaga...
+
+# ## OBJETIVOS EN LA VIDA
+
+** Estudios
+   :PROPERTIES:
+   :CUSTOM_ID: estudios
+   :END:
+*** Los que tenía que hacer
+    :PROPERTIES:
+    :CUSTOM_ID: los-que-ten-a-que-hacer
+    :END:
+  - *2012-2016:* ESO. Colegio "Unidad Educativa LEMAS" (Ecuador).
+  - *2016-2018:* Bachillerato. "Unidad Educativa LEMAS" (Ecuador).
+  - *2018-2022:* Ingeniería en electrónica, robótica y mecatrónica en la UMA (Universidad de Málaga).
+
+# ### SOBRE LOS QUE NO TENÍA QUE HACER
+#   Me he sacado un montón, algunos con más facilidad que otros para ser
+#   sincero, los puedes mirar en mi [LinkedIn][cv4], de LaTeX, de
+#   productividad personal el cual ha inspirado este sitio web y
+#   publicar todo aquello que hago, de diseño, incluso algunos nada
+#   cercanos a mi área de MATLAB, simulink, etc...
+
+
+# ## CONOCIMIENTOS
+#   Todo lo que pueda aprender de internet, libros, incluso de algunos profesores en la uni.
+#   - Bastante:
+#     + **Matemáticas**: Aplicadas a la ingeniería.
+#     + **LaTeX**
+#     + **ofimática**: Maquetación de documentos
+
+#   - Suficiente:
+#     + **Programación web**: CSS, HTML.
+#       He montado varios sitios webs, aunque siempre tienen un nivel medio y suelen ser estáticos(con chapuzas y sin ellas).
+#     + **Programación**: C++, Python, JAVA, Assembler, MATLAB y  Mathematica (si se puede considerar un lenguaje)
+#     + **Arquitectura de ordenadores**: El estudio lo hice en arquitecturas RISC y si somos específicos en MIPS pero una vez visto uno, visto todos ya que el resto son más complejos, parecidos o más simples.
+#     + **Enseñanza, tutoriales, documentación, revisión**
+#     + **Herramientas de colaboración: control de versiones**
+#     + **Software libre, el proyecto GNU, libertad en la red**
+#   - Poco, o con ganas de aprender:
+#     + **Programación web**: PHP, Django, jQuery. SQL lo he tocado 3 veces como mucho, me parece que tiene una sintaxis bastante sencilla y lógica.
+#     + **Lenguajes**: R, Octave, LISP, Julia.
+#     + **Aspectos legales**: ¿Dónde se registra un documento, archivo, diseño, obra, etc...? ¿Cuándo deja de ser legal algo en internet, quién pone esa línea?
+#     + **Matemáticas** Teoría de juegos (Lo más cerca que he estado de esto es intentar leer la tesis doctoral de John Nash, que no sé si es legal pasarla y publicarla)
+#     + **Inteligencia artificial**
+#     + **Programación orientada a objetos**
+#     + **SO(arquitectura de ordenadores)**: Parte del grado que estudio, teoría.
+#     + Redes
+#     + **Edición de audio, vídeo, efectos**
+#     + **Redes**: servidores BD/web/correo/DNS, clientes, protocolos, TCP/IP, wireless
+#     + **Seguridad informática**
+#     + **Linux**: Administración de servidores, shell, scripting, herramientas.
+
+# ## Proyectos
+# Todos los trabajos y programas son de libre distribución y uso (GPL/FDL/CC/...) y se encuentran en mi web.
+
+# ## Viajes
+
+
+# ## Experiencia laboral
+#   - Septiembre 2020 (15 días): Fui mozo de almacén, en la sección de
+#     caja, facturando. Aunque no tiene relación con mi grado... me
+#     divertí muchísimo haciéndolo; durante mi jornada reflexioné mucho
+#     sobre la automatización de ese trabajo y como en algún
+#     desaparecerá porque un robot ocupará ese puesto.
+
+# ## Idiomas
+# Los idiomas son importantes, son el reflejo de una cultura que ha ido
+# cambiando a través de los siglos; letras, estructuras, frases hechas,
+# palabras, expresiones que en nuestro idioma nativo no existen como
+# "L’esprit d’escalier" o "Carpe Diem", todo cuenta, es probable que no
+# los uses todos los días y que incluso los olvides pero la experiencia
+# de aprender alguno extra además del nativo es muy placentera y útil en
+# este mundo interconectado.
+
+#  + **Castellano:** Hablo español desde que tengo memoria, soy lo que
+#  se considera un "nativo" aunque ya te digo que los 23 tiempos verbales
+#  que hay los habré usado algún día con mucha suerte...
+ 
+#  + **Español latino**: A efectos prácticos es lo mismo pero hay que
+#  reconocerlo la jerga es distinta y yo la conozco.
+ 
+#  + **Inglés:** Si has visitado linkedin habrás visto que tengo un B1,
+#  no me quejo la verdad ha sido muy útil pero sinceramente creo que
+#  necesito "más calle", ir un par de meses a España aprender inglés y
+#  volver a Londres[^1].
+ 
+#  - **Portugués e Italiano:** Ocurre algo muy curioso con estos idiomas
+#  y es que sus raíces son latinas, no es difícil entenderlo si hablas
+#  español, aunque luego no puedas decir ni pío en los respectivos
+#  idiomas. Me gustaría aprender un poco de cada, al menos a formar
+#  estructuras básicas de sujeto verbo y predicado si es que existe.
+ 
+#  - **Francés:** Puedo leerlo medianamente bien, he hecho varias pruebas y puedo hacerlo con un diccionario a mi lado o un traductor para ciertas palabras.
+#  - **Alemán:** He investigado mucho sobre este idioma pero aún no me he puesto a ello... solo se queda en investigaciones.
+#  - **Esperanto:** Estoy intentando dominarlo, el simple hecho de que su concepción sea la internacionalidad me parece, como idea, increíble.
+#  - **Ruso:** Me gustaría aprenderlo.
+#  - **Japonés:** Me gustaría aprenderlo.
+
+
+# ## Personal
+# Especialidad en analizar y criticar (sólo constructivamente) siempre
+# que veo una forma de mejorar algo con poco esfuerzo.  Aprendo
+# continuamente y lo apunto todo; hago contabilidad y métricas de mi
+# vida.  De pequeño me aburría; ahora ya nunca tengo tiempo para
+# aburrirme. Muchas cosas por hacer (y miles más que no publico) Tras
+# muchos años me he ido conociendo mejor: mis valores, mi objetivo, mi
+# estilo, mi aportación al mundo, mis bloqueos, mis preocupaciones, … El
+# camino a la sabiduría es eterno pero estoy contento de seguirlo. La
+# ignorancia da la felicidad „Apartar la ignorancia da la felicidad“.
+# La música es un idioma que aún no domino y que me interesa „entender“;
+# he ido aprendiendo algo de teoría y de varios instrumentos (flauta de
+# bambú, guitarra clásica, acordeón, bağlama, çiftelia).  Mis
+# preferencias de trabajo con ordenador: uso GNU, Devuan, gestor de
+# ventanas wmii, teclado Dvorak muy modificado en Kinesis Contoured,
+# emacs +configuración, conkeror, urxvt, zsh.  Aunque me toca estar
+# muchas horas con el ordenador, no me gusta estar el día entero (tengo
+# otras aficiones extrañas). Lo que me gusta es la informática, no los
+# ordenadores. No me llevo bien con los aparatos electrónicos, y
+# prefiero evitarlos.  Eso es (superficialmente) todo,
+
+# **Jorge Benavides Macías**
+
+# [^1]: Si no lo has pillado es una referencia a un chiste de [Ignatius
+# Farray](https://www.youtube.com/watch?v=yyTsF5Xv4dc) minuto 8:35.
+
+# [cv4]:https://es.linkedin.com/in/jorge-benavides-macias
+
+** Linea temporal de mi vida
+   :PROPERTIES:
+   :CUSTOM_ID: linea-temporal-de-mi-vida
+   :END:
+#+BEGIN_EXPORT html
+<iframe src="https://rhyloo.github.io/TimeLine-Of-Life/" width="100%" height="20%" frameBorder="0" style="border: 0;"></iframe> <a href="https://rhyloo.github.io/TimeLine-Of-Life/" target="_blank">Go to Life</a>
+#+END_EXPORT 
+
+

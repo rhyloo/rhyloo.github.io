@@ -1,0 +1,23 @@
++++
+title = "Latin quotes"
+author = ["Jorge L. Benavides M."]
+draft = false
+weight = 4
+sidebar = false
+authorbox = false
++++
+
+This is a collection of Latin quotes that I have heard throughout my life and wanted to keep in order.
+
+<!--more-->
+
+| Latin                                     | English Translation                                    |
+|-------------------------------------------|--------------------------------------------------------|
+| Excusatio non petita, accusatio manifesta | Unasked for excuses, a clear accusation.               |
+| Quod erat demonstrandum                   | What was to be demonstrated.                           |
+| Carpe diem                                | Seize the day.                                         |
+| Alea jacta est                            | The die is cast.                                       |
+| Quod licet Iovi, non licet bovi           | What is allowed for Jupiter is not allowed for the ox. |
+| Aliquando et insanire iucundum est        | Sometimes, it's pleasant to act a little crazy.        |
+| Quidquid latine dictum sit, altum videtur | Whatever is said in Latin sounds profound.             |
+| Se non è vero, è ben trovato              | If it's not true, it's well invented.                  |

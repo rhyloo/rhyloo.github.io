@@ -1,5 +1,5 @@
 +++
-title = "My first post"
+title = "Emacs Portable"
 author = ["Jorge L. Benavides M."]
-draft = false
+draft = true
 +++

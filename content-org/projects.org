@@ -1,0 +1,106 @@
+#+HUGO_SECTION: ./projects
+#+TITLE: PROJECTS
+#+HUGO_AUTO_SET_LASTMOD: nil
+#+HUGO_WEIGHT: 2
+#+HUGO_CUSTOM_FRONT_MATTER: :sidebar false :authorbox false
+
+* TODO Camera2Monitor
+:PROPERTIES:
+:export_file_name: CAMERA2MONITOR
+:END:
+Hola 
+#+hugo: more
+
+* TODO Filtro de Chebyshev de tipo I. 
+:PROPERTIES:
+:EXPORT_FILE_NAME: Filtro de Chebyshev de tipo I
+:END:
+Este es un proyecto
+#+hugo: more
+
+#+BEGIN_EXPORT html
+<a href="https://es.mathworks.com/matlabcentral/fileexchange/92498-analog-chebyshev-filter" rel="nofollow"><img src="https://www.mathworks.com/matlabcentral/images/matlab-file-exchange.svg" alt="matlab file exchange" data-canonical-src="https://www.mathworks.com/matlabcentral/images/matlab-file-exchange.svg" style="max-width:100%;"></a>
+<a href="https://opensource.org/licenses/BSD-3-Clause" rel="nofollow"><img src="https://img.shields.io/badge/license-BSD-blue.svg" alt="license BSD blue" data-canonical-src="https://img.shields.io/badge/license-BSD-blue.svg" style="max-width:100%;"></a>
+<a href="https://github.com/rhyloo/electronic" rel="nofollow"><img alt="GitHub watchers" src="https://img.shields.io/github/watchers/rhyloo/electronic?style=social"></a>
+#+END_EXPORT
+
+** ¿Cómo usarlo?
+
+Dentro del código hay que introducir los parámetros básicos, no es lo más cómodo pero es funcional, lo cambiaré en las próximas versiones.
+
+*Frecuencia de corte* - en [Hz]\\
+*El rizado* - en [dB]\\
+*Atenuación en la banda eliminada* - en [dB]\\
+*Frecuencia de atenuación* - en [Hz]\\
+
+Además cuenta con una opción para cambiar entre inglés y español, recomiendo la versión en inglés si se piensa exportar a LaTeX ya que falla con los acentos.
+
+#+begin_src matlab :exports code
+% f_c = 1000;             % Cutoff Frecuency
+% ripple_db = 2;      % Ripple Db'S
+% attenuation_db = 40; % Attenuation In The Eliminated Band 
+% f_r = 1300;             % Frecuency Attenuation In The Eliminated Band
+%%Set Lang
+%Options Available = [Spanish English]
+lang = "english";
+#+end_src
+
+/La topología que uso para generar las resistencias y condensadores es la de Sallen-Key, forma degenerada de una topología de filtro de fuente de voltaje controlada por voltaje (VCVS)./
+
+Recomiendo realizar el cálculo de las resistencias y condensadores a mano.
+** Screenshots
+
+Filtro pasa baja diseñado para:
+ - Frecuencia de corte: 1948 Hz.
+ - Rizado en la banda pasante: 1.948 dB.
+ - Atenuación en la banda eliminada: 44.48 dB.
+ - Frecuencia de atenuación: 2348 Hz.
+#+CAPTION: Filtro Chebyshev pasa baja - Output
+#+NAME: Filtro Chebyshev pasa baja
+#+ATTR_HTML: :alt Filtro Chebyshev pasa baja - Output :title Filtro Chebyshev pasa baja - Output :style width:85%
+[[file:./../images/filter_chebyshev_low_pass_1.png][file:./../images/filter_chebyshev_low_pass_1.png]]
+
+Este mismo ejemplo está resuelto a mano en [[][diseño de un filtro de Chebyshev Pasa Baja]
+
+** Source
+
+#+ATTR_HTML: :style display: inline :width 9.5% 
+Puedes descargar este script desde [[https://github.com/rhyloo/electronic][file:./../images/github.png]] o desde 
+#+BEGIN_EXPORT html
+<a href="https://es.mathworks.com/matlabcentral/fileexchange/92498-analog-chebyshev-filter" rel="nofollow"><img src="https://www.mathworks.com/matlabcentral/images/matlab-file-exchange.svg" alt="matlab file exchange" data-canonical-src="https://www.mathworks.com/matlabcentral/images/matlab-file-exchange.svg" style="max-width:100%; display:inline"></a>
+#+END_EXPORT
+** Licencia
+   :PROPERTIES:
+   :CUSTOM_ID: licencia
+   :END:
+Está bajo licencia *BSD* ya que es *[[https://es.mathworks.com/matlabcentral/FX_transition_faq.html][simple, bien conocida, de código abierto y permisiva]]*.
+** Changelog
+:PROPERTIES:
+:CUSTOM_ID: changelog
+:END:
+*** UNRELEASED 1.1.0
+:PROPERTIES:
+:CUSTOM_ID: 1-1-0
+:END:
+***** Mejoras en la interfaz para el usuario.
+Incluye la entrada de datos, resistencias y condensadores, y la salida.
+***** Integración del filtro pasaalta, pasabanda.
+*** 1.0.0 - [2021-05-18 ma.]
+:PROPERTIES:
+:CUSTOM_ID: 1-0-0-2021-05-18-ma
+    :END:
+***** ADDED Primera versión.
+***** ADDED *[[https://es.mathworks.com/matlabcentral/fileexchange/74824-printout-transfer-function][Printout Transfer Function]]* por [[/es.mathworks.com/matlabcentral/profile/authors/3239217][Bradley Sutton]]
+Para generar una impresión por pantalla legible y cómoda he usado dos scripts publicados en *File Exchange* de *MathWorks*. Ambos scripts son parte de un paquete llamado *[[https://es.mathworks.com/matlabcentral/fileexchange/74824-printout-transfer-function][Printout Transfer Function]]* publicado por [[/es.mathworks.com/matlabcentral/profile/authors/3239217][Bradley Sutton]].
+
+
+
+* TODO LaCaja - An overview of technical development.                                     
+:PROPERTIES:
+:EXPORT_FILE_NAME: LaCaja
+:END:
+
+* TODO Aweasome Electronics Stuff
+:PROPERTIES:
+:EXPORT_FILE_NAME: aweasome_electronics_stuff
+:END:

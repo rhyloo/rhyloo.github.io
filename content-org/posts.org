@@ -1,12 +1,16 @@
-
-* DONE My first post                                        :tag1:@category1:
+* DONE My first post
 :PROPERTIES:
 :EXPORT_FILE_NAME: my-first-post
 :END:
-This is my post body
-
-* DONE My second post                                       :tag1:@category1:
+* TODO My second post
 :PROPERTIES:
 :EXPORT_FILE_NAME: my-second-post
 :END:
-This is my post body
+* TODO Emacs Portable
+:PROPERTIES:
+:EXPORT_FILE_NAME: emacs-portable
+:END:
+* TODO Documentation on business
+:PROPERTIES:
+:EXPORT_FILE_NAME: documentation-on-business
+:END:

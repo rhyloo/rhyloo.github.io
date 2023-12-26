@@ -1,7 +1,7 @@
 baseurl = "./"
 title = "Un ingeniero en problemas"
 languageCode = "en-us"
-paginate = "5" # Number of posts per page
+paginate = "50" # Number of posts per page
 disqusShortname = "" # Enable Disqus comments by entering your Disqus shortname
 googleAnalytics = "" # Enable Google Analytics by entering your tracking id
 
@@ -20,21 +20,29 @@ theme = 'mainroad'
 
 [Author] # Used in authorbox
   name = "Jorge Benavides"
-  bio = "John Doe's true identity is unknown. Maybe he is a successful blogger or writer. Nobody knows it."
+  bio = "Jorge Benaivde's true identity is unknown. Maybe he is a successful blogger or writer. Nobody knows it."
   avatar = "img/avatar.png"
 
 [Params.style.vars]
   highlightColor = "#5294e2"
+  # Override font-family sets
+  # Take care of different quotes OR escaping symbols in these params if necessary
+  fontFamilyPrimary = "'Open Sans', Helvetica, Arial, sans-serif"
+  # Secondary font-family set responsible for pre, code, kbd, and samp tags font
+  fontFamilySecondary = "SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New', monospace"
 
 [Params]
-  description = "John Doe's Personal blog about everything" # Description of your site
+  description = "Jorge Benavides's Personal blog about everything" # Description of your site
   opengraph = true
   twitter_cards = false
   readmore = false # Show "Read more" button in list if true
   authorbox = true
   pager = true
   post_meta = ["date", "categories"] # Order of post meta information
-  mainSections = ["posts", "docs"]
+  mainSections = []
+
+[Params.thumbnail]
+  visibility = ["list", "post"] # Control thumbnail visibility
 
 
 [Params.sidebar]
@@ -42,4 +50,14 @@ theme = 'mainroad'
   list = "right"   # Configure layout for list pages
   single = "right" # Configure layout for single pages
   # Enable widgets in given order
-  widgets = ["search", "recent", "categories", "taglist"]
+  widgets = ["search", "recent", "categories", "taglist", "social", "languages"]
+
+
+
+[Params.widgets.social]
+  cached = true # activate cache if true
+  # Enable parts of social widget
+  twitter = "rhyloot"
+  linkedin = "jorgebenavidesm"
+  github = "Rhyloo"
+  email = "example@example.com"
