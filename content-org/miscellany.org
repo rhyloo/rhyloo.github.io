@@ -50,9 +50,6 @@ This is a collection of interesting websites (at least for me) that I have found
 - [[https://sindominio.net/ayuda/preguntas-inteligentes.html][¿Cómo hacer preguntas de manera inteligente?]]
 - [[https://www.ucm.es/oficina-de-software-libre/publicaciones][Publicaciones - Oficina de Software libre Complutense]]
 
-- [[
-http://www.compatt.com/Tutorials/NEETS/NEETS.html]]
-
 * Wikipedia's articles
 :PROPERTIES:
 :export_file_name: wikipedia_articles
@@ -68,6 +65,11 @@ This is a collection of Wikipedia's I read.
 + [[https://es.wikipedia.org/wiki/Mitoman%C3%ADa][Mitomanía]]
 + [[https://es.wikipedia.org/wiki/Efecto_Dunning-Kruger][Efecto Dunning-Kruger]]
 
+* Aweasome electronic stuff
+:PROPERTIES:
+:export_file_name: aweasome_electronic_stuff
+:END:
+This is a collection of electronic stuff.
+#+hugo: more
 
-
-
++ [[http://www.compatt.com/Tutorials/NEETS/NEETS.html]]
