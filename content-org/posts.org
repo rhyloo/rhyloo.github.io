@@ -1,16 +1,4 @@
 * DONE My first post
 :PROPERTIES:
-:EXPORT_FILE_NAME: my-first-post
-:END:
-* TODO My second post
-:PROPERTIES:
-:EXPORT_FILE_NAME: my-second-post
-:END:
-* TODO Emacs Portable
-:PROPERTIES:
-:EXPORT_FILE_NAME: emacs-portable
-:END:
-* TODO Documentation on business
-:PROPERTIES:
-:EXPORT_FILE_NAME: documentation-on-business
+:EXPORT_FILE_NAME: what I was paid in my first employee
 :END:
