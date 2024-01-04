@@ -94,7 +94,6 @@ Incluye la entrada de datos, resistencias y condensadores, y la salida.
 Para generar una impresión por pantalla legible y cómoda he usado dos scripts publicados en *File Exchange* de *MathWorks*. Ambos scripts son parte de un paquete llamado *[[https://es.mathworks.com/matlabcentral/fileexchange/74824-printout-transfer-function][Printout Transfer Function]]* publicado por [[/es.mathworks.com/matlabcentral/profile/authors/3239217][Bradley Sutton]].
 
 
-
 * TODO LaCaja - An overview of technical development.                                     
 :PROPERTIES:
 :EXPORT_FILE_NAME: LaCaja
@@ -104,3 +103,7 @@ Para generar una impresión por pantalla legible y cómoda he usado dos scripts 
 :PROPERTIES:
 :EXPORT_FILE_NAME: aweasome_electronics_stuff
 :END:
+* TODO Useful debian commands
+sudo nmcli r wifi on
+sudo rfkill unblock wifi
+sudo  rfkill list all
