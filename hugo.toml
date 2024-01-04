@@ -1,5 +1,5 @@
 baseurl = "./"
-title = "Un ingeniero en problemas"
+title = "An engineer in problems"
 languageCode = "en-us"
 paginate = "50" # Number of posts per page
 disqusShortname = "" # Enable Disqus comments by entering your Disqus shortname
