@@ -1,13 +1,13 @@
 +++
-title = "Filtro de Chebyshev de tipo I."
+title = "Filtro de Chebyshev de tipo I"
 author = ["Jorge L. Benavides M."]
-draft = true
-weight = 3
+draft = false
+weight = 2
 sidebar = false
 authorbox = false
 +++
 
-Este es un proyecto
+Desarrollé esta calculadora durante el curso 2021 para un trabajo de la universidad.
 
 <!--more-->
 
@@ -16,7 +16,7 @@ Este es un proyecto
 <a href="https://github.com/rhyloo/electronic" rel="nofollow"><img alt="GitHub watchers" src="https://img.shields.io/github/watchers/rhyloo/electronic?style=social"></a>
 
 
-### ¿Cómo usarlo? {#cómo-usarlo}
+## ¿Cómo usarlo? {#cómo-usarlo}
 
 Dentro del código hay que introducir los parámetros básicos, no es lo más cómodo pero es funcional, lo cambiaré en las próximas versiones.
 
@@ -42,7 +42,7 @@ _La topología que uso para generar las resistencias y condensadores es la de Sa
 Recomiendo realizar el cálculo de las resistencias y condensadores a mano.
 
 
-### Screenshots {#screenshots}
+## Screenshots {#screenshots}
 
 Filtro pasa baja diseñado para:
 
@@ -51,46 +51,39 @@ Filtro pasa baja diseñado para:
 -   Atenuación en la banda eliminada: 44.48 dB.
 -   Frecuencia de atenuación: 2348 Hz.
 
-<a id="figure--Filtro Chebyshev pasa baja"></a>
+<style>.org-center { margin-left: auto; margin-right: auto; text-align: center; }</style>
 
-{{< figure src="./../images/filter_chebyshev_low_pass_1.png" alt="Filtro Chebyshev pasa baja - Output" caption="<span class=\"figure-number\">Figure 1: </span>Filtro Chebyshev pasa baja - Output" title="Filtro Chebyshev pasa baja - Output" link="./../images/filter_chebyshev_low_pass_1.png" >}}
+<div class="org-center">
 
-Este mismo ejemplo está resuelto a mano en [[][diseño de un filtro de Chebyshev Pasa Baja]
+{{< figure src="/projects/chebyshev_filter_type_one/filter_chebyshev_low_pass_1.png" alt="Filtro Chebyshev pasa baja - Output - Part 1" caption="<span class=\"figure-number\">Figure 1: </span>Output - Part 1" width="75%" link="./../images/filter_chebyshev_low_pass_1.png" >}}
+
+{{< figure src="/projects/chebyshev_filter_type_one/filter_chebyshev_low_pass_2.png" alt="Filtro Chebyshev pasa baja - Output - Part 2" caption="<span class=\"figure-number\">Figure 2: </span>Output - Part 2" width="75%" link="./../images/filter_chebyshev_low_pass_1.png" >}}
+
+{{< figure src="/projects/chebyshev_filter_type_one/filter_chebyshev_low_pass_3.png" alt="Filtro Chebyshev pasa baja - Output - Part 3" caption="<span class=\"figure-number\">Figure 3: </span>Output - Part 3" width="75%" link="./../images/filter_chebyshev_low_pass_1.png" >}}
+
+</div>
 
 
-### Source {#source}
+## Source {#source}
 
 <div style="display: inline">
 
-Puedes descargar este script desde <a href="https://github.com/rhyloo/electronic" style="display: inline"><img src="./../images/github.png" alt="github.png" style="display: inline" width="9.5%" /></a> o desde
+Puedes descargar este script desde <a href="https://github.com/rhyloo/electronic" style="display: inline"><img src="/projects/github.png" alt="github.png" style="display: inline" width="9.5%" /></a> o desde
 
 </div>
 
 <a href="https://es.mathworks.com/matlabcentral/fileexchange/92498-analog-chebyshev-filter" rel="nofollow"><img src="https://www.mathworks.com/matlabcentral/images/matlab-file-exchange.svg" alt="matlab file exchange" data-canonical-src="https://www.mathworks.com/matlabcentral/images/matlab-file-exchange.svg" style="max-width:100%; display:inline"></a>
 
 
-### Licencia {#licencia}
+## Licencia {#licencia}
 
 Está bajo licencia **BSD** ya que es **[simple, bien conocida, de código abierto y permisiva](https://es.mathworks.com/matlabcentral/FX_transition_faq.html)**.
 
 
-### Changelog {#changelog}
+## Changelog {#changelog}
 
 
-#### UNRELEASED 1.1.0 {#1-1-0}
-
-<!--list-separator-->
-
--  Mejoras en la interfaz para el usuario.
-
-    Incluye la entrada de datos, resistencias y condensadores, y la salida.
-
-<!--list-separator-->
-
--  Integración del filtro pasaalta, pasabanda.
-
-
-#### 1.0.0 - <span class="timestamp-wrapper"><span class="timestamp">[2021-05-18 ma.]</span></span> {#1-0-0-2021-05-18-ma}
+### 1.0.0 - <span class="timestamp-wrapper"><span class="timestamp">[2021-05-18 mar]</span></span> {#1-dot-0-dot-0}
 
 <!--list-separator-->
 
@@ -101,6 +94,3 @@ Está bajo licencia **BSD** ya que es **[simple, bien conocida, de código abier
 -  ADDED **[Printout Transfer Function](https://es.mathworks.com/matlabcentral/fileexchange/74824-printout-transfer-function)** por [Bradley Sutton](/es.mathworks.com/matlabcentral/profile/authors/3239217)
 
     Para generar una impresión por pantalla legible y cómoda he usado dos scripts publicados en **File Exchange** de **MathWorks**. Ambos scripts son parte de un paquete llamado **[Printout Transfer Function](https://es.mathworks.com/matlabcentral/fileexchange/74824-printout-transfer-function)** publicado por [Bradley Sutton](/es.mathworks.com/matlabcentral/profile/authors/3239217).
-
-
-## <span class="org-todo todo TODO">TODO</span> L {#l}

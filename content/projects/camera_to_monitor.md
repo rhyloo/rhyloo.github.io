@@ -1,5 +1,5 @@
 +++
-title = "Camera2Monitor"
+title = "Camera to monitor"
 author = ["Jorge L. Benavides M."]
 draft = true
 weight = 2
@@ -7,6 +7,6 @@ sidebar = false
 authorbox = false
 +++
 
-Hola
-
 <!--more-->
+
+Developing...

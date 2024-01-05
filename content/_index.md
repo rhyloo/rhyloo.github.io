@@ -1,5 +1,5 @@
 +++
-title = "index"
+title = "HOME"
 author = ["Jorge L. Benavides M."]
 draft = false
 weight = 1
@@ -7,6 +7,8 @@ menu = "main"
 authorbox = false
 +++
 
-## Test de sección index {#test-de-sección-index}
+`Section under construction`
 
-Página inicial del Blog de Jorge Benavides *En construcción*
+**Section under construction**
+
+_Section under construction_

@@ -1,24 +1,29 @@
-* TODO Buying electronics stuff
+* TODO LaCaja - An overview of technical development.                                     
 :PROPERTIES:
-:EXPORT_FILE_NAME: buying_electronics_stuff
+:EXPORT_FILE_NAME: LaCaja
 :END:
-I need to buy some things this is a list that I got from
-- [[https://www.reddit.com/r/PrintedCircuitBoard/wiki/starter/?utm_source=reddit&utm_medium=usertext&utm_name=AskElectronics&utm_content=t1_ea2w47i#wiki_components_starter_kit][Components starter kit list]]
-- [[https://www.reddit.com/r/AskElectronics/wiki/starter_components][Starter components]]
-
-Let's start with some easy to find a buying
-** [0/0] Connection
-*** [0/3] Cables dupont
-- [ ] F-F
-- [ ] M-M
-- [ ] F-M
-*** Simple wire
-
-* TODO My final degree project - overview
+* TODO My final degree project - An overview
 :PROPERTIES:
 :EXPORT_FILE_NAME: my_final_degree_project
 :END:
-* TODO What I was paid in my first employee?
+** Introduction
+   I wanted to have some cv or projects to talk about and develop some skills with PCB design so I decide...
+** Requirements matrix 
+** Design phase, hardware, analysis
+** About Software
+*** Arm Cortex M0+ 
+*** LabView
+*** Matlab
+** Unit test and verification
+** Conclusions
+* TODO My first employee as engineer
 :PROPERTIES:
-:EXPORT_FILE_NAME: what_I_was_paid_in_my_first_employee
+:EXPORT_FILE_NAME: my_first_employee_as_engineer
 :END:
+** Introduction (What I write this post?)
+   After some years _five_
+** Where I work and what is DHV Technologies?
+** What I do there?
+** What I learnt there?
+** How I feel working there and what I wanna do instead of?
+** Conclusions
