@@ -28,28 +28,68 @@
 
    Let's start with some easy to find a buying
 
+   Summary:
+   #+begin_src emacs-lisp :var basename="tbl" start=1 stop=2 :exports results
+      (append
+       '(hline ("Description" "Value")
+         hline )
+       (cl-loop for i from start upto stop
+                collect (list (format "Buying %d" i)
+                              (format ":=remote(buy_%d, @>$4)" i)))
+       '(
+         hline
+         ("Total" ":=vsum(@II$2..@III$2)") hline))
+   #+end_src
+
+   #+RESULTS:
+   |-------------+-------|
+   | Description | Value |
+   |-------------+-------|
+   | Buying 1    |   6.1 |
+   | Buying 2    | 71.83 |
+   |-------------+-------|
+   | Total       | 77.93 |
+   |-------------+-------|
+   #+TBLFM: @2$2=remote(buy_1, @>$4)::@3$2=remote(buy_2, @>$4)::@4$2=vsum(@II$2..@III$2)
+
+*** Second buying
+    I did at Aliexpress <2024-01-04 jue>...
+
+    #+begin_center
+    #+TBLNAME: buy_2
+    |---------------------------------+-------------+--------+-------+----------|
+    | Product                         | Description | Reason | Price | Currency |
+    |---------------------------------+-------------+--------+-------+----------|
+    | DuPont Wire                     |             |        |  2.46 | €        |
+    | Protoboard                      |             |        |  3.67 | €        |
+    | kit of resistors                |             |        |  1.75 | €        |
+    | kit of transistor               |             |        |  2.09 | €        |
+    | kit of capactitor electrolytics |             |        |  2.11 | €        |
+    | kit of diodes                   |             |        |  3.35 | €        |
+    | Solder TS101                    |             |        | 48.63 | €        |
+    | ESP32 - CAM                     |             |        |  5.79 | €        |
+    | kit of capactitor ceramics      |             |        |  1.98 | €        |
+    |---------------------------------+-------------+--------+-------+----------|
+    |                                 | Total       |        | 71.83 | €        |
+    |---------------------------------+-------------+--------+-------+----------|
+    #+TBLFM: @>$4 = vsum(@2$4..@-1$4)
+    #+end_center
+
 *** First buying
     I did at Aliexpress <2024-01-04 jue>...
 
     #+begin_center
-    |---------------------------------+-------------+-----------------------------------------------------+-------+----------|
-    | Product                         | Description | Reason                                              | Price | Currency |
-    |---------------------------------+-------------+-----------------------------------------------------+-------+----------|
-    | Camera OV7670 module            |             | I wanted to try some project from [[Camera to monitor][MIT with an FPGA]]. |  1.97 | €        |
-    | DuPont Wire                     |             |                                                     |  2.46 | €        |
-    | Protoboard                      |             |                                                     |  3.67 | €        |
-    | kit of resistors                |             |                                                     |  1.75 | €        |
-    | kit of transistor               |             |                                                     |  2.09 | €        |
-    | kit of capactitor electrolytics |             |                                                     |  2.11 | €        |
-    | kit of diodes                   |             |                                                     |  3.35 | €        |
-    | Solder TS101                    |             |                                                     | 48.63 | €        |
-    | ESP32 - CAM                     |             |                                                     |  5.79 | €        |
-    | Dupont wire (again)             |             |                                                     |  4.13 | €        |
-    | kit of capactitor ceramics      |             |                                                     |  1.98 | €        |
-    |                                 | Total       |                                                     | 77.93 | €        |
+    #+TBLNAME: buy_1
+    |----------------------+-------------+-----------------------------------------------------+-------+----------|
+    | Product              | Description | Reason                                              | Price | Currency |
+    |----------------------+-------------+-----------------------------------------------------+-------+----------|
+    | Camera OV7670 module |             | I wanted to try some project from [[./][MIT with an FPGA]]. |  1.97 | €        |
+    | Dupont wire          |             |                                                     |  4.13 | €        |
+    |----------------------+-------------+-----------------------------------------------------+-------+----------|
+    |                      | Total       |                                                     |   6.1 | €        |
+    |----------------------+-------------+-----------------------------------------------------+-------+----------|
     #+TBLFM: @>$4 = vsum(@2$4..@-1$4)
     #+end_center
-
     
 ** IN-PROGRESS Roadmap to become embedeed engieener (FPGA and \micro{}C) 
 ** Useful resources
